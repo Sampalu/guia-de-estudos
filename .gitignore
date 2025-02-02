@@ -1,6 +1,3 @@
-# Ignorar a pasta pública gerada pelo Hugo
-/public/
-
 # Ignorar a pasta de cache do Hugo
 /resources/
 
