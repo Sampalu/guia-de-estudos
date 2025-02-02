@@ -8,7 +8,7 @@ theme = 'docsy'
 	weight = 50
 	url = "https://github.com/google/docsy/"
 	pre = "<i class='fa-brands fa-github'></i>"
-	post = "<span class='alert'>New!</span>"
+	post = "<span class='alert'>New teste!</span>"
 
 [[menu.main]]
   name = "Produtos"
