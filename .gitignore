@@ -1,0 +1,24 @@
+# Ignorar a pasta pública gerada pelo Hugo
+/public/
+
+# Ignorar a pasta de cache do Hugo
+/resources/
+
+# Ignorar node_modules (se usar Node.js)
+/node_modules/
+
+# Ignorar arquivos de sistema
+.DS_Store
+thumbs.db
+
+# Ignorar arquivos de IDE
+.vscode/
+.idea/
+
+# Ignorar arquivos de ambiente (se houver)
+.env
+*.local
+
+# Ignorar arquivos de log e temporários
+*.log
+*.tmp

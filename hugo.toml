@@ -1,0 +1,29 @@
+baseURL = "http://example.org/"
+languageCode = 'pt-bt'
+title = 'My New Hugo Site'
+theme = 'docsy'
+
+[[menu.main]]
+	name = "GitHub"
+	weight = 50
+	url = "https://github.com/google/docsy/"
+	pre = "<i class='fa-brands fa-github'></i>"
+	post = "<span class='alert'>New!</span>"
+
+[[menu.main]]
+  name = "Produtos"
+  identifier = "products"
+  url = "/products/"
+  weight = 2
+
+  [[menu.main.products]]
+    name = "Novos Produtos"
+    identifier = "new-products"
+    url = "/products/new/"
+    weight = 1
+
+  [[menu.main.products]]
+    name = "Em Destaque"
+    identifier = "featured-products"
+    url = "/products/featured/"
+    weight = 2
