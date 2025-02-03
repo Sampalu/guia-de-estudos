@@ -28,7 +28,7 @@
 &lt;ol start="2">
 &lt;li>
 &lt;p>&lt;strong>Modelos arquiteturais:&lt;/strong>&lt;/p>
-&lt;p>[ ] Microsserviços&lt;/p>
+&lt;p>[x] Microsserviços&lt;/p>
 &lt;p>[ ] Arquitetura Orientada a Eventos&lt;/p>
 &lt;p>[ ] Arquiteturas Monolíticas&lt;/p>
 &lt;p>[ ] Filas de Mensagens (RabbitMQ, Kafka)&lt;/p>
