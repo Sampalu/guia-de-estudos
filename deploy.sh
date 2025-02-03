@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+git checkout main
 git add .
 git commit -m "Adicionando minha página na raiz"
 git push origin main
