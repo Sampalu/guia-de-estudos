@@ -28,3 +28,5 @@ git push --force origin gh-pages
 # Volta para a pasta raiz
 cd ..
 
+git checkout main
+
