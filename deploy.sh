@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 
+git add .
+git commit -m "Adicionando minha página na raiz"
+git push origin main
+
 # Gera os arquivos estáticos
 hugo --minify
 
