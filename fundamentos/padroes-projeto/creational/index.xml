@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Creational on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/</link><description>Recent content in Creational on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/index.xml" rel="self" type="application/rss+xml"/><item><title>Singleton</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/singleton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/singleton/</guid><description>&lt;h1 id="singleton---creational-criação">Singleton - Creational (Criação)&lt;a class="td-heading-self-link" href="#singleton---creational-cria%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;em>Garantir que uma classe tenha somente uma instância no programa e fornecer um ponto de acesso global para a mesma.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="destilando-a-intenção">Destilando a intenção&lt;a class="td-heading-self-link" href="#destilando-a-inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=x9h8MgAvi_I&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=4">https://www.youtube.com/watch?v=x9h8MgAvi_I&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=4&lt;/a>&lt;/p>
+&lt;p>O Singleton é um padrão de projeto que tem a intenção de resolver dois problemas em uma aplicação:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Garantir que uma classe tenha somente uma instância no programa&lt;/strong> - isso é muito comum para programas que acessam recursos compartilhados, como bases de dados, sistemas de arquivos, interfaces gráficas, spoolers de impressão, módulos de um programa e mais.&lt;/li>
+&lt;li>&lt;strong>Fornecer um ponto de acesso global para a mesma&lt;/strong> - isso deixa o singleton muito parecido com variáveis globais, porque temos um único objeto, com acesso global, sendo usado por várias partes da aplicação.&lt;/li>
+&lt;/ul>
+&lt;p>Apesar de ser um dos padrões mais usados na atualidade, requer conhecimento e cuidado ao utilizá-lo. Um programador pode facilmente criar um Singleton que gera problemas de concorrência em um programa.&lt;/p></description></item><item><title>Builder</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/builder/</guid><description>&lt;h1 id="builder---creational-criação">Builder - Creational (Criação)&lt;a class="td-heading-self-link" href="#builder---creational-cria%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;em>Separar a construção de um objeto complexo da sua representação de modo que o mesmo processo de construção possa criar diferentes representações.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="destilando-a-intenção">Destilando a intenção&lt;a class="td-heading-self-link" href="#destilando-a-inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=2VwLvwsIu-8&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=6">https://www.youtube.com/watch?v=2VwLvwsIu-8&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=6&lt;/a>&lt;/p>
+&lt;p>A intenção acima significa que:&lt;/p>
+&lt;ul>
+&lt;li>O padrão sugere a separação do código que cria e o código que usa o objeto&lt;/li>
+&lt;li>Trata da criação de objetos complexos (complexos de verdade), como:
+&lt;ul>
+&lt;li>Objetos com construtores muito complexos&lt;/li>
+&lt;li>Objetos compostos de vários objetos (composite)&lt;/li>
+&lt;li>Objetos com algoritmo de criação complexo&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Além disso, o padrão também:&lt;/p></description></item><item><title>Prototype</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/prototype/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/prototype/</guid><description>&lt;h1 id="prototype---creational-criação">Prototype - Creational (Criação)&lt;a class="td-heading-self-link" href="#prototype---creational-cria%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;em>Especificar os tipos de objetos a serem criados usando uma instância-protótipo e criar novos objetos pela cópia desse protótipo.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="destilando-a-intenção">Destilando a intenção&lt;a class="td-heading-self-link" href="#destilando-a-inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=Z-_smcjkdwM&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=8">https://www.youtube.com/watch?v=Z-_smcjkdwM&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=8&lt;/a>&lt;/p>
+&lt;p>A intenção acima significa que você pode criar objetos protótipos que têm um método específico (&lt;code>clone&lt;/code>) para clonar seus dados em um novo objeto. Isso evita a recriação de objetos caros ou complexos para serem criados.&lt;/p></description></item><item><title>Factory Method</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/factory-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/factory-method/</guid><description>&lt;h1 id="factory-method---creational-criação">Factory Method - Creational (Criação)&lt;a class="td-heading-self-link" href="#factory-method---creational-cria%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;em>Definir uma interface para criar um objeto, mas deixar as subclasses decidirem que classe instanciar. O Factory Method permite adiar a instanciação para as subclasses.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="sobre-o-factory-method">Sobre o Factory Method&lt;a class="td-heading-self-link" href="#sobre-o-factory-method" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=1rB0PhvAwiU&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=10">https://www.youtube.com/watch?v=1rB0PhvAwiU&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=10&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>É um padrão de projeto de criação (lida com a criação de objetos)&lt;/li>
+&lt;li>Oculta a lógica de instanciação do código cliente. O método fábrica será responsável por instanciar as classes desejadas&lt;/li>
+&lt;li>É obtido através de herança. O método fábrica pode ser criado ou sobrescrito por subclasses&lt;/li>
+&lt;li>Dá flexibilidade ao código cliente permitindo a criação de novas factories sem a necessidade de alterar código já escrito (OCP)&lt;/li>
+&lt;li>Pode usar parâmetros para determinar o tipo dos objetos a serem criados ou os parâmetros a serem enviados aos objetos sendo criados.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="estrutura">Estrutura&lt;a class="td-heading-self-link" href="#estrutura" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;div style="background-color: #cccccc; padding: 10px; display: inline-block;">
+ &lt;img src="../../../../images/Factory-Method.png" alt="Factory-Method" width="800" />
+&lt;/div>
+&lt;h2 id="aplicabilidade">Aplicabilidade&lt;a class="td-heading-self-link" href="#aplicabilidade" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Use o factory method quando não souber com certeza quais os tipos de objetos o seu código vai precisar&lt;/li>
+&lt;li>Use o factory method para permitir a extensão de suas factories para criação de novos objetos (isso ajuda a aplicar o Open/Closed Principle)&lt;/li>
+&lt;li>Use o factory method para desacoplar o código que cria do código que usa as classes (Single Responsibility Principle)&lt;/li>
+&lt;li>Use o factory method para dar um hook (gancho) às subclasses para permitir que elas decidam a lógica de criação de objetos&lt;/li>
+&lt;li>Use o factory method para eliminar duplicação de código na criação de objetos&lt;/li>
+&lt;/ul>
+&lt;h2 id="implementação---teoria">Implementação - Teoria&lt;a class="td-heading-self-link" href="#implementa%c3%a7%c3%a3o---teoria" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Observação importante: todos os objetos criados por um factory method tendem a ser chamados de &amp;ldquo;Product&amp;rdquo; (produto)&lt;/p></description></item><item><title>Abstract Factory</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/abstract-factory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/abstract-factory/</guid><description>&lt;h1 id="abstract-factory---creational-criação">Abstract Factory - Creational (Criação)&lt;a class="td-heading-self-link" href="#abstract-factory---creational-cria%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;em>Fornecer uma interface para criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="sobre-o-abstract-factory">Sobre o Abstract Factory&lt;a class="td-heading-self-link" href="#sobre-o-abstract-factory" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=UPSuHqNsNs4&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=12">https://www.youtube.com/watch?v=UPSuHqNsNs4&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=12&lt;/a>&lt;/p>
+&lt;p>O Abstract Factory é usado para garantir que uma família de produtos relacionados ou dependentes trabalhem sempre juntos (&lt;em>veja aplicabilidade para mais casos de uso&lt;/em>).&lt;/p>
+&lt;p>Por exemplo: imagine que está criando um sistema de interfaces gráficas que deva funcionar em Linux, Windows e Mac. É natural termos várias classes representando elementos como Janela, Botão, Input e assim por diante. Também é natural usarmos composição entre os elementos, já que um botão pode estar dentro de uma janela ou formulário (não é um requisito para o padrão, mas pode acontecer). Além disso, os sistemas operacionais também precisam de implementações diferentes das classes de interface gráfica.&lt;/p></description></item></channel></rss>
