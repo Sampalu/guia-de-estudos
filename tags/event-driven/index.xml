@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event Driven on Sampalu</title>
+    <link>http://localhost:1313/guia-de-estudos/tags/event-driven/</link>
+    <description>Recent content in Event Driven on Sampalu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/guia-de-estudos/tags/event-driven/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EDA</title>
+      <link>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/event-driven-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/event-driven-architecture/</guid>
+      <description>&lt;h2 id=&#34;eda---event-driven-architecture-arquitetura-orientada-a-eventos&#34;&gt;&lt;strong&gt;EDA - Event-Driven Architecture (Arquitetura Orientada a Eventos)&lt;/strong&gt;&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#eda---event-driven-architecture-arquitetura-orientada-a-eventos&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;EDA (Event-Driven Architecture)&lt;/strong&gt; é um &lt;strong&gt;modelo arquitetural&lt;/strong&gt; baseado em &lt;strong&gt;eventos&lt;/strong&gt; para comunicação entre sistemas e componentes. Em vez de depender de chamadas diretas entre serviços, os componentes reagem a eventos de forma assíncrona, tornando o sistema mais &lt;strong&gt;desacoplado, escalável e resiliente&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;como-funciona-o-eda&#34;&gt;&lt;strong&gt;Como funciona o EDA?&lt;/strong&gt;&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#como-funciona-o-eda&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;A arquitetura orientada a eventos se baseia em três principais elementos:&lt;/p&gt;&#xA;&lt;p&gt;1️⃣ &lt;strong&gt;Eventos&lt;/strong&gt; → Algo que aconteceu no sistema (exemplo: &amp;ldquo;Pedido Criado&amp;rdquo;, &amp;ldquo;Pagamento Aprovado&amp;rdquo;)&lt;br&gt;&#xA;2️⃣ &lt;strong&gt;Produtores de Eventos&lt;/strong&gt; → Componentes que geram e publicam eventos&lt;br&gt;&#xA;3️⃣ &lt;strong&gt;Consumidores de Eventos&lt;/strong&gt; → Componentes que escutam e reagem aos eventos&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

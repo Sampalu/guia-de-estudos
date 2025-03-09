@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event Storming on Sampalu</title>
+    <link>http://localhost:1313/guia-de-estudos/tags/event-storming/</link>
+    <description>Recent content in Event Storming on Sampalu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/guia-de-estudos/tags/event-storming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Event Storming</title>
+      <link>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/event-storming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/event-storming/</guid>
+      <description>&lt;h2 id=&#34;o-que-é-event-storming&#34;&gt;&lt;strong&gt;O que é Event Storming?&lt;/strong&gt;&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#o-que-%c3%a9-event-storming&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Event Storming&lt;/strong&gt; é uma técnica colaborativa para &lt;strong&gt;explorar, modelar e entender sistemas complexos&lt;/strong&gt; baseados em eventos. Foi criada por &lt;strong&gt;Alberto Brandolini&lt;/strong&gt; e é amplamente usada no &lt;strong&gt;Domain-Driven Design (DDD)&lt;/strong&gt; para mapear processos de negócio e identificar eventos importantes.&lt;/p&gt;&#xA;&lt;p&gt;Diferente de métodos tradicionais de documentação, o Event Storming usa um &lt;strong&gt;workshop interativo&lt;/strong&gt; onde participantes discutem e registram eventos importantes do domínio do sistema em &lt;strong&gt;post-its coloridos&lt;/strong&gt; ou ferramentas digitais.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microserviços on Sampalu</title>
+    <link>http://localhost:1313/guia-de-estudos/tags/microservi%C3%A7os/</link>
+    <description>Recent content in Microserviços on Sampalu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/guia-de-estudos/tags/microservi%C3%A7os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microserviços</title>
+      <link>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/microservicos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/microservicos/</guid>
+      <description>&lt;p&gt;Microserviços são um estilo de arquitetura de software em que uma aplicação é dividida em pequenos serviços independentes que se comunicam entre si, geralmente por meio de APIs. Cada microserviço é responsável por uma função específica do sistema e pode ser desenvolvido, implantado e escalado separadamente.&lt;/p&gt;&#xA;&lt;h3 id=&#34;principais-características-dos-microserviços&#34;&gt;&lt;strong&gt;Principais Características dos Microserviços:&lt;/strong&gt;&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#principais-caracter%c3%adsticas-dos-microservi%c3%a7os&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Independência&lt;/strong&gt; – Cada microserviço pode ser desenvolvido e mantido por equipes separadas, sem impactar outros serviços.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Escalabilidade&lt;/strong&gt; – Permite escalar apenas os serviços que necessitam de mais recursos, tornando a aplicação mais eficiente.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Facilidade de Manutenção&lt;/strong&gt; – Como cada serviço é pequeno e tem uma única responsabilidade, o código é mais fácil de entender e modificar.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resiliência&lt;/strong&gt; – Se um microserviço falha, os outros continuam funcionando normalmente, aumentando a disponibilidade do sistema.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tecnologias Diversas&lt;/strong&gt; – Cada microserviço pode ser desenvolvido com a linguagem e a tecnologia mais adequadas à sua funcionalidade.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;exemplo-de-uso&#34;&gt;&lt;strong&gt;Exemplo de Uso:&lt;/strong&gt;&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#exemplo-de-uso&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Imagine um sistema de e-commerce com arquitetura de microserviços:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

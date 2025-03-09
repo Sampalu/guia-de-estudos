@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cqrs on Sampalu</title>
+    <link>http://localhost:1313/guia-de-estudos/tags/cqrs/</link>
+    <description>Recent content in Cqrs on Sampalu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/guia-de-estudos/tags/cqrs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CQRS</title>
+      <link>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/cqrs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/cqrs/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;CQRS (Segregação de Responsabilidade entre Comando e Consulta)&lt;/strong&gt; é um padrão arquitetural que separa operações de leitura (&lt;strong&gt;Query&lt;/strong&gt;) e escrita (&lt;strong&gt;Command&lt;/strong&gt;) em um sistema. O objetivo principal é &lt;strong&gt;melhorar a escalabilidade, desempenho e segurança&lt;/strong&gt;, evitando que consultas afetem a performance das operações de escrita e vice-versa.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;o-problema-que-o-cqrs-resolve&#34;&gt;&lt;strong&gt;O Problema que o CQRS Resolve&lt;/strong&gt;&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#o-problema-que-o-cqrs-resolve&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Em uma arquitetura tradicional, geralmente utilizamos um &lt;strong&gt;modelo único&lt;/strong&gt; para leitura e escrita, onde o mesmo banco de dados e os mesmos objetos de domínio são usados para buscar e modificar informações. Isso pode gerar problemas como:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

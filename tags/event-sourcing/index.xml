@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event Sourcing on Sampalu</title>
+    <link>http://localhost:1313/guia-de-estudos/tags/event-sourcing/</link>
+    <description>Recent content in Event Sourcing on Sampalu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/guia-de-estudos/tags/event-sourcing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Event Sourcing</title>
+      <link>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/event-sourcing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/event-sourcing/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Event Sourcing&lt;/strong&gt; é um padrão arquitetural onde &lt;strong&gt;o estado de um sistema é derivado de uma sequência de eventos&lt;/strong&gt; em vez de armazenar diretamente o estado atual em um banco de dados tradicional.&lt;/p&gt;&#xA;&lt;p&gt;Ao invés de simplesmente armazenar a última versão dos dados, o Event Sourcing &lt;strong&gt;mantém um histórico completo de todas as mudanças feitas no sistema&lt;/strong&gt; na forma de eventos imutáveis. Isso permite &lt;strong&gt;reconstruir o estado do sistema a qualquer momento&lt;/strong&gt;, fornecendo rastreabilidade e auditabilidade total.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
