@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parad on Sampalu</title>
+    <link>http://localhost:1313/guia-de-estudos/tags/parad/</link>
+    <description>Recent content in Parad on Sampalu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/guia-de-estudos/tags/parad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paradigmas da Programação</title>
+      <link>http://localhost:1313/guia-de-estudos/fundamentos/paradigmas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guia-de-estudos/fundamentos/paradigmas/</guid>
+      <description>&lt;p&gt;Os &lt;strong&gt;paradigmas de programação&lt;/strong&gt; são estilos ou abordagens para escrever código, cada um com suas próprias regras, princípios e filosofias. Os três principais paradigmas são: &lt;strong&gt;Procedural, Orientado a Objetos (OO) e Funcional&lt;/strong&gt;. Vamos explorar cada um deles em detalhes.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-paradigma-procedural&#34;&gt;&lt;strong&gt;1. Paradigma Procedural&lt;/strong&gt;&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#1-paradigma-procedural&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-definição&#34;&gt;📌 Definição:&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#-defini%c3%a7%c3%a3o&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;O &lt;strong&gt;paradigma procedural&lt;/strong&gt; baseia-se na estruturação do código como uma sequência de &lt;strong&gt;instruções&lt;/strong&gt; ou &lt;strong&gt;procedimentos&lt;/strong&gt; (também chamados de funções ou sub-rotinas). Ele segue uma abordagem &lt;strong&gt;imperativa&lt;/strong&gt;, onde o programa descreve &lt;strong&gt;passo a passo&lt;/strong&gt; como algo deve ser feito.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
