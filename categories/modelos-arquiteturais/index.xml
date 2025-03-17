@@ -46,10 +46,171 @@
 3️⃣ &lt;strong>Consumidores de Eventos&lt;/strong> → Componentes que escutam e reagem aos eventos&lt;/p></description></item><item><title>Event Sourcing</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/event-sourcing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/event-sourcing/</guid><description>&lt;p>&lt;strong>Event Sourcing&lt;/strong> é um padrão arquitetural onde &lt;strong>o estado de um sistema é derivado de uma sequência de eventos&lt;/strong> em vez de armazenar diretamente o estado atual em um banco de dados tradicional.&lt;/p>
 &lt;p>Ao invés de simplesmente armazenar a última versão dos dados, o Event Sourcing &lt;strong>mantém um histórico completo de todas as mudanças feitas no sistema&lt;/strong> na forma de eventos imutáveis. Isso permite &lt;strong>reconstruir o estado do sistema a qualquer momento&lt;/strong>, fornecendo rastreabilidade e auditabilidade total.&lt;/p></description></item><item><title>Event Storming</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/event-storming/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/event-storming/</guid><description>&lt;h2 id="o-que-é-event-storming">&lt;strong>O que é Event Storming?&lt;/strong>&lt;a class="td-heading-self-link" href="#o-que-%c3%a9-event-storming" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;strong>Event Storming&lt;/strong> é uma técnica colaborativa para &lt;strong>explorar, modelar e entender sistemas complexos&lt;/strong> baseados em eventos. Foi criada por &lt;strong>Alberto Brandolini&lt;/strong> e é amplamente usada no &lt;strong>Domain-Driven Design (DDD)&lt;/strong> para mapear processos de negócio e identificar eventos importantes.&lt;/p>
-&lt;p>Diferente de métodos tradicionais de documentação, o Event Storming usa um &lt;strong>workshop interativo&lt;/strong> onde participantes discutem e registram eventos importantes do domínio do sistema em &lt;strong>post-its coloridos&lt;/strong> ou ferramentas digitais.&lt;/p></description></item><item><title>Orquestrada vs. Coreografada</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/orquestrada-x-coreografada/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/orquestrada-x-coreografada/</guid><description>&lt;p>A &lt;strong>Arquitetura Orientada a Eventos (EDA - Event-Driven Architecture)&lt;/strong> pode ser implementada de duas formas principais: &lt;strong>orquestrada&lt;/strong> ou &lt;strong>coreografada&lt;/strong>. A escolha entre esses modelos afeta diretamente a forma como os serviços interagem, influenciando escalabilidade, flexibilidade e complexidade.&lt;/p>
+&lt;p>Diferente de métodos tradicionais de documentação, o Event Storming usa um &lt;strong>workshop interativo&lt;/strong> onde participantes discutem e registram eventos importantes do domínio do sistema em &lt;strong>post-its coloridos&lt;/strong> ou ferramentas digitais.&lt;/p></description></item><item><title>Saga</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/saga/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/saga/</guid><description>&lt;p>O &lt;strong>padrão Saga&lt;/strong> é uma abordagem para gerenciar &lt;strong>transações distribuídas&lt;/strong> em arquiteturas de microserviços. Como, em um ambiente distribuído, não há um &lt;strong>gerenciador central de transações&lt;/strong> como nos bancos de dados relacionais (com ACID), o Saga divide a transação global em uma sequência de &lt;strong>transações locais&lt;/strong> coordenadas de forma que, se algo falhar, o sistema possa ser restaurado a um estado consistente.&lt;/p>
+&lt;h3 id="como-funciona-um-saga">Como funciona um Saga?&lt;a class="td-heading-self-link" href="#como-funciona-um-saga" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Em vez de usar &lt;strong>commit&lt;/strong> e &lt;strong>rollback&lt;/strong> globais, um Saga garante &lt;strong>consistência eventual&lt;/strong> através de uma série de &lt;strong>passos compensáveis&lt;/strong>. Cada serviço executa sua parte da transação de forma independente, e caso um dos passos falhe, são acionadas &lt;strong>ações de compensação&lt;/strong> para desfazer os efeitos das operações anteriores.&lt;/p></description></item><item><title>Arquitetura Orquestrada</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-orquestrada/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-orquestrada/</guid><description>&lt;p>Na &lt;strong>arquitetura orquestrada&lt;/strong>, um &lt;strong>orquestrador central&lt;/strong> (geralmente um serviço dedicado, como um &lt;strong>workflow engine&lt;/strong>) &lt;strong>controla&lt;/strong> a execução dos eventos e a comunicação entre os serviços.&lt;/p>
+&lt;p>&lt;strong>Como funciona?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Um &lt;strong>serviço central&lt;/strong> coordena os fluxos de trabalho.&lt;/li>
+&lt;li>Cada serviço é passivo, apenas &lt;strong>responde&lt;/strong> a comandos.&lt;/li>
+&lt;li>O orquestrador gerencia dependências e garante que os eventos sejam processados na ordem correta.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Exemplo (E-commerce)&lt;/strong>&lt;br>
+1️⃣ Um serviço central (ex.: &lt;strong>Camunda, Temporal, AWS Step Functions&lt;/strong>) recebe um evento &lt;code>&amp;quot;PedidoCriado&amp;quot;&lt;/code>.&lt;br>
+2️⃣ Ele chama &lt;strong>explicitamente&lt;/strong> o serviço de pagamento.&lt;br>
+3️⃣ Se o pagamento for aprovado, ele aciona o serviço de estoque.&lt;br>
+4️⃣ Se o estoque for confirmado, ele aciona o serviço de entrega.&lt;/p></description></item><item><title>Arquitetura Coreografada</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-coreografada/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-coreografada/</guid><description>&lt;p>Na &lt;strong>arquitetura coreografada&lt;/strong>, &lt;strong>não há um serviço central&lt;/strong> controlando o fluxo. Em vez disso, os serviços &lt;strong>publicam e escutam eventos&lt;/strong>, reagindo a eles de forma independente.&lt;/p>
+&lt;p>&lt;strong>Como funciona?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Cada serviço toma decisões &lt;strong>baseadas nos eventos recebidos&lt;/strong>.&lt;/li>
+&lt;li>Nenhum serviço controla diretamente os outros.&lt;/li>
+&lt;li>A comunicação é assíncrona via &lt;strong>eventos distribuídos&lt;/strong> (Kafka, RabbitMQ, SNS/SQS).&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Exemplo (E-commerce)&lt;/strong>&lt;br>
+1️⃣ O serviço de pedidos publica um evento &lt;code>&amp;quot;PedidoCriado&amp;quot;&lt;/code>.&lt;br>
+2️⃣ O serviço de pagamento escuta esse evento e processa o pagamento.&lt;br>
+3️⃣ Se o pagamento for aprovado, um evento &lt;code>&amp;quot;PagamentoConfirmado&amp;quot;&lt;/code> é disparado.&lt;br>
+4️⃣ O serviço de estoque escuta esse evento e atualiza o estoque.&lt;br>
+5️⃣ O serviço de entrega escuta &lt;code>&amp;quot;EstoqueConfirmado&amp;quot;&lt;/code> e gera uma ordem de envio.&lt;/p></description></item><item><title>Orquestrada vs. Coreografada</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/orquestrada-x-coreografada/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/orquestrada-x-coreografada/</guid><description>&lt;h2 id="qual-escolher">&lt;strong>Qual escolher?&lt;/strong>&lt;a class="td-heading-self-link" href="#qual-escolher" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Ambas seguem o modelo &lt;strong>EDA (Event-Driven Architecture)&lt;/strong>, mas se diferenciam na forma como os serviços se coordenam.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Característica&lt;/th>
+ &lt;th>&lt;strong>Orquestrada (Assíncrona)&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Coreografada&lt;/strong>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Coordenação&lt;/strong>&lt;/td>
+ &lt;td>Existe um &lt;strong>orquestrador central&lt;/strong> que recebe eventos e decide os próximos passos, mantendo a ordem do fluxo.&lt;/td>
+ &lt;td>Não há controle central. Cada serviço escuta eventos e decide sozinho o que fazer.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Acoplamento&lt;/strong>&lt;/td>
+ &lt;td>Se for assíncrona (usando Kafka, RabbitMQ, SQS), &lt;strong>o acoplamento direto é reduzido&lt;/strong>, pois os serviços não precisam se conhecer.&lt;/td>
+ &lt;td>&lt;strong>Baixo acoplamento&lt;/strong>, pois os serviços só precisam conhecer os eventos publicados por outros.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Ordem de Execução&lt;/strong>&lt;/td>
+ &lt;td>O orquestrador pode garantir que eventos aconteçam &lt;strong>em uma sequência específica&lt;/strong>, mesmo que sejam processados assincronamente.&lt;/td>
+ &lt;td>A ordem &lt;strong>depende do design do fluxo&lt;/strong>. Se um evento não for consumido ou processado corretamente, pode haver inconsistências.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Escalabilidade&lt;/strong>&lt;/td>
+ &lt;td>Pode escalar bem, pois os serviços se comunicam via eventos assíncronos. No entanto, o orquestrador pode ser um &lt;strong>ponto único de falha&lt;/strong>.&lt;/td>
+ &lt;td>Altamente escalável, pois não há um único ponto de coordenação. Cada serviço escala independentemente.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Observabilidade&lt;/strong>&lt;/td>
+ &lt;td>Como há um orquestrador controlando os fluxos, é mais fácil &lt;strong>rastrear o estado das operações&lt;/strong> e depurar problemas.&lt;/td>
+ &lt;td>A rastreabilidade pode ser difícil, pois eventos são disparados de maneira distribuída, sem um ponto central de controle.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Complexidade&lt;/strong>&lt;/td>
+ &lt;td>A lógica de negócios fica centralizada no orquestrador, o que pode tornar seu código mais complexo e difícil de manter.&lt;/td>
+ &lt;td>A complexidade é distribuída entre os serviços, exigindo mais esforço para garantir que cada um saiba como reagir aos eventos certos.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Use Orquestrada quando:&lt;/strong>&lt;br>
+✔️ O fluxo exige &lt;strong>controle rígido&lt;/strong> (ex.: processos bancários, compliance).&lt;br>
+✔️ É necessário &lt;strong>monitoramento detalhado&lt;/strong>.&lt;br>
+✔️ Existe &lt;strong>lógica de negócios complexa&lt;/strong> que precisa de um coordenador.&lt;/p></description></item><item><title>Outros Padrões</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</guid><description>&lt;p>Os principais padrões de design para microserviços ajudam a lidar com desafios comuns como comunicação, escalabilidade, resiliência e segurança. Aqui estão os mais relevantes, além do &lt;strong>Saga&lt;/strong>, que é usado para coordenação de transações distribuídas:&lt;/p>
 &lt;hr>
-&lt;h2 id="arquitetura-orquestrada">&lt;strong>Arquitetura Orquestrada&lt;/strong>&lt;a class="td-heading-self-link" href="#arquitetura-orquestrada" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;strong>O que é?&lt;/strong>&lt;br>
-Na &lt;strong>arquitetura orquestrada&lt;/strong>, um &lt;strong>orquestrador central&lt;/strong> (geralmente um serviço dedicado, como um &lt;strong>workflow engine&lt;/strong>) &lt;strong>controla&lt;/strong> a execução dos eventos e a comunicação entre os serviços.&lt;/p>
-&lt;p>&lt;strong>Como funciona?&lt;/strong>&lt;/p></description></item><item><title>Modelos Arquiteturais</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/</guid><description>&lt;p>&lt;strong>Modelos arquiteturais&lt;/strong> referem-se à &lt;strong>estruturas e padrões&lt;/strong> usados para projetar e organizar sistemas de software de forma eficaz e eficiente. Eles servem como um &lt;strong>guia&lt;/strong> para tomar decisões sobre a estrutura do sistema, como os componentes interagem entre si, e como os requisitos de desempenho, escalabilidade, segurança, manutenção e outros são atendidos.&lt;/p>
+&lt;h2 id="1-padrões-de-comunicação">&lt;strong>1. Padrões de Comunicação&lt;/strong>&lt;a class="td-heading-self-link" href="#1-padr%c3%b5es-de-comunica%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="api-gateway">&lt;strong>API Gateway&lt;/strong>&lt;a class="td-heading-self-link" href="#api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um único ponto de entrada para os clientes, roteando requisições para os microserviços corretos.&lt;/li>
+&lt;li>Pode lidar com autenticação, cache, rate limiting e balanceamento de carga.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> O &lt;strong>Netflix Zuul&lt;/strong> e o &lt;strong>Kong API Gateway&lt;/strong> são implementações comuns.&lt;/li>
+&lt;/ul>
+&lt;h3 id="backend-for-frontend-bff">&lt;strong>Backend for Frontend (BFF)&lt;/strong>&lt;a class="td-heading-self-link" href="#backend-for-frontend-bff" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Similar ao API Gateway, mas otimizado para diferentes tipos de clientes (web, mobile, IoT).&lt;/li>
+&lt;li>Cada tipo de cliente pode ter um backend específico que adapta a resposta conforme necessário.&lt;/li>
+&lt;/ul>
+&lt;h3 id="service-mesh">&lt;strong>Service Mesh&lt;/strong>&lt;a class="td-heading-self-link" href="#service-mesh" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Gerencia comunicação entre serviços, adicionando monitoramento, segurança e controle de tráfego.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> Istio e Linkerd.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="2-padrões-de-resiliência">&lt;strong>2. Padrões de Resiliência&lt;/strong>&lt;a class="td-heading-self-link" href="#2-padr%c3%b5es-de-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="circuit-breaker">&lt;strong>Circuit Breaker&lt;/strong>&lt;a class="td-heading-self-link" href="#circuit-breaker" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Evita que falhas em um serviço se propaguem para outros, &amp;ldquo;desligando&amp;rdquo; chamadas a serviços não responsivos.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> O &lt;strong>Hystrix&lt;/strong>, da Netflix, é uma implementação popular.&lt;/li>
+&lt;/ul>
+&lt;h3 id="retry-e-backoff-exponencial">&lt;strong>Retry e Backoff Exponencial&lt;/strong>&lt;a class="td-heading-self-link" href="#retry-e-backoff-exponencial" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Tenta repetir a requisição em caso de falha, aumentando o tempo entre tentativas para evitar sobrecarregar o sistema.&lt;/li>
+&lt;/ul>
+&lt;h3 id="bulkhead-compartimentos-estanques">&lt;strong>Bulkhead (Compartimentos Estanques)&lt;/strong>&lt;a class="td-heading-self-link" href="#bulkhead-compartimentos-estanques" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Separa recursos para evitar que falhas em uma parte do sistema afetem outras.&lt;/li>
+&lt;li>Exemplo: Se um serviço de pagamento estiver sobrecarregado, ele não deve afetar a operação de login.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="3-padrões-de-dados-e-armazenamento">&lt;strong>3. Padrões de Dados e Armazenamento&lt;/strong>&lt;a class="td-heading-self-link" href="#3-padr%c3%b5es-de-dados-e-armazenamento" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="database-per-service">&lt;strong>Database per Service&lt;/strong>&lt;a class="td-heading-self-link" href="#database-per-service" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Cada microserviço tem seu próprio banco de dados para evitar dependências diretas.&lt;/li>
+&lt;li>Isso melhora escalabilidade, mas pode gerar desafios de consistência.&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-sourcing">&lt;strong>Event Sourcing&lt;/strong>&lt;a class="td-heading-self-link" href="#event-sourcing" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Os dados são armazenados como uma sequência de eventos em vez de estados mutáveis.&lt;/li>
+&lt;li>Facilita a rastreabilidade e auditoria, além de permitir reconstrução do estado.&lt;/li>
+&lt;/ul>
+&lt;h3 id="cqrs-command-query-responsibility-segregation">&lt;strong>CQRS (Command Query Responsibility Segregation)&lt;/strong>&lt;a class="td-heading-self-link" href="#cqrs-command-query-responsibility-segregation" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Separa operações de leitura e escrita para otimizar desempenho.&lt;/li>
+&lt;li>Normalmente usado com Event Sourcing.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="4-padrões-de-comunicação-assíncrona">&lt;strong>4. Padrões de Comunicação Assíncrona&lt;/strong>&lt;a class="td-heading-self-link" href="#4-padr%c3%b5es-de-comunica%c3%a7%c3%a3o-ass%c3%adncrona" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="publisher-subscriber-pubsub">&lt;strong>Publisher-Subscriber (Pub/Sub)&lt;/strong>&lt;a class="td-heading-self-link" href="#publisher-subscriber-pubsub" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um serviço publica eventos em um broker (como Kafka, RabbitMQ), e outros serviços assinam para receber atualizações.&lt;/li>
+&lt;li>Desacopla os serviços, melhorando escalabilidade.&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-notification">&lt;strong>Event Notification&lt;/strong>&lt;a class="td-heading-self-link" href="#event-notification" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um serviço apenas emite um evento informando que algo aconteceu, mas não se preocupa com quem vai consumi-lo.&lt;/li>
+&lt;li>Exemplo: Um serviço de pedidos pode publicar um evento &lt;code>&amp;quot;PedidoCriado&amp;quot;&lt;/code>, e os serviços de pagamento e estoque podem reagir a ele.&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-carried-state-transfer">&lt;strong>Event-Carried State Transfer&lt;/strong>&lt;a class="td-heading-self-link" href="#event-carried-state-transfer" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um serviço publica eventos contendo &lt;strong>dados completos&lt;/strong> do estado atual para que outros serviços não precisem consultar diretamente.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="5-padrões-de-segurança">&lt;strong>5. Padrões de Segurança&lt;/strong>&lt;a class="td-heading-self-link" href="#5-padr%c3%b5es-de-seguran%c3%a7a" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="access-token-oauth2-jwt">&lt;strong>Access Token (OAuth2, JWT)&lt;/strong>&lt;a class="td-heading-self-link" href="#access-token-oauth2-jwt" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Usa tokens para autenticação e autorização entre serviços.&lt;/li>
+&lt;/ul>
+&lt;h3 id="sidecar-pattern">&lt;strong>Sidecar Pattern&lt;/strong>&lt;a class="td-heading-self-link" href="#sidecar-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um container auxiliar que adiciona funcionalidades como logging, segurança e proxy de comunicação.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> Istio usa Sidecar para gerenciamento de tráfego.&lt;/li>
+&lt;/ul>
+&lt;h3 id="api-rate-limiting">&lt;strong>API Rate Limiting&lt;/strong>&lt;a class="td-heading-self-link" href="#api-rate-limiting" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Restringe o número de requisições para evitar ataques DDoS.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="6-padrões-de-gerenciamento-e-monitoramento">&lt;strong>6. Padrões de Gerenciamento e Monitoramento&lt;/strong>&lt;a class="td-heading-self-link" href="#6-padr%c3%b5es-de-gerenciamento-e-monitoramento" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="observability-logs-metrics-tracing">&lt;strong>Observability (Logs, Metrics, Tracing)&lt;/strong>&lt;a class="td-heading-self-link" href="#observability-logs-metrics-tracing" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Usa ferramentas como &lt;strong>Prometheus, ELK, OpenTelemetry&lt;/strong> para monitorar microserviços.&lt;/li>
+&lt;/ul>
+&lt;h3 id="strangler-pattern">&lt;strong>Strangler Pattern&lt;/strong>&lt;a class="td-heading-self-link" href="#strangler-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Ajuda a migrar de um monólito para microserviços gradualmente, substituindo partes do sistema sem interromper o funcionamento.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusão">&lt;strong>Conclusão&lt;/strong>&lt;a class="td-heading-self-link" href="#conclus%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Esses padrões ajudam a projetar microserviços mais escaláveis, resilientes e seguros. A escolha depende das necessidades do sistema e dos desafios específicos enfrentados.&lt;/p></description></item><item><title>Modelos Arquiteturais</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/</guid><description>&lt;p>&lt;strong>Modelos arquiteturais&lt;/strong> referem-se à &lt;strong>estruturas e padrões&lt;/strong> usados para projetar e organizar sistemas de software de forma eficaz e eficiente. Eles servem como um &lt;strong>guia&lt;/strong> para tomar decisões sobre a estrutura do sistema, como os componentes interagem entre si, e como os requisitos de desempenho, escalabilidade, segurança, manutenção e outros são atendidos.&lt;/p>
 &lt;p>Esses modelos ajudam a &lt;strong>visualizar&lt;/strong> e &lt;strong>planejar&lt;/strong> o design do software de maneira mais clara e a garantir que as soluções implementadas atendam aos objetivos do projeto de maneira consistente e sustentável.&lt;/p></description></item></channel></rss>

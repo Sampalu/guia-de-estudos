@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guia de Estudos on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/</link><description>Recent content in Guia de Estudos on Sampalu</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 09 Mar 2025 19:08:27 -0300</lastBuildDate><atom:link href="https://sampalu.github.io/guia-de-estudos/index.xml" rel="self" type="application/rss+xml"/><item><title>Arquitetura Monolítica</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-monolitica/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-monolitica/</guid><description>&lt;p>A &lt;strong>arquitetura monolítica&lt;/strong> é um modelo tradicional de desenvolvimento de software onde toda a aplicação é construída como uma única unidade indivisível. Isso significa que todos os componentes – como interface de usuário, lógica de negócios e acesso a dados – estão &lt;strong>altamente integrados&lt;/strong> dentro do mesmo código-base e executados como um único processo.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guia de Estudos on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/</link><description>Recent content in Guia de Estudos on Sampalu</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 16 Mar 2025 22:03:33 -0300</lastBuildDate><atom:link href="https://sampalu.github.io/guia-de-estudos/index.xml" rel="self" type="application/rss+xml"/><item><title>Arquitetura Monolítica</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-monolitica/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-monolitica/</guid><description>&lt;p>A &lt;strong>arquitetura monolítica&lt;/strong> é um modelo tradicional de desenvolvimento de software onde toda a aplicação é construída como uma única unidade indivisível. Isso significa que todos os componentes – como interface de usuário, lógica de negócios e acesso a dados – estão &lt;strong>altamente integrados&lt;/strong> dentro do mesmo código-base e executados como um único processo.&lt;/p>
 &lt;hr>
 &lt;h2 id="características-principais">&lt;strong>Características Principais&lt;/strong>&lt;a class="td-heading-self-link" href="#caracter%c3%adsticas-principais" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;ol>
@@ -20,7 +20,8 @@
 &lt;hr>
 &lt;h2 id="sobre-o-composite">Sobre o Composite&lt;a class="td-heading-self-link" href="#sobre-o-composite" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=I0RqHDFQjVY&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=14">https://www.youtube.com/watch?v=I0RqHDFQjVY&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=14&lt;/a>&lt;/p>
-&lt;p>O composite é um padrão de projeto que permite ao cliente tratar um único objeto ou uma estrutura formada de vários objetos aninhados hierarquicamente da mesma maneira.&lt;/p></description></item><item><title>Singleton</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/singleton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/singleton/</guid><description>&lt;h1 id="singleton---creational-criação">Singleton - Creational (Criação)&lt;a class="td-heading-self-link" href="#singleton---creational-cria%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;p>O composite é um padrão de projeto que permite ao cliente tratar um único objeto ou uma estrutura formada de vários objetos aninhados hierarquicamente da mesma maneira.&lt;/p></description></item><item><title>Hexagonal Architecture (2005)</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/hexagonal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/hexagonal/</guid><description>&lt;p>A &lt;strong>Arquitetura Hexagonal&lt;/strong>, também conhecida como &lt;strong>Ports and Adapters&lt;/strong>, foi proposta por &lt;strong>Alistair Cockburn&lt;/strong> com o objetivo principal de &lt;strong>isolar a lógica de negócio das dependências externas&lt;/strong>, tornando os sistemas &lt;strong>mais flexíveis, testáveis e fáceis de manter&lt;/strong>.&lt;/p>
+&lt;p>A &lt;strong>Arquitetura Hexagonal&lt;/strong>, também conhecida como &lt;strong>Ports and Adapters&lt;/strong>, foi proposta por &lt;strong>Alistair Cockburn&lt;/strong> com o objetivo de criar aplicações independentes de infraestrutura e tecnologia, focando na separação entre a lógica de negócio e as dependências externas, como banco de dados, APIs externas e interfaces de usuário.&lt;/p></description></item><item><title>Singleton</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/singleton/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/creational/singleton/</guid><description>&lt;h1 id="singleton---creational-criação">Singleton - Creational (Criação)&lt;a class="td-heading-self-link" href="#singleton---creational-cria%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h1>
 &lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;em>Garantir que uma classe tenha somente uma instância no programa e fornecer um ponto de acesso global para a mesma.&lt;/em>&lt;/p>
 &lt;hr>
@@ -112,14 +113,21 @@
 &lt;li>&lt;strong>Tecnologias Diversas&lt;/strong> – Cada microserviço pode ser desenvolvido com a linguagem e a tecnologia mais adequadas à sua funcionalidade.&lt;/li>
 &lt;/ol>
 &lt;h3 id="exemplo-de-uso">&lt;strong>Exemplo de Uso:&lt;/strong>&lt;a class="td-heading-self-link" href="#exemplo-de-uso" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Imagine um sistema de e-commerce com arquitetura de microserviços:&lt;/p></description></item><item><title>Paradigmas da Programação</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/paradigmas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/paradigmas/</guid><description>&lt;p>Os &lt;strong>paradigmas de programação&lt;/strong> são estilos ou abordagens para escrever código, cada um com suas próprias regras, princípios e filosofias. Os três principais paradigmas são: &lt;strong>Procedural, Orientado a Objetos (OO) e Funcional&lt;/strong>. Vamos explorar cada um deles em detalhes.&lt;/p>
+&lt;p>Imagine um sistema de e-commerce com arquitetura de microserviços:&lt;/p></description></item><item><title>Onion Architecture (2008)</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/onion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/onion/</guid><description>&lt;p>A &lt;strong>Arquitetura Onion&lt;/strong> foi criada com o objetivo principal de &lt;strong>garantir que a lógica de negócio seja completamente independente de detalhes de infraestrutura e frameworks&lt;/strong>, promovendo uma estrutura mais &lt;strong>modular, flexível e testável&lt;/strong>.&lt;/p>
+&lt;p>Ela busca &lt;strong>evitar o alto acoplamento&lt;/strong> entre as camadas da aplicação, tornando a &lt;strong>lógica de negócio reutilizável e resistente a mudanças tecnológicas&lt;/strong>.&lt;/p>
+&lt;hr>
+&lt;h2 id="como-a-arquitetura-onion-resolve-problemas-comuns">&lt;strong>Como a Arquitetura Onion Resolve Problemas Comuns?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-a-arquitetura-onion-resolve-problemas-comuns" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>- Dependência Inversa:&lt;/strong> Em arquiteturas tradicionais, a lógica de negócio depende da infraestrutura (ex.: ORM, APIs externas). Na &lt;strong>Arquitetura Onion&lt;/strong>, essa relação é invertida: a infraestrutura é que depende do domínio, garantindo independência.&lt;/p></description></item><item><title>Paradigmas da Programação</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/paradigmas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/paradigmas/</guid><description>&lt;p>Os &lt;strong>paradigmas de programação&lt;/strong> são estilos ou abordagens para escrever código, cada um com suas próprias regras, princípios e filosofias. Os três principais paradigmas são: &lt;strong>Procedural, Orientado a Objetos (OO) e Funcional&lt;/strong>. Vamos explorar cada um deles em detalhes.&lt;/p>
 &lt;hr>
 &lt;h2 id="1-paradigma-procedural">&lt;strong>1. Paradigma Procedural&lt;/strong>&lt;a class="td-heading-self-link" href="#1-paradigma-procedural" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;h3 id="-definição">📌 Definição:&lt;a class="td-heading-self-link" href="#-defini%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;h3 id="definição">Definição:&lt;a class="td-heading-self-link" href="#defini%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;p>O &lt;strong>paradigma procedural&lt;/strong> baseia-se na estruturação do código como uma sequência de &lt;strong>instruções&lt;/strong> ou &lt;strong>procedimentos&lt;/strong> (também chamados de funções ou sub-rotinas). Ele segue uma abordagem &lt;strong>imperativa&lt;/strong>, onde o programa descreve &lt;strong>passo a passo&lt;/strong> como algo deve ser feito.&lt;/p></description></item><item><title>Bridge</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/structural/bridge/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/structural/bridge/</guid><description>&lt;h1 id="bridge---structural-estrutural">Bridge - Structural (Estrutural)&lt;a class="td-heading-self-link" href="#bridge---structural-estrutural" aria-label="Heading self-link">&lt;/a>&lt;/h1>
 &lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;em>Bridge é um padrão de projeto estrutural que tem a intenção de desacoplar uma abstração da sua implementação, de modo que as duas possam variar e evoluir independentemente.&lt;/em>&lt;/p>
-&lt;p>&lt;em>Observação:&lt;/em> &lt;strong>abstração&lt;/strong> é um código de alto nível que geralmente delega tarefas para sua implementação; &lt;strong>implementação&lt;/strong> é o código de baixo nível que realmente faz o trabalho (o código para o qual a abstração delega tarefas).&lt;/p></description></item><item><title>DDD</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/ddd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/ddd/</guid><description>&lt;p>&lt;strong>Domain-Driven Design (DDD)&lt;/strong> é uma abordagem para o desenvolvimento de software que foca em entender e modelar o domínio do negócio de forma aprofundada, garantindo que o software reflita a realidade da organização. Foi introduzida por &lt;strong>Eric Evans&lt;/strong> no livro &lt;em>Domain-Driven Design: Tackling Complexity in the Heart of Software&lt;/em>.&lt;/p>
+&lt;p>&lt;em>Observação:&lt;/em> &lt;strong>abstração&lt;/strong> é um código de alto nível que geralmente delega tarefas para sua implementação; &lt;strong>implementação&lt;/strong> é o código de baixo nível que realmente faz o trabalho (o código para o qual a abstração delega tarefas).&lt;/p></description></item><item><title>Clean Architecture (2012)</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/clean/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/clean/</guid><description>&lt;p>A &lt;strong>Clean Architecture&lt;/strong>, proposta por Robert C. Martin (Uncle Bob), é um modelo arquitetural que visa criar sistemas &lt;strong>flexíveis, testáveis e independentes de frameworks, bancos de dados e interfaces gráficas&lt;/strong>. Seu objetivo principal é separar preocupações, garantindo que as regras de negócio não fiquem acopladas a detalhes de implementação.&lt;/p>
+&lt;hr>
+&lt;h2 id="objetivo-principal-da-clean-architecture">&lt;strong>Objetivo Principal da Clean Architecture&lt;/strong>&lt;a class="td-heading-self-link" href="#objetivo-principal-da-clean-architecture" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>A &lt;strong>Clean Architecture&lt;/strong>, proposta por &lt;strong>Robert C. Martin (Uncle Bob)&lt;/strong>, tem como principal objetivo criar sistemas &lt;strong>modulares, altamente testáveis e independentes de tecnologia e infraestrutura&lt;/strong>. O foco está na &lt;strong>separação de responsabilidades&lt;/strong> e na &lt;strong>manutenção a longo prazo&lt;/strong>, garantindo que a lógica de negócio não dependa diretamente de frameworks, bancos de dados ou interfaces de usuário.&lt;/p></description></item><item><title>DDD</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/ddd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/ddd/</guid><description>&lt;p>&lt;strong>Domain-Driven Design (DDD)&lt;/strong> é uma abordagem para o desenvolvimento de software que foca em entender e modelar o domínio do negócio de forma aprofundada, garantindo que o software reflita a realidade da organização. Foi introduzida por &lt;strong>Eric Evans&lt;/strong> no livro &lt;em>Domain-Driven Design: Tackling Complexity in the Heart of Software&lt;/em>.&lt;/p>
 &lt;h3 id="princípios-fundamentais-do-ddd">&lt;strong>Princípios Fundamentais do DDD&lt;/strong>&lt;a class="td-heading-self-link" href="#princ%c3%adpios-fundamentais-do-ddd" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -189,7 +197,9 @@
 &lt;li>Use o factory method para eliminar duplicação de código na criação de objetos&lt;/li>
 &lt;/ul>
 &lt;h2 id="implementação---teoria">Implementação - Teoria&lt;a class="td-heading-self-link" href="#implementa%c3%a7%c3%a3o---teoria" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>Observação importante: todos os objetos criados por um factory method tendem a ser chamados de &amp;ldquo;Product&amp;rdquo; (produto)&lt;/p></description></item><item><title>State</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/state/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/state/</guid><description>&lt;h1 id="state---behavioural-comportamental">State - Behavioural (Comportamental)&lt;a class="td-heading-self-link" href="#state---behavioural-comportamental" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;p>Observação importante: todos os objetos criados por um factory method tendem a ser chamados de &amp;ldquo;Product&amp;rdquo; (produto)&lt;/p></description></item><item><title>PUC x RIC</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/puc-x-ric/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/puc-x-ric/</guid><description>&lt;p>Se uma vaga de emprego exige conhecimento sobre &lt;strong>arquitetura PUC e RIC&lt;/strong>, significa que a empresa espera que você tenha experiência com &lt;strong>diferentes formas de organizar sistemas distribuídos&lt;/strong>. Para se preparar, você deve entender &lt;strong>como essas arquiteturas impactam o design, escalabilidade e manutenção de sistemas&lt;/strong>. Aqui estão os principais tópicos para estudar:&lt;/p>
+&lt;h3 id="conceitos-fundamentais-de-puc-e-ric">&lt;strong>Conceitos Fundamentais de PUC e RIC&lt;/strong>&lt;a class="td-heading-self-link" href="#conceitos-fundamentais-de-puc-e-ric" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Em Tecnologia da Informação, &lt;strong>PUC (Processing Unit Centered)&lt;/strong> e &lt;strong>RIC (Resource Interaction Centered)&lt;/strong> são conceitos de arquitetura voltados para a organização e estruturação de sistemas distribuídos.&lt;/p></description></item><item><title>State</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/state/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/state/</guid><description>&lt;h1 id="state---behavioural-comportamental">State - Behavioural (Comportamental)&lt;a class="td-heading-self-link" href="#state---behavioural-comportamental" aria-label="Heading self-link">&lt;/a>&lt;/h1>
 &lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;em>Permite que um objeto altere seu comportamento quando seu estado interno muda. O objeto parecerá ter mudado sua classe&lt;/em>&lt;/p>
 &lt;hr>
@@ -242,9 +252,7 @@
 &lt;hr>
 &lt;h2 id="sobre-o-flyweight">Sobre o Flyweight&lt;a class="td-heading-self-link" href="#sobre-o-flyweight" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=WPQa64bdQbk&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=25">https://www.youtube.com/watch?v=WPQa64bdQbk&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=25&lt;/a>&lt;/p>
-&lt;p>O &lt;strong>Flyweight Pattern&lt;/strong> (Padrão Flyweight) é um padrão estrutural que busca &lt;strong>reduzir o uso de memória&lt;/strong> compartilhando objetos semelhantes ao invés de criar novas instâncias sempre. Ele é especialmente útil quando se tem &lt;strong>muitos objetos similares&lt;/strong> que consomem recursos desnecessários.&lt;/p></description></item><item><title>PUC x RIC</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/puc-x-ric/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/puc-x-ric/</guid><description>&lt;p>Se uma vaga de emprego exige conhecimento sobre &lt;strong>arquitetura PUC e RIC&lt;/strong>, significa que a empresa espera que você tenha experiência com &lt;strong>diferentes formas de organizar sistemas distribuídos&lt;/strong>. Para se preparar, você deve entender &lt;strong>como essas arquiteturas impactam o design, escalabilidade e manutenção de sistemas&lt;/strong>. Aqui estão os principais tópicos para estudar:&lt;/p>
-&lt;h3 id="conceitos-fundamentais-de-puc-e-ric">&lt;strong>Conceitos Fundamentais de PUC e RIC&lt;/strong>&lt;a class="td-heading-self-link" href="#conceitos-fundamentais-de-puc-e-ric" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Em Tecnologia da Informação, &lt;strong>PUC (Processing Unit Centered)&lt;/strong> e &lt;strong>RIC (Resource Interaction Centered)&lt;/strong> são conceitos de arquitetura voltados para a organização e estruturação de sistemas distribuídos.&lt;/p></description></item><item><title>Template Method</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/template-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/template-method/</guid><description>&lt;h1 id="template-method---behavioural-comportamental">Template Method - Behavioural (Comportamental)&lt;a class="td-heading-self-link" href="#template-method---behavioural-comportamental" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;p>O &lt;strong>Flyweight Pattern&lt;/strong> (Padrão Flyweight) é um padrão estrutural que busca &lt;strong>reduzir o uso de memória&lt;/strong> compartilhando objetos semelhantes ao invés de criar novas instâncias sempre. Ele é especialmente útil quando se tem &lt;strong>muitos objetos similares&lt;/strong> que consomem recursos desnecessários.&lt;/p></description></item><item><title>Template Method</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/template-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/template-method/</guid><description>&lt;h1 id="template-method---behavioural-comportamental">Template Method - Behavioural (Comportamental)&lt;a class="td-heading-self-link" href="#template-method---behavioural-comportamental" aria-label="Heading self-link">&lt;/a>&lt;/h1>
 &lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;em>Define o esqueleto de um algoritmo em uma operação, postergando a definição de alguns passos para subclasses. O template method permite que as subclasses redefinam certos passos de um algoritmo sem mudar sua estrutura&lt;/em>&lt;/p>
 &lt;hr>
@@ -256,22 +264,183 @@
 &lt;hr>
 &lt;h2 id="sobre-o-observer">Sobre o Observer&lt;a class="td-heading-self-link" href="#sobre-o-observer" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=iMV1aHaijhQ&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=41">https://www.youtube.com/watch?v=iMV1aHaijhQ&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=41&lt;/a>&lt;/p>
-&lt;p>O &lt;strong>Observer&lt;/strong> é um padrão de projeto &lt;strong>comportamental&lt;/strong> que define uma &lt;strong>dependência um-para-muitos&lt;/strong> entre objetos, garantindo que, quando um objeto muda de estado, todos os seus &lt;strong>observadores&lt;/strong> são notificados automaticamente.&lt;/p></description></item><item><title>Orquestrada vs. Coreografada</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/orquestrada-x-coreografada/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/orquestrada-x-coreografada/</guid><description>&lt;p>A &lt;strong>Arquitetura Orientada a Eventos (EDA - Event-Driven Architecture)&lt;/strong> pode ser implementada de duas formas principais: &lt;strong>orquestrada&lt;/strong> ou &lt;strong>coreografada&lt;/strong>. A escolha entre esses modelos afeta diretamente a forma como os serviços interagem, influenciando escalabilidade, flexibilidade e complexidade.&lt;/p>
-&lt;hr>
-&lt;h2 id="arquitetura-orquestrada">&lt;strong>Arquitetura Orquestrada&lt;/strong>&lt;a class="td-heading-self-link" href="#arquitetura-orquestrada" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>&lt;strong>O que é?&lt;/strong>&lt;br>
-Na &lt;strong>arquitetura orquestrada&lt;/strong>, um &lt;strong>orquestrador central&lt;/strong> (geralmente um serviço dedicado, como um &lt;strong>workflow engine&lt;/strong>) &lt;strong>controla&lt;/strong> a execução dos eventos e a comunicação entre os serviços.&lt;/p>
-&lt;p>&lt;strong>Como funciona?&lt;/strong>&lt;/p></description></item><item><title>Iterator</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/iterator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/iterator/</guid><description>&lt;h1 id="iterator---behavioural-comportamental">Iterator - Behavioural (Comportamental)&lt;a class="td-heading-self-link" href="#iterator---behavioural-comportamental" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;p>O &lt;strong>Observer&lt;/strong> é um padrão de projeto &lt;strong>comportamental&lt;/strong> que define uma &lt;strong>dependência um-para-muitos&lt;/strong> entre objetos, garantindo que, quando um objeto muda de estado, todos os seus &lt;strong>observadores&lt;/strong> são notificados automaticamente.&lt;/p></description></item><item><title>Saga</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/saga/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/saga/</guid><description>&lt;p>O &lt;strong>padrão Saga&lt;/strong> é uma abordagem para gerenciar &lt;strong>transações distribuídas&lt;/strong> em arquiteturas de microserviços. Como, em um ambiente distribuído, não há um &lt;strong>gerenciador central de transações&lt;/strong> como nos bancos de dados relacionais (com ACID), o Saga divide a transação global em uma sequência de &lt;strong>transações locais&lt;/strong> coordenadas de forma que, se algo falhar, o sistema possa ser restaurado a um estado consistente.&lt;/p>
+&lt;h3 id="como-funciona-um-saga">Como funciona um Saga?&lt;a class="td-heading-self-link" href="#como-funciona-um-saga" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Em vez de usar &lt;strong>commit&lt;/strong> e &lt;strong>rollback&lt;/strong> globais, um Saga garante &lt;strong>consistência eventual&lt;/strong> através de uma série de &lt;strong>passos compensáveis&lt;/strong>. Cada serviço executa sua parte da transação de forma independente, e caso um dos passos falhe, são acionadas &lt;strong>ações de compensação&lt;/strong> para desfazer os efeitos das operações anteriores.&lt;/p></description></item><item><title>Arquitetura Orquestrada</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-orquestrada/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-orquestrada/</guid><description>&lt;p>Na &lt;strong>arquitetura orquestrada&lt;/strong>, um &lt;strong>orquestrador central&lt;/strong> (geralmente um serviço dedicado, como um &lt;strong>workflow engine&lt;/strong>) &lt;strong>controla&lt;/strong> a execução dos eventos e a comunicação entre os serviços.&lt;/p>
+&lt;p>&lt;strong>Como funciona?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Um &lt;strong>serviço central&lt;/strong> coordena os fluxos de trabalho.&lt;/li>
+&lt;li>Cada serviço é passivo, apenas &lt;strong>responde&lt;/strong> a comandos.&lt;/li>
+&lt;li>O orquestrador gerencia dependências e garante que os eventos sejam processados na ordem correta.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Exemplo (E-commerce)&lt;/strong>&lt;br>
+1️⃣ Um serviço central (ex.: &lt;strong>Camunda, Temporal, AWS Step Functions&lt;/strong>) recebe um evento &lt;code>&amp;quot;PedidoCriado&amp;quot;&lt;/code>.&lt;br>
+2️⃣ Ele chama &lt;strong>explicitamente&lt;/strong> o serviço de pagamento.&lt;br>
+3️⃣ Se o pagamento for aprovado, ele aciona o serviço de estoque.&lt;br>
+4️⃣ Se o estoque for confirmado, ele aciona o serviço de entrega.&lt;/p></description></item><item><title>Iterator</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/iterator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/iterator/</guid><description>&lt;h1 id="iterator---behavioural-comportamental">Iterator - Behavioural (Comportamental)&lt;a class="td-heading-self-link" href="#iterator---behavioural-comportamental" aria-label="Heading self-link">&lt;/a>&lt;/h1>
 &lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;em>Fornece uma maneira de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente.&lt;/em>&lt;/p>
 &lt;hr>
 &lt;h2 id="sobre-o-iterator">Sobre o Iterator&lt;a class="td-heading-self-link" href="#sobre-o-iterator" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=7ndeSYdmOdE&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=43">https://www.youtube.com/watch?v=7ndeSYdmOdE&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=43&lt;/a>&lt;/p>
 &lt;p>O &lt;strong>Iterator&lt;/strong> é um padrão de projeto &lt;strong>comportamental&lt;/strong> que fornece uma maneira de acessar os elementos de um &lt;strong>objeto agregado&lt;/strong> sequencialmente &lt;strong>sem expor sua estrutura interna&lt;/strong>.&lt;/p>
-&lt;p>O padrão &lt;strong>Iterator&lt;/strong> é amplamente utilizado em &lt;strong>listas, coleções e estruturas de dados&lt;/strong> no C#.&lt;/p></description></item><item><title>Visitor</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/visitor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/visitor/</guid><description>&lt;h1 id="visitor---behavioural-comportamental">Visitor - Behavioural (Comportamental)&lt;a class="td-heading-self-link" href="#visitor---behavioural-comportamental" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;p>O padrão &lt;strong>Iterator&lt;/strong> é amplamente utilizado em &lt;strong>listas, coleções e estruturas de dados&lt;/strong> no C#.&lt;/p></description></item><item><title>Arquitetura Coreografada</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-coreografada/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/arquitetura-coreografada/</guid><description>&lt;p>Na &lt;strong>arquitetura coreografada&lt;/strong>, &lt;strong>não há um serviço central&lt;/strong> controlando o fluxo. Em vez disso, os serviços &lt;strong>publicam e escutam eventos&lt;/strong>, reagindo a eles de forma independente.&lt;/p>
+&lt;p>&lt;strong>Como funciona?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Cada serviço toma decisões &lt;strong>baseadas nos eventos recebidos&lt;/strong>.&lt;/li>
+&lt;li>Nenhum serviço controla diretamente os outros.&lt;/li>
+&lt;li>A comunicação é assíncrona via &lt;strong>eventos distribuídos&lt;/strong> (Kafka, RabbitMQ, SNS/SQS).&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Exemplo (E-commerce)&lt;/strong>&lt;br>
+1️⃣ O serviço de pedidos publica um evento &lt;code>&amp;quot;PedidoCriado&amp;quot;&lt;/code>.&lt;br>
+2️⃣ O serviço de pagamento escuta esse evento e processa o pagamento.&lt;br>
+3️⃣ Se o pagamento for aprovado, um evento &lt;code>&amp;quot;PagamentoConfirmado&amp;quot;&lt;/code> é disparado.&lt;br>
+4️⃣ O serviço de estoque escuta esse evento e atualiza o estoque.&lt;br>
+5️⃣ O serviço de entrega escuta &lt;code>&amp;quot;EstoqueConfirmado&amp;quot;&lt;/code> e gera uma ordem de envio.&lt;/p></description></item><item><title>Visitor</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/visitor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/visitor/</guid><description>&lt;h1 id="visitor---behavioural-comportamental">Visitor - Behavioural (Comportamental)&lt;a class="td-heading-self-link" href="#visitor---behavioural-comportamental" aria-label="Heading self-link">&lt;/a>&lt;/h1>
 &lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>&lt;em>Representa uma operação a ser executada sobre os elementos da estrutura de um objeto. O visitor permite que você separe um algoritmo dos elementos sobre os quais opera.&lt;/em>&lt;/p>
 &lt;hr>
 &lt;h2 id="sobre-o-visitor">Sobre o Visitor&lt;a class="td-heading-self-link" href="#sobre-o-visitor" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=5PRG7rT2dcU&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=45">https://www.youtube.com/watch?v=5PRG7rT2dcU&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=45&lt;/a>&lt;/p>
-&lt;p>O &lt;strong>Visitor&lt;/strong> é um padrão de projeto &lt;strong>comportamental&lt;/strong> que permite &lt;strong>adicionar novas operações a uma estrutura de objetos sem modificá-los&lt;/strong>. Isso é feito separando a lógica de processamento dos objetos, mantendo cada um com &lt;strong>suas responsabilidades bem definidas&lt;/strong>.&lt;/p></description></item></channel></rss>
+&lt;p>O &lt;strong>Visitor&lt;/strong> é um padrão de projeto &lt;strong>comportamental&lt;/strong> que permite &lt;strong>adicionar novas operações a uma estrutura de objetos sem modificá-los&lt;/strong>. Isso é feito separando a lógica de processamento dos objetos, mantendo cada um com &lt;strong>suas responsabilidades bem definidas&lt;/strong>.&lt;/p></description></item><item><title>Orquestrada vs. Coreografada</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/orquestrada-x-coreografada/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/orquestrada-x-coreografada/</guid><description>&lt;h2 id="qual-escolher">&lt;strong>Qual escolher?&lt;/strong>&lt;a class="td-heading-self-link" href="#qual-escolher" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Ambas seguem o modelo &lt;strong>EDA (Event-Driven Architecture)&lt;/strong>, mas se diferenciam na forma como os serviços se coordenam.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Característica&lt;/th>
+ &lt;th>&lt;strong>Orquestrada (Assíncrona)&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Coreografada&lt;/strong>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Coordenação&lt;/strong>&lt;/td>
+ &lt;td>Existe um &lt;strong>orquestrador central&lt;/strong> que recebe eventos e decide os próximos passos, mantendo a ordem do fluxo.&lt;/td>
+ &lt;td>Não há controle central. Cada serviço escuta eventos e decide sozinho o que fazer.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Acoplamento&lt;/strong>&lt;/td>
+ &lt;td>Se for assíncrona (usando Kafka, RabbitMQ, SQS), &lt;strong>o acoplamento direto é reduzido&lt;/strong>, pois os serviços não precisam se conhecer.&lt;/td>
+ &lt;td>&lt;strong>Baixo acoplamento&lt;/strong>, pois os serviços só precisam conhecer os eventos publicados por outros.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Ordem de Execução&lt;/strong>&lt;/td>
+ &lt;td>O orquestrador pode garantir que eventos aconteçam &lt;strong>em uma sequência específica&lt;/strong>, mesmo que sejam processados assincronamente.&lt;/td>
+ &lt;td>A ordem &lt;strong>depende do design do fluxo&lt;/strong>. Se um evento não for consumido ou processado corretamente, pode haver inconsistências.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Escalabilidade&lt;/strong>&lt;/td>
+ &lt;td>Pode escalar bem, pois os serviços se comunicam via eventos assíncronos. No entanto, o orquestrador pode ser um &lt;strong>ponto único de falha&lt;/strong>.&lt;/td>
+ &lt;td>Altamente escalável, pois não há um único ponto de coordenação. Cada serviço escala independentemente.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Observabilidade&lt;/strong>&lt;/td>
+ &lt;td>Como há um orquestrador controlando os fluxos, é mais fácil &lt;strong>rastrear o estado das operações&lt;/strong> e depurar problemas.&lt;/td>
+ &lt;td>A rastreabilidade pode ser difícil, pois eventos são disparados de maneira distribuída, sem um ponto central de controle.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Complexidade&lt;/strong>&lt;/td>
+ &lt;td>A lógica de negócios fica centralizada no orquestrador, o que pode tornar seu código mais complexo e difícil de manter.&lt;/td>
+ &lt;td>A complexidade é distribuída entre os serviços, exigindo mais esforço para garantir que cada um saiba como reagir aos eventos certos.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Use Orquestrada quando:&lt;/strong>&lt;br>
+✔️ O fluxo exige &lt;strong>controle rígido&lt;/strong> (ex.: processos bancários, compliance).&lt;br>
+✔️ É necessário &lt;strong>monitoramento detalhado&lt;/strong>.&lt;br>
+✔️ Existe &lt;strong>lógica de negócios complexa&lt;/strong> que precisa de um coordenador.&lt;/p></description></item><item><title>Outros Padrões</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</guid><description>&lt;p>Os principais padrões de design para microserviços ajudam a lidar com desafios comuns como comunicação, escalabilidade, resiliência e segurança. Aqui estão os mais relevantes, além do &lt;strong>Saga&lt;/strong>, que é usado para coordenação de transações distribuídas:&lt;/p>
+&lt;hr>
+&lt;h2 id="1-padrões-de-comunicação">&lt;strong>1. Padrões de Comunicação&lt;/strong>&lt;a class="td-heading-self-link" href="#1-padr%c3%b5es-de-comunica%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="api-gateway">&lt;strong>API Gateway&lt;/strong>&lt;a class="td-heading-self-link" href="#api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um único ponto de entrada para os clientes, roteando requisições para os microserviços corretos.&lt;/li>
+&lt;li>Pode lidar com autenticação, cache, rate limiting e balanceamento de carga.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> O &lt;strong>Netflix Zuul&lt;/strong> e o &lt;strong>Kong API Gateway&lt;/strong> são implementações comuns.&lt;/li>
+&lt;/ul>
+&lt;h3 id="backend-for-frontend-bff">&lt;strong>Backend for Frontend (BFF)&lt;/strong>&lt;a class="td-heading-self-link" href="#backend-for-frontend-bff" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Similar ao API Gateway, mas otimizado para diferentes tipos de clientes (web, mobile, IoT).&lt;/li>
+&lt;li>Cada tipo de cliente pode ter um backend específico que adapta a resposta conforme necessário.&lt;/li>
+&lt;/ul>
+&lt;h3 id="service-mesh">&lt;strong>Service Mesh&lt;/strong>&lt;a class="td-heading-self-link" href="#service-mesh" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Gerencia comunicação entre serviços, adicionando monitoramento, segurança e controle de tráfego.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> Istio e Linkerd.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="2-padrões-de-resiliência">&lt;strong>2. Padrões de Resiliência&lt;/strong>&lt;a class="td-heading-self-link" href="#2-padr%c3%b5es-de-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="circuit-breaker">&lt;strong>Circuit Breaker&lt;/strong>&lt;a class="td-heading-self-link" href="#circuit-breaker" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Evita que falhas em um serviço se propaguem para outros, &amp;ldquo;desligando&amp;rdquo; chamadas a serviços não responsivos.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> O &lt;strong>Hystrix&lt;/strong>, da Netflix, é uma implementação popular.&lt;/li>
+&lt;/ul>
+&lt;h3 id="retry-e-backoff-exponencial">&lt;strong>Retry e Backoff Exponencial&lt;/strong>&lt;a class="td-heading-self-link" href="#retry-e-backoff-exponencial" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Tenta repetir a requisição em caso de falha, aumentando o tempo entre tentativas para evitar sobrecarregar o sistema.&lt;/li>
+&lt;/ul>
+&lt;h3 id="bulkhead-compartimentos-estanques">&lt;strong>Bulkhead (Compartimentos Estanques)&lt;/strong>&lt;a class="td-heading-self-link" href="#bulkhead-compartimentos-estanques" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Separa recursos para evitar que falhas em uma parte do sistema afetem outras.&lt;/li>
+&lt;li>Exemplo: Se um serviço de pagamento estiver sobrecarregado, ele não deve afetar a operação de login.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="3-padrões-de-dados-e-armazenamento">&lt;strong>3. Padrões de Dados e Armazenamento&lt;/strong>&lt;a class="td-heading-self-link" href="#3-padr%c3%b5es-de-dados-e-armazenamento" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="database-per-service">&lt;strong>Database per Service&lt;/strong>&lt;a class="td-heading-self-link" href="#database-per-service" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Cada microserviço tem seu próprio banco de dados para evitar dependências diretas.&lt;/li>
+&lt;li>Isso melhora escalabilidade, mas pode gerar desafios de consistência.&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-sourcing">&lt;strong>Event Sourcing&lt;/strong>&lt;a class="td-heading-self-link" href="#event-sourcing" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Os dados são armazenados como uma sequência de eventos em vez de estados mutáveis.&lt;/li>
+&lt;li>Facilita a rastreabilidade e auditoria, além de permitir reconstrução do estado.&lt;/li>
+&lt;/ul>
+&lt;h3 id="cqrs-command-query-responsibility-segregation">&lt;strong>CQRS (Command Query Responsibility Segregation)&lt;/strong>&lt;a class="td-heading-self-link" href="#cqrs-command-query-responsibility-segregation" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Separa operações de leitura e escrita para otimizar desempenho.&lt;/li>
+&lt;li>Normalmente usado com Event Sourcing.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="4-padrões-de-comunicação-assíncrona">&lt;strong>4. Padrões de Comunicação Assíncrona&lt;/strong>&lt;a class="td-heading-self-link" href="#4-padr%c3%b5es-de-comunica%c3%a7%c3%a3o-ass%c3%adncrona" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="publisher-subscriber-pubsub">&lt;strong>Publisher-Subscriber (Pub/Sub)&lt;/strong>&lt;a class="td-heading-self-link" href="#publisher-subscriber-pubsub" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um serviço publica eventos em um broker (como Kafka, RabbitMQ), e outros serviços assinam para receber atualizações.&lt;/li>
+&lt;li>Desacopla os serviços, melhorando escalabilidade.&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-notification">&lt;strong>Event Notification&lt;/strong>&lt;a class="td-heading-self-link" href="#event-notification" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um serviço apenas emite um evento informando que algo aconteceu, mas não se preocupa com quem vai consumi-lo.&lt;/li>
+&lt;li>Exemplo: Um serviço de pedidos pode publicar um evento &lt;code>&amp;quot;PedidoCriado&amp;quot;&lt;/code>, e os serviços de pagamento e estoque podem reagir a ele.&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-carried-state-transfer">&lt;strong>Event-Carried State Transfer&lt;/strong>&lt;a class="td-heading-self-link" href="#event-carried-state-transfer" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um serviço publica eventos contendo &lt;strong>dados completos&lt;/strong> do estado atual para que outros serviços não precisem consultar diretamente.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="5-padrões-de-segurança">&lt;strong>5. Padrões de Segurança&lt;/strong>&lt;a class="td-heading-self-link" href="#5-padr%c3%b5es-de-seguran%c3%a7a" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="access-token-oauth2-jwt">&lt;strong>Access Token (OAuth2, JWT)&lt;/strong>&lt;a class="td-heading-self-link" href="#access-token-oauth2-jwt" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Usa tokens para autenticação e autorização entre serviços.&lt;/li>
+&lt;/ul>
+&lt;h3 id="sidecar-pattern">&lt;strong>Sidecar Pattern&lt;/strong>&lt;a class="td-heading-self-link" href="#sidecar-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um container auxiliar que adiciona funcionalidades como logging, segurança e proxy de comunicação.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> Istio usa Sidecar para gerenciamento de tráfego.&lt;/li>
+&lt;/ul>
+&lt;h3 id="api-rate-limiting">&lt;strong>API Rate Limiting&lt;/strong>&lt;a class="td-heading-self-link" href="#api-rate-limiting" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Restringe o número de requisições para evitar ataques DDoS.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="6-padrões-de-gerenciamento-e-monitoramento">&lt;strong>6. Padrões de Gerenciamento e Monitoramento&lt;/strong>&lt;a class="td-heading-self-link" href="#6-padr%c3%b5es-de-gerenciamento-e-monitoramento" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="observability-logs-metrics-tracing">&lt;strong>Observability (Logs, Metrics, Tracing)&lt;/strong>&lt;a class="td-heading-self-link" href="#observability-logs-metrics-tracing" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Usa ferramentas como &lt;strong>Prometheus, ELK, OpenTelemetry&lt;/strong> para monitorar microserviços.&lt;/li>
+&lt;/ul>
+&lt;h3 id="strangler-pattern">&lt;strong>Strangler Pattern&lt;/strong>&lt;a class="td-heading-self-link" href="#strangler-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Ajuda a migrar de um monólito para microserviços gradualmente, substituindo partes do sistema sem interromper o funcionamento.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusão">&lt;strong>Conclusão&lt;/strong>&lt;a class="td-heading-self-link" href="#conclus%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Esses padrões ajudam a projetar microserviços mais escaláveis, resilientes e seguros. A escolha depende das necessidades do sistema e dos desafios específicos enfrentados.&lt;/p></description></item></channel></rss>
