@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Testes on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/categories/testes/</link><description>Recent content in Testes on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/categories/testes/index.xml" rel="self" type="application/rss+xml"/><item><title>Pirâmide de Testes</title><link>https://sampalu.github.io/guia-de-estudos/testes/piramide-testes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/piramide-testes/</guid><description>&lt;h3 id="estrutura-da-pirâmide-de-testes">&lt;strong>Estrutura da Pirâmide de Testes&lt;/strong>&lt;a class="td-heading-self-link" href="#estrutura-da-pir%c3%a2mide-de-testes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;div style="background-color: #cccccc; padding: 10px; margin-bottom:30px; margin-top:10px; display: inline-block;">
+ &lt;img src="../../images/piramide-testes.png" alt="Pirâmide de Testes" />
+&lt;/div>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Testes Unitários (Unit - Base da Pirâmide)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>São a base da pirâmide, representando a maior quantidade de testes.&lt;/li>
+&lt;li>Testam unidades isoladas do código, como funções ou classes, garantindo que cada componente funcione corretamente.&lt;/li>
+&lt;li>São rápidos, baratos e fáceis de manter. &lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Testes de Integração (Integration - Meio da Pirâmide)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Validam a interação entre diferentes módulos ou serviços do sistema.&lt;/li>
+&lt;li>Testam como os componentes trabalham juntos e se há falhas na comunicação entre eles.&lt;/li>
+&lt;li>São mais lentos e custosos que os testes unitários, mas ainda viáveis. &lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Testes End-to-End (E2E - Topo da Pirâmide)&lt;/strong>&lt;/p></description></item><item><title>Pirâmide de Testes Automatizados</title><link>https://sampalu.github.io/guia-de-estudos/testes/piramide-testes-automatizados/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/piramide-testes-automatizados/</guid><description>&lt;h3 id="estrutura-da-pirâmide-de-testes">&lt;strong>Estrutura da Pirâmide de Testes&lt;/strong>&lt;a class="td-heading-self-link" href="#estrutura-da-pir%c3%a2mide-de-testes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;div style="background-color: #cccccc; padding: 10px; margin-bottom:30px; margin-top:10px; display: inline-block;">
+ &lt;img src="../../images/piramide-testes-auto.png" alt="Pirâmide de Testes" />
+&lt;/div>
+&lt;p>Seu objetivo principal é garantir &lt;strong>qualidade, eficiência e confiabilidade&lt;/strong>, reduzindo custos e tempo de execução dos testes. É uma abordagem especialmente útil em &lt;strong>arquiteturas de microserviços&lt;/strong>, onde a automação bem planejada evita falhas na comunicação entre serviços.&lt;/p>
+&lt;p>A largura de cada camada representa o &lt;strong>esforço necessário&lt;/strong> para implementá-los, e não a quantidade de testes.&lt;/p></description></item><item><title>Test Pattern (Padrão de Teste)</title><link>https://sampalu.github.io/guia-de-estudos/testes/test-pattern/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/test-pattern/</guid><description>&lt;p>Os &lt;strong>Test Patterns&lt;/strong> (Padrões de Teste) são soluções reutilizáveis para problemas comuns no desenvolvimento e execução de testes de software. Assim como os &lt;strong>Design Patterns&lt;/strong> ajudam na organização do código, os Test Patterns oferecem diretrizes para estruturar testes de maneira eficiente e escalável.&lt;/p>
+&lt;hr>
+&lt;h2 id="principais-categorias-de-test-patterns">&lt;strong>Principais Categorias de Test Patterns&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-categorias-de-test-patterns" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="1-padrões-de-estrutura-de-teste">&lt;strong>1️⃣ Padrões de Estrutura de Teste&lt;/strong>&lt;a class="td-heading-self-link" href="#1-padr%c3%b5es-de-estrutura-de-teste" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Definem como organizar os testes para facilitar a leitura, a manutenção e a reutilização.&lt;/p></description></item><item><title>Teste de Parametrização (Parameterized Testing)</title><link>https://sampalu.github.io/guia-de-estudos/testes/teste-parametrizacao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/teste-parametrizacao/</guid><description>&lt;h2 id="como-funciona">&lt;strong>Como Funciona?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-funciona" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>O teste recebe &lt;strong>parâmetros externos&lt;/strong> (listas, arquivos, bancos de dados, etc.).&lt;/li>
+&lt;li>Ele &lt;strong>executa a mesma lógica repetidamente&lt;/strong> para cada conjunto de valores.&lt;/li>
+&lt;li>Permite &lt;strong>testar variações&lt;/strong> sem duplicação de código.&lt;/li>
+&lt;/ul>
+&lt;p>🔹 &lt;strong>Exemplo:&lt;/strong> Testar a soma de dois números em diferentes casos.&lt;/p>
+&lt;hr>
+&lt;h2 id="benefícios-do-teste-de-parametrização">&lt;strong>Benefícios do Teste de Parametrização&lt;/strong>&lt;a class="td-heading-self-link" href="#benef%c3%adcios-do-teste-de-parametriza%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>✅ &lt;strong>Redução de código duplicado&lt;/strong> → Menos repetição de testes idênticos com pequenas variações.&lt;br>
+✅ &lt;strong>Cobertura maior de cenários&lt;/strong> → Facilita testar diferentes valores, incluindo casos extremos.&lt;br>
+✅ &lt;strong>Facilidade de manutenção&lt;/strong> → Mudanças no código não exigem reescrita de múltiplos testes.&lt;/p></description></item><item><title>Teste de Contrato (Contract Testing)</title><link>https://sampalu.github.io/guia-de-estudos/testes/teste-contrato/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/teste-contrato/</guid><description>&lt;h2 id="como-funciona">&lt;strong>Como Funciona?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-funciona" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Um &lt;strong>contrato&lt;/strong> define &lt;strong>o que&lt;/strong> um serviço (ex.: API) &lt;strong>deve fornecer&lt;/strong> e como um consumidor (ex.: outro serviço) deve &lt;strong>utilizar essa informação&lt;/strong>.&lt;/li>
+&lt;li>Os testes de contrato &lt;strong>garantem que tanto o produtor quanto o consumidor sigam esse contrato&lt;/strong>, evitando quebras inesperadas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="fluxo-do-teste-de-contrato">&lt;strong>Fluxo do Teste de Contrato&lt;/strong>&lt;a class="td-heading-self-link" href="#fluxo-do-teste-de-contrato" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>1️⃣ &lt;strong>O consumidor&lt;/strong> (quem consome o serviço) define um contrato com suas expectativas.&lt;br>
+2️⃣ &lt;strong>O produtor&lt;/strong> (quem fornece o serviço) deve garantir que suas respostas seguem esse contrato.&lt;br>
+3️⃣ &lt;strong>O teste de contrato valida&lt;/strong> que essa comunicação funciona corretamente.&lt;/p></description></item><item><title>Teste de Carga Fria (Cold Load Testing)</title><link>https://sampalu.github.io/guia-de-estudos/testes/teste-carga-fria/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/teste-carga-fria/</guid><description>&lt;h2 id="como-funciona">&lt;strong>Como Funciona?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-funciona" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>O sistema é &lt;strong>reiniciado&lt;/strong> para garantir que &lt;strong>não há cache, processos pré-carregados ou otimizações ativas&lt;/strong>.&lt;/li>
+&lt;li>Usuários ou cargas simuladas começam a acessar a aplicação imediatamente após a inicialização.&lt;/li>
+&lt;li>São analisados &lt;strong>tempos de resposta, consumo de recursos e possíveis gargalos&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="diferença-entre-teste-de-carga-fria-e-quente">&lt;strong>Diferença entre Teste de Carga Fria e Quente&lt;/strong>&lt;a class="td-heading-self-link" href="#diferen%c3%a7a-entre-teste-de-carga-fria-e-quente" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Tipo de Teste&lt;/th>
+ &lt;th>O que Avalia?&lt;/th>
+ &lt;th>Estado do Sistema&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Carga Fria (Cold Load Testing)&lt;/strong>&lt;/td>
+ &lt;td>Tempo de resposta após inicialização do sistema&lt;/td>
+ &lt;td>Nenhum cache, sistema recém-inicializado&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Carga Quente (Warm Load Testing)&lt;/strong>&lt;/td>
+ &lt;td>Performance em estado normal de operação&lt;/td>
+ &lt;td>Cache, otimizações e processos ativos&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="o-que-o-teste-de-carga-fria-avalia">&lt;strong>O que o Teste de Carga Fria Avalia?&lt;/strong>&lt;a class="td-heading-self-link" href="#o-que-o-teste-de-carga-fria-avalia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>✅ &lt;strong>Tempo de inicialização&lt;/strong> → Quanto tempo leva para o sistema estar operacional?&lt;br>
+✅ &lt;strong>Primeiras requisições&lt;/strong> → Como o sistema responde aos primeiros usuários após o start?&lt;br>
+✅ &lt;strong>Consumo de recursos&lt;/strong> → Uso de CPU, memória e banco de dados no arranque.&lt;br>
+✅ &lt;strong>Dependências externas&lt;/strong> → O sistema depende de outros serviços que demoram a responder?&lt;br>
+✅ &lt;strong>Impacto no usuário&lt;/strong> → A experiência do usuário é afetada nos primeiros acessos?&lt;/p></description></item><item><title>Teste Sintético (Synthetic Testing)</title><link>https://sampalu.github.io/guia-de-estudos/testes/teste-sintetico/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/teste-sintetico/</guid><description>&lt;h3 id="como-funciona">&lt;strong>Como Funciona?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-funciona" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Utiliza &lt;strong>scripts automatizados&lt;/strong> para simular interações com a aplicação.&lt;/li>
+&lt;li>Pode testar &lt;strong>cargas específicas&lt;/strong> e monitorar métricas de desempenho.&lt;/li>
+&lt;li>Avalia &lt;strong>disponibilidade, tempo de resposta e funcionalidade&lt;/strong> de sistemas antes de eventos reais.&lt;/li>
+&lt;li>Pode ser configurado para &lt;strong>rodar periodicamente&lt;/strong> e identificar falhas antes que usuários reais as encontrem.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="tipos-de-teste-sintético">&lt;strong>Tipos de Teste Sintético&lt;/strong>&lt;a class="td-heading-self-link" href="#tipos-de-teste-sint%c3%a9tico" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>✅ &lt;strong>Teste de Disponibilidade:&lt;/strong> Verifica se um serviço está online e acessível.&lt;br>
+✅ &lt;strong>Teste de Transação:&lt;/strong> Simula interações do usuário (exemplo: login, checkout de e-commerce).&lt;br>
+✅ &lt;strong>Teste de Carga Controlada:&lt;/strong> Gera tráfego simulado para medir desempenho sem impactar usuários reais.&lt;/p></description></item><item><title>Resumo Tipos de Testes</title><link>https://sampalu.github.io/guia-de-estudos/testes/tipos-testes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/tipos-testes/</guid><description>&lt;h3 id="1-testes-unitários-unit-tests">&lt;strong>1️⃣ Testes Unitários&lt;/strong> (Unit Tests)&lt;a class="td-heading-self-link" href="#1-testes-unit%c3%a1rios-unit-tests" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>🔹 &lt;strong>Objetivo:&lt;/strong> Testar unidades isoladas do código, como funções, métodos ou classes.&lt;br>
+🔹 &lt;strong>Benefícios:&lt;/strong> Rápidos, baratos e fáceis de manter.&lt;br>
+🔹 &lt;strong>Ferramentas comuns:&lt;/strong> JUnit (Java), NUnit (C#), Jest (JavaScript), PyTest (Python).&lt;br>
+🔹 &lt;strong>Exemplo:&lt;/strong> Testar se uma função matemática retorna o valor esperado.&lt;/p>
+&lt;hr>
+&lt;h3 id="2-testes-de-integração-integration-tests">&lt;strong>2️⃣ Testes de Integração&lt;/strong> (Integration Tests)&lt;a class="td-heading-self-link" href="#2-testes-de-integra%c3%a7%c3%a3o-integration-tests" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>🔹 &lt;strong>Objetivo:&lt;/strong> Validar a comunicação entre diferentes módulos ou serviços.&lt;br>
+🔹 &lt;strong>Benefícios:&lt;/strong> Garante que as partes do sistema funcionam bem juntas.&lt;br>
+🔹 &lt;strong>Ferramentas comuns:&lt;/strong> JUnit + Spring Test (Java), Moq (C#), Testcontainers (para testes com banco de dados).&lt;br>
+🔹 &lt;strong>Exemplo:&lt;/strong> Testar se um serviço backend pode armazenar e recuperar dados corretamente do banco de dados.&lt;/p></description></item><item><title>Testes</title><link>https://sampalu.github.io/guia-de-estudos/testes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/</guid><description/></item></channel></rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Filas de Mensagens on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/</link><description>Recent content in Filas de Mensagens on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/index.xml" rel="self" type="application/rss+xml"/><item><title>Apache Kafka</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/apache-kafka/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/apache-kafka/</guid><description>&lt;h2 id="1-conceito">&lt;strong>1. Conceito&lt;/strong>&lt;a class="td-heading-self-link" href="#1-conceito" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Kafka é um sistema de &lt;strong>mensageria distribuída&lt;/strong> que utiliza um modelo &lt;strong>publish-subscribe&lt;/strong> para transmissão de eventos. Ele permite que produtores enviem mensagens para tópicos e consumidores leiam essas mensagens.&lt;/p>
+&lt;p>Principais casos de uso:&lt;/p>
+&lt;ul>
+&lt;li>Processamento de eventos em tempo real&lt;/li>
+&lt;li>Integração entre microsserviços&lt;/li>
+&lt;li>Monitoramento e análise de logs&lt;/li>
+&lt;li>Streaming de dados para análise em Big Data&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="2-arquitetura-do-apache-kafka">&lt;strong>2. Arquitetura do Apache Kafka&lt;/strong>&lt;a class="td-heading-self-link" href="#2-arquitetura-do-apache-kafka" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>A arquitetura do Kafka é composta pelos seguintes componentes:&lt;/p></description></item><item><title>RabbitMQ</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/rabbitmq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/rabbitmq/</guid><description>&lt;h3 id="principais-conceitos-do-rabbitmq">&lt;strong>Principais Conceitos do RabbitMQ&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-conceitos-do-rabbitmq" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Exchange (Troca)&lt;/strong>&lt;br>
+O &lt;strong>Exchange&lt;/strong> é responsável por receber as mensagens dos &lt;strong>produtores&lt;/strong> e roteá-las para as &lt;strong>filas&lt;/strong> (Queues). O roteamento pode ser feito de diferentes maneiras, dependendo do tipo de exchange.&lt;/p>
+&lt;p>Tipos de &lt;strong>Exchange&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Direct&lt;/strong>: Roteia a mensagem para a fila específica com base em uma chave de roteamento exata.&lt;/li>
+&lt;li>&lt;strong>Fanout&lt;/strong>: Roteia a mensagem para todas as filas vinculadas ao exchange, independentemente da chave de roteamento.&lt;/li>
+&lt;li>&lt;strong>Topic&lt;/strong>: Roteia a mensagem para filas com base em uma chave de roteamento que pode ser uma combinação de palavras e pontos (como tópicos).&lt;/li>
+&lt;li>&lt;strong>Headers&lt;/strong>: Roteia com base nos cabeçalhos da mensagem, ao invés de uma chave de roteamento.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Queue (Fila)&lt;/strong>&lt;br>
+As &lt;strong>filas&lt;/strong> são onde as mensagens são armazenadas até que o &lt;strong>consumidor&lt;/strong> as consuma. As mensagens são &lt;strong>gerenciadas&lt;/strong> dentro de filas de forma a garantir que sejam processadas de maneira confiável.&lt;/p></description></item></channel></rss>
