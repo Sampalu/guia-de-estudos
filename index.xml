@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guia de Estudos on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/</link><description>Recent content in Guia de Estudos on Sampalu</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 23 Mar 2025 21:13:52 -0300</lastBuildDate><atom:link href="https://sampalu.github.io/guia-de-estudos/index.xml" rel="self" type="application/rss+xml"/><item><title>Apache Kafka</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/apache-kafka/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/apache-kafka/</guid><description>&lt;h2 id="1-conceito">&lt;strong>1. Conceito&lt;/strong>&lt;a class="td-heading-self-link" href="#1-conceito" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guia de Estudos on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/</link><description>Recent content in Guia de Estudos on Sampalu</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 24 Mar 2025 23:45:24 -0300</lastBuildDate><atom:link href="https://sampalu.github.io/guia-de-estudos/index.xml" rel="self" type="application/rss+xml"/><item><title>Apache Kafka</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/apache-kafka/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/apache-kafka/</guid><description>&lt;h2 id="1-conceito">&lt;strong>1. Conceito&lt;/strong>&lt;a class="td-heading-self-link" href="#1-conceito" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Kafka é um sistema de &lt;strong>mensageria distribuída&lt;/strong> que utiliza um modelo &lt;strong>publish-subscribe&lt;/strong> para transmissão de eventos. Ele permite que produtores enviem mensagens para tópicos e consumidores leiam essas mensagens.&lt;/p>
 &lt;p>Principais casos de uso:&lt;/p>
 &lt;ul>
@@ -38,7 +38,17 @@
 &lt;h2 id="sobre-o-composite">Sobre o Composite&lt;a class="td-heading-self-link" href="#sobre-o-composite" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=I0RqHDFQjVY&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=14">https://www.youtube.com/watch?v=I0RqHDFQjVY&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=14&lt;/a>&lt;/p>
 &lt;p>O composite é um padrão de projeto que permite ao cliente tratar um único objeto ou uma estrutura formada de vários objetos aninhados hierarquicamente da mesma maneira.&lt;/p></description></item><item><title>Hexagonal Architecture (2005)</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/hexagonal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/hexagonal/</guid><description>&lt;p>A &lt;strong>Arquitetura Hexagonal&lt;/strong>, também conhecida como &lt;strong>Ports and Adapters&lt;/strong>, foi proposta por &lt;strong>Alistair Cockburn&lt;/strong> com o objetivo principal de &lt;strong>isolar a lógica de negócio das dependências externas&lt;/strong>, tornando os sistemas &lt;strong>mais flexíveis, testáveis e fáceis de manter&lt;/strong>.&lt;/p>
-&lt;p>A &lt;strong>Arquitetura Hexagonal&lt;/strong>, também conhecida como &lt;strong>Ports and Adapters&lt;/strong>, foi proposta por &lt;strong>Alistair Cockburn&lt;/strong> com o objetivo de criar aplicações independentes de infraestrutura e tecnologia, focando na separação entre a lógica de negócio e as dependências externas, como banco de dados, APIs externas e interfaces de usuário.&lt;/p></description></item><item><title>Pirâmide de Testes</title><link>https://sampalu.github.io/guia-de-estudos/testes/piramide-testes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/piramide-testes/</guid><description>&lt;h3 id="estrutura-da-pirâmide-de-testes">&lt;strong>Estrutura da Pirâmide de Testes&lt;/strong>&lt;a class="td-heading-self-link" href="#estrutura-da-pir%c3%a2mide-de-testes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>A &lt;strong>Arquitetura Hexagonal&lt;/strong>, também conhecida como &lt;strong>Ports and Adapters&lt;/strong>, foi proposta por &lt;strong>Alistair Cockburn&lt;/strong> com o objetivo de criar aplicações independentes de infraestrutura e tecnologia, focando na separação entre a lógica de negócio e as dependências externas, como banco de dados, APIs externas e interfaces de usuário.&lt;/p></description></item><item><title>Pilares da Evolução da Plataforma (ISO/IEC 9126)</title><link>https://sampalu.github.io/guia-de-estudos/cloud/pilares-eng-soft/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/pilares-eng-soft/</guid><description>&lt;h3 id="isoiec-9126--modelo-de-qualidade-de-software">&lt;strong>ISO/IEC 9126 – Modelo de Qualidade de Software&lt;/strong>&lt;a class="td-heading-self-link" href="#isoiec-9126--modelo-de-qualidade-de-software" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>A norma &lt;strong>ISO/IEC 9126&lt;/strong> define a qualidade do software com base em seis características principais, que também servem como pilares de evolução da plataforma:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Funcionalidade&lt;/strong> – Capacidade do software de fornecer as funções esperadas com precisão.&lt;/li>
+&lt;li>&lt;strong>Confiabilidade&lt;/strong> – Garantia de que o sistema pode operar corretamente por um período determinado, sem falhas.&lt;/li>
+&lt;li>&lt;strong>Usabilidade&lt;/strong> – Facilidade de uso para os usuários finais.&lt;/li>
+&lt;li>&lt;strong>Eficiência&lt;/strong> – Uso otimizado de recursos, garantindo desempenho adequado.&lt;/li>
+&lt;li>&lt;strong>Manutenibilidade&lt;/strong> – Facilidade para corrigir erros, modificar ou aprimorar o software.&lt;/li>
+&lt;li>&lt;strong>Portabilidade&lt;/strong> – Capacidade do software de ser transferido para diferentes ambientes e plataformas.&lt;/li>
+&lt;/ol>
+&lt;p>Esses pilares garantem que a plataforma possa &lt;strong>evoluir com qualidade&lt;/strong>, mantendo um equilíbrio entre funcionalidade, desempenho e adaptação a novos requisitos.&lt;/p></description></item><item><title>Pirâmide de Testes</title><link>https://sampalu.github.io/guia-de-estudos/testes/piramide-testes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/piramide-testes/</guid><description>&lt;h3 id="estrutura-da-pirâmide-de-testes">&lt;strong>Estrutura da Pirâmide de Testes&lt;/strong>&lt;a class="td-heading-self-link" href="#estrutura-da-pir%c3%a2mide-de-testes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;div style="background-color: #cccccc; padding: 10px; margin-bottom:30px; margin-top:10px; display: inline-block;">
  &lt;img src="../../images/piramide-testes.png" alt="Pirâmide de Testes" />
 &lt;/div>
@@ -219,7 +229,45 @@ As &lt;strong>filas&lt;/strong> são onde as mensagens são armazenadas até que
 &lt;hr>
 &lt;h2 id="1-single-responsibility-principle-srp--princípio-da-responsabilidade-única">1. &lt;strong>S&lt;/strong>ingle Responsibility Principle (SRP) – Princípio da Responsabilidade Única&lt;a class="td-heading-self-link" href="#1-single-responsibility-principle-srp--princ%c3%adpio-da-responsabilidade-%c3%banica" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="definição">Definição:&lt;a class="td-heading-self-link" href="#defini%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Uma classe deve ter &lt;strong>apenas um motivo para mudar&lt;/strong>, ou seja, deve ter &lt;strong>uma única responsabilidade&lt;/strong>.&lt;/p></description></item><item><title>Test Pattern (Padrão de Teste)</title><link>https://sampalu.github.io/guia-de-estudos/testes/test-pattern/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/test-pattern/</guid><description>&lt;p>Os &lt;strong>Test Patterns&lt;/strong> (Padrões de Teste) são soluções reutilizáveis para problemas comuns no desenvolvimento e execução de testes de software. Assim como os &lt;strong>Design Patterns&lt;/strong> ajudam na organização do código, os Test Patterns oferecem diretrizes para estruturar testes de maneira eficiente e escalável.&lt;/p>
+&lt;p>Uma classe deve ter &lt;strong>apenas um motivo para mudar&lt;/strong>, ou seja, deve ter &lt;strong>uma única responsabilidade&lt;/strong>.&lt;/p></description></item><item><title>Tecnicas de Cache</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/</guid><description>&lt;p>O uso de cache para resiliência em engenharia de software é uma estratégia fundamental para melhorar a disponibilidade e a escalabilidade dos sistemas. Na AWS, serviços como &lt;strong>Amazon ElastiCache&lt;/strong> (Redis e Memcached) são amplamente utilizados para reduzir a carga em bancos de dados e garantir que aplicações possam continuar operando mesmo sob falhas temporárias.&lt;/p>
+&lt;h2 id="técnicas-de-cache-para-resiliência">&lt;strong>Técnicas de Cache para Resiliência&lt;/strong>&lt;a class="td-heading-self-link" href="#t%c3%a9cnicas-de-cache-para-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="cache-aside-lazy-loading">&lt;strong>Cache-Aside (Lazy Loading)&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-aside-lazy-loading" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>A aplicação primeiro verifica se os dados estão no cache.&lt;/li>
+&lt;li>Se não estiverem, busca no banco de dados e armazena no cache para acessos futuros.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> Reduz carga no banco de dados e melhora o desempenho.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> O primeiro acesso pode ser mais lento.&lt;/li>
+&lt;/ul>
+&lt;h3 id="write-through">&lt;strong>Write-Through&lt;/strong>&lt;a class="td-heading-self-link" href="#write-through" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Toda vez que um dado é atualizado, ele é gravado no cache e no banco de dados simultaneamente.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> O cache está sempre atualizado.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> Pode gerar escrita desnecessária caso os dados não sejam frequentemente acessados.&lt;/li>
+&lt;/ul>
+&lt;h3 id="write-behind-write-back">&lt;strong>Write-Behind (Write-Back)&lt;/strong>&lt;a class="td-heading-self-link" href="#write-behind-write-back" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>As atualizações são gravadas no cache primeiro e propagadas para o banco de dados em segundo plano.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> Reduz a latência das operações de escrita.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> Pode causar perda de dados em caso de falhas antes da persistência.&lt;/li>
+&lt;/ul>
+&lt;h3 id="cache-persistente">&lt;strong>Cache Persistente&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-persistente" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Alguns serviços, como &lt;strong>Redis com snapshots (RDB) e append-only file (AOF)&lt;/strong>, permitem persistência dos dados do cache para recuperação em caso de falha.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> Evita perda total dos dados armazenados no cache.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> Pode aumentar a latência da gravação devido ao processo de persistência.&lt;/li>
+&lt;/ul>
+&lt;h3 id="cache-de-sessão">&lt;strong>Cache de Sessão&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-de-sess%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Em sistemas distribuídos, armazenar sessões no Redis permite que os usuários continuem autenticados mesmo que um servidor falhe.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> Melhora a experiência do usuário ao evitar reautenticação.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> Pode precisar de replicação para alta disponibilidade.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="como-usar-redismemcached-na-aws-para-resiliência">&lt;strong>Como Usar Redis/Memcached na AWS para Resiliência?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-usar-redismemcached-na-aws-para-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="amazon-elasticache-redis-vs-memcached">&lt;strong>Amazon ElastiCache (Redis vs. Memcached)&lt;/strong>&lt;a class="td-heading-self-link" href="#amazon-elasticache-redis-vs-memcached" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Redis&lt;/strong>:&lt;/p></description></item><item><title>Test Pattern (Padrão de Teste)</title><link>https://sampalu.github.io/guia-de-estudos/testes/test-pattern/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/testes/test-pattern/</guid><description>&lt;p>Os &lt;strong>Test Patterns&lt;/strong> (Padrões de Teste) são soluções reutilizáveis para problemas comuns no desenvolvimento e execução de testes de software. Assim como os &lt;strong>Design Patterns&lt;/strong> ajudam na organização do código, os Test Patterns oferecem diretrizes para estruturar testes de maneira eficiente e escalável.&lt;/p>
 &lt;hr>
 &lt;h2 id="principais-categorias-de-test-patterns">&lt;strong>Principais Categorias de Test Patterns&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-categorias-de-test-patterns" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="1-padrões-de-estrutura-de-teste">&lt;strong>1️⃣ Padrões de Estrutura de Teste&lt;/strong>&lt;a class="td-heading-self-link" href="#1-padr%c3%b5es-de-estrutura-de-teste" aria-label="Heading self-link">&lt;/a>&lt;/h3>
