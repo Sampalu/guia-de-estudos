@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Api Gateway on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/tags/api-gateway/</link><description>Recent content in Api Gateway on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/tags/api-gateway/index.xml" rel="self" type="application/rss+xml"/><item><title>Backpressure (Contrapressão)</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/padroes-resiliencia/backpressure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/padroes-resiliencia/backpressure/</guid><description>&lt;h3 id="como-o-backpressure-funciona">&lt;strong>Como o Backpressure funciona?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-o-backpressure-funciona" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>O conceito se baseia no controle de fluxo entre um &lt;strong>produtor&lt;/strong> (quem gera os dados) e um &lt;strong>consumidor&lt;/strong> (quem processa os dados). Se o consumidor não consegue lidar com a demanda no ritmo que os dados chegam, ele sinaliza para o produtor reduzir a velocidade ou descartar dados excedentes.&lt;/p>
+&lt;p>&lt;strong>Exemplo:&lt;/strong>&lt;br>
+Imagine um servidor HTTP processando requisições de usuários. Se o banco de dados estiver sobrecarregado, o servidor pode:&lt;br>
+1️⃣ &lt;strong>Rejeitar novas requisições (código 429 - Too Many Requests).&lt;/strong>&lt;br>
+2️⃣ &lt;strong>Colocar requisições em uma fila para processar depois.&lt;/strong>&lt;br>
+3️⃣ &lt;strong>Reduzir a taxa de produção de novas requisições.&lt;/strong>&lt;/p></description></item><item><title>API Gateway</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/api-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/api-gateway/</guid><description>&lt;p>Aqui estão os principais aspectos e responsabilidades desse padrão de design:&lt;/p>
+&lt;h3 id="1-função-principal-do-api-gateway">1. &lt;strong>Função Principal do API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#1-fun%c3%a7%c3%a3o-principal-do-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>O &lt;strong>API Gateway&lt;/strong> é o ponto de entrada único para os clientes que desejam interagir com os microserviços.&lt;/li>
+&lt;li>Ele faz o roteamento de requisições, autenticando e distribuindo as chamadas para os serviços apropriados. Em vez de os clientes interagirem diretamente com vários microserviços, eles enviam todas as requisições para o gateway, que faz o trabalho de encaminhar para os serviços internos.&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-responsabilidades-do-api-gateway">2. &lt;strong>Responsabilidades do API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#2-responsabilidades-do-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Roteamento de Requisições&lt;/strong>: O gateway roteia as requisições para os microserviços corretos com base em um caminho, método HTTP, parâmetros ou outras regras de negócio.&lt;/li>
+&lt;li>&lt;strong>Autenticação e Autorização&lt;/strong>: O API Gateway pode ser configurado para verificar tokens de autenticação (como JWT) e validar se o usuário tem permissão para acessar determinados serviços.&lt;/li>
+&lt;li>&lt;strong>Agregação de Respostas&lt;/strong>: Em muitos casos, uma requisição do cliente pode precisar fazer chamadas a múltiplos microserviços. O API Gateway pode realizar chamadas para esses serviços em paralelo ou sequencialmente, agregando os resultados antes de retornar uma resposta para o cliente.&lt;/li>
+&lt;li>&lt;strong>Controle de Carga (Load Balancing)&lt;/strong>: O API Gateway pode distribuir as requisições de forma equilibrada entre as instâncias de microserviços, garantindo que nenhum serviço sobrecarregue e mantenha uma alta disponibilidade.&lt;/li>
+&lt;li>&lt;strong>Cache&lt;/strong>: O gateway pode cachear as respostas para melhorar o desempenho e reduzir a carga nos microserviços.&lt;/li>
+&lt;li>&lt;strong>Monitoramento e Logging&lt;/strong>: Pode ser configurado para registrar e monitorar todas as requisições e respostas, facilitando a rastreabilidade e o diagnóstico de falhas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-vantagens-do-padrão-api-gateway">3. &lt;strong>Vantagens do Padrão API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#3-vantagens-do-padr%c3%a3o-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Simplificação do Cliente&lt;/strong>: Os clientes não precisam se preocupar com os detalhes de cada microserviço. Eles interagem com um único ponto de entrada.&lt;/li>
+&lt;li>&lt;strong>Centralização de Preocupações Transversais&lt;/strong>: Funcionalidades como autenticação, autorização, logs e monitoramento podem ser centralizadas no API Gateway, permitindo que os microserviços se concentrem em sua lógica de negócios.&lt;/li>
+&lt;li>&lt;strong>Redução de Complexidade no Cliente&lt;/strong>: Como o gateway pode consolidar múltiplas chamadas em uma única requisição, o cliente lida com uma interface mais simples e com menor número de pontos de interação.&lt;/li>
+&lt;li>&lt;strong>Facilidade de Evolução&lt;/strong>: Permite que os microserviços evoluam independentemente, sem impactar diretamente os consumidores da API.&lt;/li>
+&lt;/ul>
+&lt;h3 id="4-desvantagens-e-cuidados">4. &lt;strong>Desvantagens e Cuidados&lt;/strong>:&lt;a class="td-heading-self-link" href="#4-desvantagens-e-cuidados" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Ponto Único de Falha&lt;/strong>: Se o API Gateway falhar, todo o sistema pode ser afetado. Para mitigar isso, pode-se implementar redundância e balanceamento de carga no próprio gateway.&lt;/li>
+&lt;li>&lt;strong>Desempenho e Latência&lt;/strong>: Como o gateway precisa rotear e processar todas as requisições, ele pode se tornar um ponto de gargalo se não for bem dimensionado ou se tiver tarefas pesadas demais (como agregação de dados).&lt;/li>
+&lt;li>&lt;strong>Manutenção e Complexidade&lt;/strong>: O API Gateway pode se tornar complexo, especialmente se houver lógica de negócios excessiva ou se precisar lidar com múltiplos serviços e protocolos. Manter e atualizar o gateway pode ser desafiador.&lt;/li>
+&lt;/ul>
+&lt;h3 id="5-exemplos-de-ferramentas-de-api-gateway">5. &lt;strong>Exemplos de Ferramentas de API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#5-exemplos-de-ferramentas-de-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Kong&lt;/strong>: Uma das ferramentas de API Gateway mais populares, oferece roteamento, autenticação, limitação de taxa, caching e monitoramento.&lt;/li>
+&lt;li>&lt;strong>AWS API Gateway&lt;/strong>: Solução oferecida pela Amazon Web Services que permite criar, publicar, manter e proteger APIs.&lt;/li>
+&lt;li>&lt;strong>NGINX&lt;/strong>: Usado como um API Gateway devido ao seu desempenho e flexibilidade em configurar regras de roteamento.&lt;/li>
+&lt;li>&lt;strong>Zuul&lt;/strong> (do Netflix): Uma solução bastante usada no mundo dos microserviços, especialmente para roteamento e filtragem de tráfego.&lt;/li>
+&lt;/ul>
+&lt;h3 id="6-exemplo-de-fluxo-de-requisição-no-padrão-api-gateway">6. &lt;strong>Exemplo de Fluxo de Requisição no Padrão API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#6-exemplo-de-fluxo-de-requisi%c3%a7%c3%a3o-no-padr%c3%a3o-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Cliente&lt;/strong> envia uma requisição para o &lt;strong>API Gateway&lt;/strong>.&lt;/li>
+&lt;li>O &lt;strong>API Gateway&lt;/strong> valida a autenticação e as permissões do cliente.&lt;/li>
+&lt;li>O &lt;strong>API Gateway&lt;/strong> roteia a requisição para o(s) microserviço(s) apropriado(s).&lt;/li>
+&lt;li>Os &lt;strong>microserviços&lt;/strong> processam a requisição e retornam os resultados para o &lt;strong>API Gateway&lt;/strong>.&lt;/li>
+&lt;li>O &lt;strong>API Gateway&lt;/strong> agrega os resultados, se necessário, e envia a resposta final para o &lt;strong>Cliente&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="7-considerações-de-arquitetura">7. &lt;strong>Considerações de Arquitetura&lt;/strong>:&lt;a class="td-heading-self-link" href="#7-considera%c3%a7%c3%b5es-de-arquitetura" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Em uma arquitetura de microserviços, o &lt;strong>API Gateway&lt;/strong> atua como uma camada adicional entre os clientes e os serviços, mas não deve ser confundido com a lógica de negócios dos microserviços. Sua responsabilidade é tratar de aspectos transversais como roteamento, segurança, e agilidade, sem interferir na funcionalidade de cada serviço.&lt;/li>
+&lt;/ul>
+&lt;h3 id="8-papel-do-api-gateway-em-apis-rest-e-openapi">8. &lt;strong>Papel do API Gateway em APIs REST e OpenAPI&lt;/strong>&lt;a class="td-heading-self-link" href="#8-papel-do-api-gateway-em-apis-rest-e-openapi" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Quando usamos um API Gateway em conjunto com APIs REST ou OpenAPI, ele pode desempenhar funções como:&lt;br>
+✅ &lt;strong>Autenticação e autorização&lt;/strong> (OAuth, JWT, API Keys).&lt;br>
+✅ &lt;strong>Rate limiting e proteção contra DDoS&lt;/strong>.&lt;br>
+✅ &lt;strong>Cache e otimização de desempenho&lt;/strong>.&lt;br>
+✅ &lt;strong>Monitoramento e logging das requisições&lt;/strong>.&lt;br>
+✅ &lt;strong>Conversão de formatos de dados (exemplo: XML para JSON)&lt;/strong>.&lt;/p></description></item><item><title>PUC x RIC</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/puc-x-ric/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/puc-x-ric/</guid><description>&lt;p>Se uma vaga de emprego exige conhecimento sobre &lt;strong>arquitetura PUC e RIC&lt;/strong>, significa que a empresa espera que você tenha experiência com &lt;strong>diferentes formas de organizar sistemas distribuídos&lt;/strong>. Para se preparar, você deve entender &lt;strong>como essas arquiteturas impactam o design, escalabilidade e manutenção de sistemas&lt;/strong>. Aqui estão os principais tópicos para estudar:&lt;/p>
+&lt;h3 id="conceitos-fundamentais-de-puc-e-ric">&lt;strong>Conceitos Fundamentais de PUC e RIC&lt;/strong>&lt;a class="td-heading-self-link" href="#conceitos-fundamentais-de-puc-e-ric" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Em Tecnologia da Informação, &lt;strong>PUC (Processing Unit Centered)&lt;/strong> e &lt;strong>RIC (Resource Interaction Centered)&lt;/strong> são conceitos de arquitetura voltados para a organização e estruturação de sistemas distribuídos.&lt;/p></description></item><item><title>Rate Limiting (Limitação de Taxa) - Throttling</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/padroes-resiliencia/rate-limit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/padroes-resiliencia/rate-limit/</guid><description>&lt;p>O &lt;strong>Rate Limiting&lt;/strong> é um padrão de resiliência que controla o número de requisições que um sistema pode processar dentro de um determinado período. Ele é essencial para evitar sobrecarga, abuso e ataques como &lt;strong>DDoS (Distributed Denial of Service)&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Exemplo prático:&lt;/strong> Imagine uma API que permite até &lt;strong>100 requisições por minuto&lt;/strong> para cada usuário. Se alguém tentar enviar 101 requisições dentro desse período, a última será bloqueada e retornará um erro (por exemplo, HTTP &lt;strong>429 Too Many Requests&lt;/strong>).&lt;/p></description></item><item><title>CDN - CloudFront (cache e otimizacao web)</title><link>https://sampalu.github.io/guia-de-estudos/cloud/cdn-cloudfront/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/cdn-cloudfront/</guid><description>&lt;h3 id="como-funciona-uma-cdn">&lt;strong>Como funciona uma CDN?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-funciona-uma-cdn" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>O funcionamento de uma CDN pode ser resumido nos seguintes passos:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Armazenamento em cache&lt;/strong> – A CDN armazena conteúdos estáticos, como imagens, vídeos, folhas de estilo (CSS) e scripts JavaScript, em servidores próximos aos usuários finais.&lt;/li>
+&lt;li>&lt;strong>Distribuição geográfica&lt;/strong> – Quando um usuário faz uma solicitação para acessar um site, a CDN direciona essa requisição para o servidor mais próximo, reduzindo a latência.&lt;/li>
+&lt;li>&lt;strong>Balanceamento de carga&lt;/strong> – A CDN distribui o tráfego entre vários servidores para evitar sobrecarga em um único servidor.&lt;/li>
+&lt;li>&lt;strong>Compressão e otimização&lt;/strong> – Algumas CDNs oferecem compactação de arquivos, minimização de código e até mesmo otimização de imagens para melhorar o desempenho.&lt;/li>
+&lt;li>&lt;strong>Proteção contra ataques DDoS&lt;/strong> – Muitas CDNs incluem segurança integrada para mitigar ataques distribuídos de negação de serviço (DDoS).&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="cache-na-web">&lt;strong>Cache na Web&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-na-web" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>O &lt;strong>cache&lt;/strong> é um dos principais mecanismos de otimização da web e pode ocorrer em diferentes níveis, desde o navegador até servidores intermediários. O cache reduz o tempo de carregamento de páginas ao armazenar temporariamente dados para acessos futuros.&lt;/p></description></item><item><title>Outros Padrões</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</guid><description>&lt;p>Os principais padrões de design para microserviços ajudam a lidar com desafios comuns como comunicação, escalabilidade, resiliência e segurança. Aqui estão os mais relevantes, além do &lt;strong>Saga&lt;/strong>, que é usado para coordenação de transações distribuídas:&lt;/p>
+&lt;hr>
+&lt;h2 id="1-padrões-de-comunicação">&lt;strong>1. Padrões de Comunicação&lt;/strong>&lt;a class="td-heading-self-link" href="#1-padr%c3%b5es-de-comunica%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="api-gateway">&lt;strong>API Gateway&lt;/strong>&lt;a class="td-heading-self-link" href="#api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um único ponto de entrada para os clientes, roteando requisições para os microserviços corretos.&lt;/li>
+&lt;li>Pode lidar com autenticação, cache, rate limiting e balanceamento de carga.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> O &lt;strong>Netflix Zuul&lt;/strong> e o &lt;strong>Kong API Gateway&lt;/strong> são implementações comuns.&lt;/li>
+&lt;/ul>
+&lt;h3 id="backend-for-frontend-bff">&lt;strong>Backend for Frontend (BFF)&lt;/strong>&lt;a class="td-heading-self-link" href="#backend-for-frontend-bff" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Similar ao API Gateway, mas otimizado para diferentes tipos de clientes (web, mobile, IoT).&lt;/li>
+&lt;li>Cada tipo de cliente pode ter um backend específico que adapta a resposta conforme necessário.&lt;/li>
+&lt;/ul>
+&lt;h3 id="service-mesh">&lt;strong>Service Mesh&lt;/strong>&lt;a class="td-heading-self-link" href="#service-mesh" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Gerencia comunicação entre serviços, adicionando monitoramento, segurança e controle de tráfego.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> Istio e Linkerd.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="2-padrões-de-resiliência">&lt;strong>2. Padrões de Resiliência&lt;/strong>&lt;a class="td-heading-self-link" href="#2-padr%c3%b5es-de-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="circuit-breaker">&lt;strong>Circuit Breaker&lt;/strong>&lt;a class="td-heading-self-link" href="#circuit-breaker" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Evita que falhas em um serviço se propaguem para outros, &amp;ldquo;desligando&amp;rdquo; chamadas a serviços não responsivos.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> O &lt;strong>Hystrix&lt;/strong>, da Netflix, é uma implementação popular.&lt;/li>
+&lt;/ul>
+&lt;h3 id="retry-e-backoff-exponencial">&lt;strong>Retry e Backoff Exponencial&lt;/strong>&lt;a class="td-heading-self-link" href="#retry-e-backoff-exponencial" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Tenta repetir a requisição em caso de falha, aumentando o tempo entre tentativas para evitar sobrecarregar o sistema.&lt;/li>
+&lt;/ul>
+&lt;h3 id="bulkhead-compartimentos-estanques">&lt;strong>Bulkhead (Compartimentos Estanques)&lt;/strong>&lt;a class="td-heading-self-link" href="#bulkhead-compartimentos-estanques" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Separa recursos para evitar que falhas em uma parte do sistema afetem outras.&lt;/li>
+&lt;li>Exemplo: Se um serviço de pagamento estiver sobrecarregado, ele não deve afetar a operação de login.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="3-padrões-de-dados-e-armazenamento">&lt;strong>3. Padrões de Dados e Armazenamento&lt;/strong>&lt;a class="td-heading-self-link" href="#3-padr%c3%b5es-de-dados-e-armazenamento" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="database-per-service">&lt;strong>Database per Service&lt;/strong>&lt;a class="td-heading-self-link" href="#database-per-service" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Cada microserviço tem seu próprio banco de dados para evitar dependências diretas.&lt;/li>
+&lt;li>Isso melhora escalabilidade, mas pode gerar desafios de consistência.&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-sourcing">&lt;strong>Event Sourcing&lt;/strong>&lt;a class="td-heading-self-link" href="#event-sourcing" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Os dados são armazenados como uma sequência de eventos em vez de estados mutáveis.&lt;/li>
+&lt;li>Facilita a rastreabilidade e auditoria, além de permitir reconstrução do estado.&lt;/li>
+&lt;/ul>
+&lt;h3 id="cqrs-command-query-responsibility-segregation">&lt;strong>CQRS (Command Query Responsibility Segregation)&lt;/strong>&lt;a class="td-heading-self-link" href="#cqrs-command-query-responsibility-segregation" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Separa operações de leitura e escrita para otimizar desempenho.&lt;/li>
+&lt;li>Normalmente usado com Event Sourcing.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="4-padrões-de-comunicação-assíncrona">&lt;strong>4. Padrões de Comunicação Assíncrona&lt;/strong>&lt;a class="td-heading-self-link" href="#4-padr%c3%b5es-de-comunica%c3%a7%c3%a3o-ass%c3%adncrona" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="publisher-subscriber-pubsub">&lt;strong>Publisher-Subscriber (Pub/Sub)&lt;/strong>&lt;a class="td-heading-self-link" href="#publisher-subscriber-pubsub" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um serviço publica eventos em um broker (como Kafka, RabbitMQ), e outros serviços assinam para receber atualizações.&lt;/li>
+&lt;li>Desacopla os serviços, melhorando escalabilidade.&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-notification">&lt;strong>Event Notification&lt;/strong>&lt;a class="td-heading-self-link" href="#event-notification" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um serviço apenas emite um evento informando que algo aconteceu, mas não se preocupa com quem vai consumi-lo.&lt;/li>
+&lt;li>Exemplo: Um serviço de pedidos pode publicar um evento &lt;code>&amp;quot;PedidoCriado&amp;quot;&lt;/code>, e os serviços de pagamento e estoque podem reagir a ele.&lt;/li>
+&lt;/ul>
+&lt;h3 id="event-carried-state-transfer">&lt;strong>Event-Carried State Transfer&lt;/strong>&lt;a class="td-heading-self-link" href="#event-carried-state-transfer" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um serviço publica eventos contendo &lt;strong>dados completos&lt;/strong> do estado atual para que outros serviços não precisem consultar diretamente.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="5-padrões-de-segurança">&lt;strong>5. Padrões de Segurança&lt;/strong>&lt;a class="td-heading-self-link" href="#5-padr%c3%b5es-de-seguran%c3%a7a" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="access-token-oauth2-jwt">&lt;strong>Access Token (OAuth2, JWT)&lt;/strong>&lt;a class="td-heading-self-link" href="#access-token-oauth2-jwt" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Usa tokens para autenticação e autorização entre serviços.&lt;/li>
+&lt;/ul>
+&lt;h3 id="sidecar-pattern">&lt;strong>Sidecar Pattern&lt;/strong>&lt;a class="td-heading-self-link" href="#sidecar-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Um container auxiliar que adiciona funcionalidades como logging, segurança e proxy de comunicação.&lt;/li>
+&lt;li>&lt;strong>Exemplo:&lt;/strong> Istio usa Sidecar para gerenciamento de tráfego.&lt;/li>
+&lt;/ul>
+&lt;h3 id="api-rate-limiting">&lt;strong>API Rate Limiting&lt;/strong>&lt;a class="td-heading-self-link" href="#api-rate-limiting" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Restringe o número de requisições para evitar ataques DDoS.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="6-padrões-de-gerenciamento-e-monitoramento">&lt;strong>6. Padrões de Gerenciamento e Monitoramento&lt;/strong>&lt;a class="td-heading-self-link" href="#6-padr%c3%b5es-de-gerenciamento-e-monitoramento" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="observability-logs-metrics-tracing">&lt;strong>Observability (Logs, Metrics, Tracing)&lt;/strong>&lt;a class="td-heading-self-link" href="#observability-logs-metrics-tracing" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Usa ferramentas como &lt;strong>Prometheus, ELK, OpenTelemetry&lt;/strong> para monitorar microserviços.&lt;/li>
+&lt;/ul>
+&lt;h3 id="strangler-pattern">&lt;strong>Strangler Pattern&lt;/strong>&lt;a class="td-heading-self-link" href="#strangler-pattern" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Ajuda a migrar de um monólito para microserviços gradualmente, substituindo partes do sistema sem interromper o funcionamento.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusão">&lt;strong>Conclusão&lt;/strong>&lt;a class="td-heading-self-link" href="#conclus%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Esses padrões ajudam a projetar microserviços mais escaláveis, resilientes e seguros. A escolha depende das necessidades do sistema e dos desafios específicos enfrentados.&lt;/p></description></item></channel></rss>

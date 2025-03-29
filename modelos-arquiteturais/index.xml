@@ -36,4 +36,15 @@
 &lt;h3 id="amazon-elasticache-redis-vs-memcached">&lt;strong>Amazon ElastiCache (Redis vs. Memcached)&lt;/strong>&lt;a class="td-heading-self-link" href="#amazon-elasticache-redis-vs-memcached" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Redis&lt;/strong>:&lt;/p></description></item></channel></rss>
+&lt;p>&lt;strong>Redis&lt;/strong>:&lt;/p></description></item><item><title>Protocolos e Padrões de Comunicação</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/protocolos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/protocolos/</guid><description>&lt;p>Aqui está um resumo dos principais protocolos e padrões de comunicação usados em aplicações web e distribuídas:&lt;/p>
+&lt;hr>
+&lt;h2 id="1-http-hypertext-transfer-protocol">&lt;strong>1. HTTP (HyperText Transfer Protocol)&lt;/strong>&lt;a class="td-heading-self-link" href="#1-http-hypertext-transfer-protocol" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>O HTTP é o protocolo base da web, usado para comunicação entre clientes (como navegadores) e servidores. Ele funciona no modelo &lt;strong>request-response&lt;/strong>, onde o cliente faz uma requisição e o servidor responde.&lt;/p>
+&lt;ul>
+&lt;li>Usa métodos como &lt;code>GET&lt;/code>, &lt;code>POST&lt;/code>, &lt;code>PUT&lt;/code>, &lt;code>DELETE&lt;/code> para manipular recursos.&lt;/li>
+&lt;li>Funciona sobre TCP, geralmente na porta 80 (HTTP) ou 443 (HTTPS).&lt;/li>
+&lt;li>É &lt;strong>stateless&lt;/strong>: cada requisição é independente.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="2-rest-representational-state-transfer">&lt;strong>2. REST (Representational State Transfer)&lt;/strong>&lt;a class="td-heading-self-link" href="#2-rest-representational-state-transfer" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>REST é um &lt;strong>estilo arquitetural&lt;/strong> para construir APIs baseadas em HTTP. Ele segue princípios como:&lt;/p></description></item></channel></rss>

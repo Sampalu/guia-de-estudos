@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Load Balancers on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/tags/load-balancers/</link><description>Recent content in Load Balancers on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/tags/load-balancers/index.xml" rel="self" type="application/rss+xml"/><item><title>Load Balancers e Proxy Reverso</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/load-balancers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/load-balancers/</guid><description>&lt;h2 id="proxy-reverso">&lt;strong>Proxy Reverso&lt;/strong>&lt;a class="td-heading-self-link" href="#proxy-reverso" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Um &lt;strong>proxy reverso&lt;/strong> é um servidor que fica entre os clientes (navegadores, aplicações) e os servidores de backend (onde a aplicação realmente roda). Ele recebe as requisições dos clientes e decide para onde enviá-las, podendo incluir funcionalidades como:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Distribuição de tráfego&lt;/strong> (mas sem ser, necessariamente, um load balancer)&lt;/li>
+&lt;li>&lt;strong>Cache de conteúdo&lt;/strong> para melhorar desempenho&lt;/li>
+&lt;li>&lt;strong>Compressão e otimização de resposta&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Terminação SSL/TLS&lt;/strong>, reduzindo a carga nos servidores backend&lt;/li>
+&lt;li>&lt;strong>Autenticação e segurança&lt;/strong>, protegendo os servidores de origem&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;strong>Exemplo:&lt;/strong> Se você acessa &lt;code>meusite.com&lt;/code>, um proxy reverso pode encaminhar sua requisição para diferentes servidores, servindo páginas estáticas diretamente ou repassando para um servidor de aplicação.&lt;/p></description></item><item><title>Algoritmos de Balanceamento de Carga</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/algoritmos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/algoritmos/</guid><description>&lt;h3 id="1-round-robin-">1️⃣ &lt;strong>Round Robin&lt;/strong> 🌀&lt;a class="td-heading-self-link" href="#1-round-robin-" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>🔹 &lt;strong>Como funciona?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>As requisições são distribuídas &lt;strong>de forma sequencial&lt;/strong> entre os servidores disponíveis.&lt;/li>
+&lt;li>Exemplo: Se há 3 servidores (A, B e C), as requisições vão para A → B → C → A → B → C&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;p>🔹 &lt;strong>Vantagens:&lt;/strong>&lt;br>
+✅ Simples e fácil de implementar.&lt;br>
+✅ Útil quando todos os servidores têm a mesma capacidade.&lt;/p>
+&lt;p>🔹 &lt;strong>Desvantagens:&lt;/strong>&lt;br>
+❌ Não considera a carga atual dos servidores.&lt;br>
+❌ Pode sobrecarregar um servidor mais lento ou menos potente.&lt;/p></description></item><item><title>Load Balancers</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/</guid><description/></item></channel></rss>

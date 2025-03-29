@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Load Bal on Sampalu</title>
+    <link>http://localhost:1313/guia-de-estudos/tags/load-bal/</link>
+    <description>Recent content in Load Bal on Sampalu</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/guia-de-estudos/tags/load-bal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Load Balancers e Proxy Reverso</title>
+      <link>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/load-balancers/load-balancers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guia-de-estudos/modelos-arquiteturais/load-balancers/load-balancers/</guid>
+      <description>&lt;h2 id=&#34;proxy-reverso&#34;&gt;&lt;strong&gt;Proxy Reverso&lt;/strong&gt;&lt;a class=&#34;td-heading-self-link&#34; href=&#34;#proxy-reverso&#34; aria-label=&#34;Heading self-link&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Um &lt;strong&gt;proxy reverso&lt;/strong&gt; é um servidor que fica entre os clientes (navegadores, aplicações) e os servidores de backend (onde a aplicação realmente roda). Ele recebe as requisições dos clientes e decide para onde enviá-las, podendo incluir funcionalidades como:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Distribuição de tráfego&lt;/strong&gt; (mas sem ser, necessariamente, um load balancer)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cache de conteúdo&lt;/strong&gt; para melhorar desempenho&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Compressão e otimização de resposta&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Terminação SSL/TLS&lt;/strong&gt;, reduzindo a carga nos servidores backend&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Autenticação e segurança&lt;/strong&gt;, protegendo os servidores de origem&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; Se você acessa &lt;code&gt;meusite.com&lt;/code&gt;, um proxy reverso pode encaminhar sua requisição para diferentes servidores, servindo páginas estáticas diretamente ou repassando para um servidor de aplicação.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

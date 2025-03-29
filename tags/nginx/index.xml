@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nginx on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/tags/nginx/</link><description>Recent content in Nginx on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/tags/nginx/index.xml" rel="self" type="application/rss+xml"/><item><title>Load Balancers e Proxy Reverso</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/load-balancers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/load-balancers/</guid><description>&lt;h2 id="proxy-reverso">&lt;strong>Proxy Reverso&lt;/strong>&lt;a class="td-heading-self-link" href="#proxy-reverso" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Um &lt;strong>proxy reverso&lt;/strong> é um servidor que fica entre os clientes (navegadores, aplicações) e os servidores de backend (onde a aplicação realmente roda). Ele recebe as requisições dos clientes e decide para onde enviá-las, podendo incluir funcionalidades como:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Distribuição de tráfego&lt;/strong> (mas sem ser, necessariamente, um load balancer)&lt;/li>
+&lt;li>&lt;strong>Cache de conteúdo&lt;/strong> para melhorar desempenho&lt;/li>
+&lt;li>&lt;strong>Compressão e otimização de resposta&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Terminação SSL/TLS&lt;/strong>, reduzindo a carga nos servidores backend&lt;/li>
+&lt;li>&lt;strong>Autenticação e segurança&lt;/strong>, protegendo os servidores de origem&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;strong>Exemplo:&lt;/strong> Se você acessa &lt;code>meusite.com&lt;/code>, um proxy reverso pode encaminhar sua requisição para diferentes servidores, servindo páginas estáticas diretamente ou repassando para um servidor de aplicação.&lt;/p></description></item><item><title>Algoritmos de Balanceamento de Carga</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/algoritmos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/algoritmos/</guid><description>&lt;h3 id="1-round-robin-">1️⃣ &lt;strong>Round Robin&lt;/strong> 🌀&lt;a class="td-heading-self-link" href="#1-round-robin-" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>🔹 &lt;strong>Como funciona?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>As requisições são distribuídas &lt;strong>de forma sequencial&lt;/strong> entre os servidores disponíveis.&lt;/li>
+&lt;li>Exemplo: Se há 3 servidores (A, B e C), as requisições vão para A → B → C → A → B → C&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;p>🔹 &lt;strong>Vantagens:&lt;/strong>&lt;br>
+✅ Simples e fácil de implementar.&lt;br>
+✅ Útil quando todos os servidores têm a mesma capacidade.&lt;/p>
+&lt;p>🔹 &lt;strong>Desvantagens:&lt;/strong>&lt;br>
+❌ Não considera a carga atual dos servidores.&lt;br>
+❌ Pode sobrecarregar um servidor mais lento ou menos potente.&lt;/p></description></item><item><title>API Gateway</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/api-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/api-gateway/</guid><description>&lt;p>Aqui estão os principais aspectos e responsabilidades desse padrão de design:&lt;/p>
+&lt;h3 id="1-função-principal-do-api-gateway">1. &lt;strong>Função Principal do API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#1-fun%c3%a7%c3%a3o-principal-do-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>O &lt;strong>API Gateway&lt;/strong> é o ponto de entrada único para os clientes que desejam interagir com os microserviços.&lt;/li>
+&lt;li>Ele faz o roteamento de requisições, autenticando e distribuindo as chamadas para os serviços apropriados. Em vez de os clientes interagirem diretamente com vários microserviços, eles enviam todas as requisições para o gateway, que faz o trabalho de encaminhar para os serviços internos.&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-responsabilidades-do-api-gateway">2. &lt;strong>Responsabilidades do API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#2-responsabilidades-do-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Roteamento de Requisições&lt;/strong>: O gateway roteia as requisições para os microserviços corretos com base em um caminho, método HTTP, parâmetros ou outras regras de negócio.&lt;/li>
+&lt;li>&lt;strong>Autenticação e Autorização&lt;/strong>: O API Gateway pode ser configurado para verificar tokens de autenticação (como JWT) e validar se o usuário tem permissão para acessar determinados serviços.&lt;/li>
+&lt;li>&lt;strong>Agregação de Respostas&lt;/strong>: Em muitos casos, uma requisição do cliente pode precisar fazer chamadas a múltiplos microserviços. O API Gateway pode realizar chamadas para esses serviços em paralelo ou sequencialmente, agregando os resultados antes de retornar uma resposta para o cliente.&lt;/li>
+&lt;li>&lt;strong>Controle de Carga (Load Balancing)&lt;/strong>: O API Gateway pode distribuir as requisições de forma equilibrada entre as instâncias de microserviços, garantindo que nenhum serviço sobrecarregue e mantenha uma alta disponibilidade.&lt;/li>
+&lt;li>&lt;strong>Cache&lt;/strong>: O gateway pode cachear as respostas para melhorar o desempenho e reduzir a carga nos microserviços.&lt;/li>
+&lt;li>&lt;strong>Monitoramento e Logging&lt;/strong>: Pode ser configurado para registrar e monitorar todas as requisições e respostas, facilitando a rastreabilidade e o diagnóstico de falhas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-vantagens-do-padrão-api-gateway">3. &lt;strong>Vantagens do Padrão API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#3-vantagens-do-padr%c3%a3o-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Simplificação do Cliente&lt;/strong>: Os clientes não precisam se preocupar com os detalhes de cada microserviço. Eles interagem com um único ponto de entrada.&lt;/li>
+&lt;li>&lt;strong>Centralização de Preocupações Transversais&lt;/strong>: Funcionalidades como autenticação, autorização, logs e monitoramento podem ser centralizadas no API Gateway, permitindo que os microserviços se concentrem em sua lógica de negócios.&lt;/li>
+&lt;li>&lt;strong>Redução de Complexidade no Cliente&lt;/strong>: Como o gateway pode consolidar múltiplas chamadas em uma única requisição, o cliente lida com uma interface mais simples e com menor número de pontos de interação.&lt;/li>
+&lt;li>&lt;strong>Facilidade de Evolução&lt;/strong>: Permite que os microserviços evoluam independentemente, sem impactar diretamente os consumidores da API.&lt;/li>
+&lt;/ul>
+&lt;h3 id="4-desvantagens-e-cuidados">4. &lt;strong>Desvantagens e Cuidados&lt;/strong>:&lt;a class="td-heading-self-link" href="#4-desvantagens-e-cuidados" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Ponto Único de Falha&lt;/strong>: Se o API Gateway falhar, todo o sistema pode ser afetado. Para mitigar isso, pode-se implementar redundância e balanceamento de carga no próprio gateway.&lt;/li>
+&lt;li>&lt;strong>Desempenho e Latência&lt;/strong>: Como o gateway precisa rotear e processar todas as requisições, ele pode se tornar um ponto de gargalo se não for bem dimensionado ou se tiver tarefas pesadas demais (como agregação de dados).&lt;/li>
+&lt;li>&lt;strong>Manutenção e Complexidade&lt;/strong>: O API Gateway pode se tornar complexo, especialmente se houver lógica de negócios excessiva ou se precisar lidar com múltiplos serviços e protocolos. Manter e atualizar o gateway pode ser desafiador.&lt;/li>
+&lt;/ul>
+&lt;h3 id="5-exemplos-de-ferramentas-de-api-gateway">5. &lt;strong>Exemplos de Ferramentas de API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#5-exemplos-de-ferramentas-de-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Kong&lt;/strong>: Uma das ferramentas de API Gateway mais populares, oferece roteamento, autenticação, limitação de taxa, caching e monitoramento.&lt;/li>
+&lt;li>&lt;strong>AWS API Gateway&lt;/strong>: Solução oferecida pela Amazon Web Services que permite criar, publicar, manter e proteger APIs.&lt;/li>
+&lt;li>&lt;strong>NGINX&lt;/strong>: Usado como um API Gateway devido ao seu desempenho e flexibilidade em configurar regras de roteamento.&lt;/li>
+&lt;li>&lt;strong>Zuul&lt;/strong> (do Netflix): Uma solução bastante usada no mundo dos microserviços, especialmente para roteamento e filtragem de tráfego.&lt;/li>
+&lt;/ul>
+&lt;h3 id="6-exemplo-de-fluxo-de-requisição-no-padrão-api-gateway">6. &lt;strong>Exemplo de Fluxo de Requisição no Padrão API Gateway&lt;/strong>:&lt;a class="td-heading-self-link" href="#6-exemplo-de-fluxo-de-requisi%c3%a7%c3%a3o-no-padr%c3%a3o-api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Cliente&lt;/strong> envia uma requisição para o &lt;strong>API Gateway&lt;/strong>.&lt;/li>
+&lt;li>O &lt;strong>API Gateway&lt;/strong> valida a autenticação e as permissões do cliente.&lt;/li>
+&lt;li>O &lt;strong>API Gateway&lt;/strong> roteia a requisição para o(s) microserviço(s) apropriado(s).&lt;/li>
+&lt;li>Os &lt;strong>microserviços&lt;/strong> processam a requisição e retornam os resultados para o &lt;strong>API Gateway&lt;/strong>.&lt;/li>
+&lt;li>O &lt;strong>API Gateway&lt;/strong> agrega os resultados, se necessário, e envia a resposta final para o &lt;strong>Cliente&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="7-considerações-de-arquitetura">7. &lt;strong>Considerações de Arquitetura&lt;/strong>:&lt;a class="td-heading-self-link" href="#7-considera%c3%a7%c3%b5es-de-arquitetura" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Em uma arquitetura de microserviços, o &lt;strong>API Gateway&lt;/strong> atua como uma camada adicional entre os clientes e os serviços, mas não deve ser confundido com a lógica de negócios dos microserviços. Sua responsabilidade é tratar de aspectos transversais como roteamento, segurança, e agilidade, sem interferir na funcionalidade de cada serviço.&lt;/li>
+&lt;/ul>
+&lt;h3 id="8-papel-do-api-gateway-em-apis-rest-e-openapi">8. &lt;strong>Papel do API Gateway em APIs REST e OpenAPI&lt;/strong>&lt;a class="td-heading-self-link" href="#8-papel-do-api-gateway-em-apis-rest-e-openapi" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Quando usamos um API Gateway em conjunto com APIs REST ou OpenAPI, ele pode desempenhar funções como:&lt;br>
+✅ &lt;strong>Autenticação e autorização&lt;/strong> (OAuth, JWT, API Keys).&lt;br>
+✅ &lt;strong>Rate limiting e proteção contra DDoS&lt;/strong>.&lt;br>
+✅ &lt;strong>Cache e otimização de desempenho&lt;/strong>.&lt;br>
+✅ &lt;strong>Monitoramento e logging das requisições&lt;/strong>.&lt;br>
+✅ &lt;strong>Conversão de formatos de dados (exemplo: XML para JSON)&lt;/strong>.&lt;/p></description></item><item><title>Rate Limiting (Limitação de Taxa) - Throttling</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/padroes-resiliencia/rate-limit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/padroes-resiliencia/rate-limit/</guid><description>&lt;p>O &lt;strong>Rate Limiting&lt;/strong> é um padrão de resiliência que controla o número de requisições que um sistema pode processar dentro de um determinado período. Ele é essencial para evitar sobrecarga, abuso e ataques como &lt;strong>DDoS (Distributed Denial of Service)&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Exemplo prático:&lt;/strong> Imagine uma API que permite até &lt;strong>100 requisições por minuto&lt;/strong> para cada usuário. Se alguém tentar enviar 101 requisições dentro desse período, a última será bloqueada e retornará um erro (por exemplo, HTTP &lt;strong>429 Too Many Requests&lt;/strong>).&lt;/p></description></item></channel></rss>

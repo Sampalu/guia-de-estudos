@@ -8,4 +8,97 @@
 &lt;li>&lt;strong>Manutenibilidade&lt;/strong> – Facilidade para corrigir erros, modificar ou aprimorar o software.&lt;/li>
 &lt;li>&lt;strong>Portabilidade&lt;/strong> – Capacidade do software de ser transferido para diferentes ambientes e plataformas.&lt;/li>
 &lt;/ol>
-&lt;p>Esses pilares garantem que a plataforma possa &lt;strong>evoluir com qualidade&lt;/strong>, mantendo um equilíbrio entre funcionalidade, desempenho e adaptação a novos requisitos.&lt;/p></description></item></channel></rss>
+&lt;p>Esses pilares garantem que a plataforma possa &lt;strong>evoluir com qualidade&lt;/strong>, mantendo um equilíbrio entre funcionalidade, desempenho e adaptação a novos requisitos.&lt;/p></description></item><item><title>Escalabilidade (Vertical / Horizontal)</title><link>https://sampalu.github.io/guia-de-estudos/cloud/escalabilidade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/escalabilidade/</guid><description>&lt;h3 id="escalabilidade-vertical-scale-updown">&lt;strong>Escalabilidade Vertical (Scale Up/Down)&lt;/strong>&lt;a class="td-heading-self-link" href="#escalabilidade-vertical-scale-updown" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>A escalabilidade &lt;strong>vertical&lt;/strong> significa aumentar ou diminuir a capacidade de um único recurso, como uma máquina virtual (EC2), banco de dados (RDS), etc.&lt;/p>
+&lt;p>✅ &lt;strong>Como funciona?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Aumentar CPU, memória ou disco de um único servidor.&lt;/li>
+&lt;li>Substituir uma instância pequena por uma maior.&lt;/li>
+&lt;li>Indicado para cargas que exigem mais poder de processamento em um único nó.&lt;/li>
+&lt;/ul>
+&lt;p>⚠ &lt;strong>Limitações&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Existe um limite físico (máximo de CPU/RAM disponíveis).&lt;/li>
+&lt;li>Pode causar tempo de inatividade durante a troca do recurso.&lt;/li>
+&lt;li>Não melhora a disponibilidade, pois o sistema continua dependendo de um único nó.&lt;/li>
+&lt;/ul>
+&lt;p>👉 &lt;strong>Exemplo na AWS&lt;/strong>:&lt;/p></description></item><item><title>Alta Disponibilidade (HA - High Availability)</title><link>https://sampalu.github.io/guia-de-estudos/cloud/alta-disponibilidade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/alta-disponibilidade/</guid><description>&lt;h3 id="principais-características-da-alta-disponibilidade">&lt;strong>Principais Características da Alta Disponibilidade&lt;/strong>:&lt;a class="td-heading-self-link" href="#principais-caracter%c3%adsticas-da-alta-disponibilidade" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Redundância&lt;/strong> – Ter cópias dos componentes críticos em várias zonas ou regiões.&lt;/li>
+&lt;li>&lt;strong>Balanceamento de carga&lt;/strong> – Distribuir tráfego entre múltiplas instâncias ou serviços para evitar sobrecarga.&lt;/li>
+&lt;li>&lt;strong>Failover automático&lt;/strong> – Se um componente falha, outro assume automaticamente.&lt;/li>
+&lt;li>&lt;strong>Monitoramento e Auto Scaling&lt;/strong> – Detectar falhas e escalar automaticamente os recursos conforme necessário.&lt;/li>
+&lt;li>&lt;strong>Desacoplamento&lt;/strong> – Arquiteturas desacopladas evitam que a falha de um componente afete o sistema todo.&lt;/li>
+&lt;/ol>
+&lt;h3 id="como-aplicar-alta-disponibilidade-na-aws">&lt;strong>Como Aplicar Alta Disponibilidade na AWS?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-aplicar-alta-disponibilidade-na-aws" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Multi-AZ (Multi-Availability Zone)&lt;/strong>: Distribuir cargas de trabalho entre diferentes &lt;em>Zonas de Disponibilidade&lt;/em> dentro de uma região.&lt;/li>
+&lt;li>&lt;strong>Multi-Region&lt;/strong>: Replicar serviços em múltiplas regiões para tolerância a falhas maiores.&lt;/li>
+&lt;li>&lt;strong>Load Balancer (ALB/ELB)&lt;/strong>: Distribuir tráfego entre várias instâncias EC2 ou containers.&lt;/li>
+&lt;li>&lt;strong>Auto Scaling&lt;/strong>: Ajustar dinamicamente a quantidade de recursos conforme a demanda.&lt;/li>
+&lt;li>&lt;strong>RDS Multi-AZ&lt;/strong>: Garantir que bancos de dados tenham uma réplica em outra zona para failover automático.&lt;/li>
+&lt;li>&lt;strong>S3 e DynamoDB&lt;/strong>: Serviços gerenciados com replicação embutida para garantir durabilidade e disponibilidade.&lt;/li>
+&lt;/ul>
+&lt;p>Em resumo, ter &lt;strong>alta disponibilidade&lt;/strong> significa garantir que um sistema continue funcionando com o mínimo de impacto possível em caso de falhas, aproveitando recursos distribuídos e automatizados da nuvem**.&lt;/p></description></item><item><title>Observabilidade e SRE</title><link>https://sampalu.github.io/guia-de-estudos/cloud/observabilidade-e-sre/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/observabilidade-e-sre/</guid><description>&lt;h2 id="observabilidade-vs-monitoramento">&lt;strong>Observabilidade vs. Monitoramento&lt;/strong>&lt;a class="td-heading-self-link" href="#observabilidade-vs-monitoramento" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Monitoramento&lt;/strong> refere-se à coleta de métricas e logs para entender o comportamento de um sistema.&lt;/li>
+&lt;li>&lt;strong>Observabilidade&lt;/strong> é um conceito mais amplo, referindo-se à capacidade de entender o estado interno de um sistema apenas por meio dos dados que ele gera (logs, métricas e traces).&lt;/li>
+&lt;/ul>
+&lt;h3 id="pilares-da-observabilidade">&lt;strong>Pilares da Observabilidade&lt;/strong>&lt;a class="td-heading-self-link" href="#pilares-da-observabilidade" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Os três pilares principais da observabilidade são:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Métricas&lt;/strong> – Dados numéricos sobre o desempenho do sistema ao longo do tempo.&lt;/li>
+&lt;li>&lt;strong>Logs&lt;/strong> – Registros de eventos com informações detalhadas sobre o comportamento do sistema.&lt;/li>
+&lt;li>&lt;strong>Traces (Rastreamentos)&lt;/strong> – Registro do fluxo de uma requisição através de diferentes componentes do sistema.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="site-reliability-engineering-sre">&lt;strong>Site Reliability Engineering (SRE)&lt;/strong>&lt;a class="td-heading-self-link" href="#site-reliability-engineering-sre" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>O SRE é um conjunto de práticas desenvolvido pelo Google para aplicar engenharia de software na operação de sistemas. Ele foca em confiabilidade, automação e eficiência.&lt;/p></description></item><item><title>OpenAPI</title><link>https://sampalu.github.io/guia-de-estudos/cloud/openapi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/openapi/</guid><description>&lt;h3 id="características-principais-do-openapi">&lt;strong>Características principais do OpenAPI&lt;/strong>:&lt;a class="td-heading-self-link" href="#caracter%c3%adsticas-principais-do-openapi" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Documentação Padronizada&lt;/strong>&lt;br>
+O OpenAPI fornece uma &lt;strong>estrutura padronizada&lt;/strong> para descrever todas as partes de uma API, como:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Endpoints&lt;/strong>: URLs que o cliente pode acessar.&lt;/li>
+&lt;li>&lt;strong>Métodos HTTP&lt;/strong>: Como GET, POST, PUT, DELETE, etc.&lt;/li>
+&lt;li>&lt;strong>Parâmetros&lt;/strong>: Parâmetros de consulta, cabeçalhos, corpo da requisição, etc.&lt;/li>
+&lt;li>&lt;strong>Respostas&lt;/strong>: Códigos de status HTTP, tipos de conteúdo, dados de resposta.&lt;/li>
+&lt;li>&lt;strong>Segurança&lt;/strong>: Autenticação e autorização (por exemplo, OAuth2, API keys).&lt;/li>
+&lt;/ul>
+&lt;p>Isso facilita a &lt;strong>compreensão e o uso&lt;/strong> da API tanto para desenvolvedores quanto para ferramentas automáticas.&lt;/p></description></item><item><title>Amazon ECS x Amazon EC2 - Custo de Manutenção</title><link>https://sampalu.github.io/guia-de-estudos/cloud/ecs-x-ec2-manutencao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/ecs-x-ec2-manutencao/</guid><description>&lt;h2 id="amazon-ec2-elastic-compute-cloud">&lt;strong>Amazon EC2 (Elastic Compute Cloud)&lt;/strong>&lt;a class="td-heading-self-link" href="#amazon-ec2-elastic-compute-cloud" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>EC2 fornece máquinas virtuais na nuvem onde você tem controle total sobre o sistema operacional e configurações.&lt;/p>
+&lt;h3 id="-prós-vantagens">&lt;strong>✅ Prós (Vantagens)&lt;/strong>&lt;a class="td-heading-self-link" href="#-pr%c3%b3s-vantagens" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>✔ &lt;strong>Flexibilidade&lt;/strong> – Você pode instalar qualquer software e configurar como quiser.&lt;br>
+✔ &lt;strong>Poder de processamento dedicado&lt;/strong> – Escolha tipos de instância otimizadas para CPU, memória, etc.&lt;br>
+✔ &lt;strong>Previsibilidade de desempenho&lt;/strong> – Cada instância tem recursos garantidos.&lt;/p>
+&lt;h3 id="-contras-desvantagens">&lt;strong>❌ Contras (Desvantagens)&lt;/strong>&lt;a class="td-heading-self-link" href="#-contras-desvantagens" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>❌ &lt;strong>Gerenciamento manual&lt;/strong> – Você precisa atualizar, monitorar e escalar as instâncias.&lt;br>
+❌ &lt;strong>Escalabilidade mais complexa&lt;/strong> – Precisa configurar &lt;strong>Auto Scaling&lt;/strong> e &lt;strong>Load Balancer&lt;/strong> manualmente.&lt;br>
+❌ &lt;strong>Maior tempo de manutenção&lt;/strong> – Se um servidor falhar, você precisa substituí-lo ou usar um ASG para recuperação.&lt;/p></description></item><item><title>CDN - CloudFront (cache e otimizacao web)</title><link>https://sampalu.github.io/guia-de-estudos/cloud/cdn-cloudfront/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/cdn-cloudfront/</guid><description>&lt;h3 id="como-funciona-uma-cdn">&lt;strong>Como funciona uma CDN?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-funciona-uma-cdn" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>O funcionamento de uma CDN pode ser resumido nos seguintes passos:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Armazenamento em cache&lt;/strong> – A CDN armazena conteúdos estáticos, como imagens, vídeos, folhas de estilo (CSS) e scripts JavaScript, em servidores próximos aos usuários finais.&lt;/li>
+&lt;li>&lt;strong>Distribuição geográfica&lt;/strong> – Quando um usuário faz uma solicitação para acessar um site, a CDN direciona essa requisição para o servidor mais próximo, reduzindo a latência.&lt;/li>
+&lt;li>&lt;strong>Balanceamento de carga&lt;/strong> – A CDN distribui o tráfego entre vários servidores para evitar sobrecarga em um único servidor.&lt;/li>
+&lt;li>&lt;strong>Compressão e otimização&lt;/strong> – Algumas CDNs oferecem compactação de arquivos, minimização de código e até mesmo otimização de imagens para melhorar o desempenho.&lt;/li>
+&lt;li>&lt;strong>Proteção contra ataques DDoS&lt;/strong> – Muitas CDNs incluem segurança integrada para mitigar ataques distribuídos de negação de serviço (DDoS).&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="cache-na-web">&lt;strong>Cache na Web&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-na-web" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>O &lt;strong>cache&lt;/strong> é um dos principais mecanismos de otimização da web e pode ocorrer em diferentes níveis, desde o navegador até servidores intermediários. O cache reduz o tempo de carregamento de páginas ao armazenar temporariamente dados para acessos futuros.&lt;/p></description></item><item><title>AWS SQS x AWS SNS</title><link>https://sampalu.github.io/guia-de-estudos/cloud/sqs-x-sns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/sqs-x-sns/</guid><description>&lt;h2 id="o-que-é-aws-sns-simple-notification-service">&lt;strong>O que é AWS SNS? (Simple Notification Service)&lt;/strong>&lt;a class="td-heading-self-link" href="#o-que-%c3%a9-aws-sns-simple-notification-service" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>O &lt;strong>Amazon SNS&lt;/strong> é um serviço de notificação &lt;strong>baseado em publicação/assinatura (pub/sub)&lt;/strong>. Ele permite enviar mensagens para vários destinatários simultaneamente, funcionando como um &lt;strong>distribuidor de mensagens&lt;/strong>.&lt;/p>
+&lt;h3 id="principais-características-do-sns">&lt;strong>Principais Características do SNS&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-caracter%c3%adsticas-do-sns" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Modelo Pub/Sub&lt;/strong>: Um &lt;strong>publicador&lt;/strong> envia mensagens para um &lt;strong>tópico&lt;/strong>, e &lt;strong>assinantes&lt;/strong> recebem essas mensagens.&lt;/li>
+&lt;li>&lt;strong>Entrega em tempo real&lt;/strong>: As mensagens são entregues imediatamente aos assinantes.&lt;/li>
+&lt;li>&lt;strong>Múltiplos protocolos de entrega&lt;/strong>: As mensagens podem ser enviadas para &lt;strong>e-mails, SMS, HTTP endpoints, AWS Lambda e SQS&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Escalabilidade automática&lt;/strong>: Suporta alta taxa de envio sem precisar configurar infraestrutura.&lt;/li>
+&lt;/ul>
+&lt;h3 id="quando-usar-sns">&lt;strong>Quando usar SNS?&lt;/strong>&lt;a class="td-heading-self-link" href="#quando-usar-sns" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>✅ Notificações instantâneas para múltiplos sistemas (exemplo: alertas de sistemas distribuídos).&lt;br>
+✅ Envio de mensagens para diferentes protocolos ao mesmo tempo (exemplo: SMS, e-mail e HTTP).&lt;br>
+✅ Integração com microservices que precisam de comunicação assíncrona.&lt;/p></description></item><item><title>Estratégias de deploy, Blue/Green, Canary</title><link>https://sampalu.github.io/guia-de-estudos/cloud/estrategia-deploy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/estrategia-deploy/</guid><description>&lt;h3 id="estratégias-de-deploy-blue-green-e-canary">&lt;strong>Estratégias de Deploy: Blue-Green e Canary&lt;/strong>&lt;a class="td-heading-self-link" href="#estrat%c3%a9gias-de-deploy-blue-green-e-canary" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Quando se trata de &lt;strong>deploy de aplicações&lt;/strong>, especialmente em ambientes &lt;strong>de produção&lt;/strong>, a forma como novas versões são introduzidas pode impactar diretamente a &lt;strong>disponibilidade&lt;/strong>, &lt;strong>desempenho&lt;/strong> e &lt;strong>experiência do usuário&lt;/strong>. Para minimizar riscos e garantir um lançamento suave, existem estratégias como &lt;strong>Blue-Green Deployment&lt;/strong> e &lt;strong>Canary Deployment&lt;/strong>.&lt;/p>
+&lt;hr>
+&lt;h2 id="1-blue-green-deployment">&lt;strong>1️⃣ Blue-Green Deployment&lt;/strong>&lt;a class="td-heading-self-link" href="#1-blue-green-deployment" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>O &lt;strong>Blue-Green Deployment&lt;/strong> é uma estratégia que envolve manter &lt;strong>duas versões do ambiente&lt;/strong>:&lt;/p></description></item></channel></rss>

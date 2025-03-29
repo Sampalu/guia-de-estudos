@@ -9,7 +9,7 @@
 &lt;/ul>
 &lt;hr>
 &lt;h2 id="2-arquitetura-do-apache-kafka">&lt;strong>2. Arquitetura do Apache Kafka&lt;/strong>&lt;a class="td-heading-self-link" href="#2-arquitetura-do-apache-kafka" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;p>A arquitetura do Kafka é composta pelos seguintes componentes:&lt;/p></description></item><item><title>Filas de Mensagens</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/</guid><description/></item><item><title>RabbitMQ</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/rabbitmq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/rabbitmq/</guid><description>&lt;h3 id="principais-conceitos-do-rabbitmq">&lt;strong>Principais Conceitos do RabbitMQ&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-conceitos-do-rabbitmq" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>A arquitetura do Kafka é composta pelos seguintes componentes:&lt;/p></description></item><item><title>RabbitMQ</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/rabbitmq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/rabbitmq/</guid><description>&lt;h3 id="principais-conceitos-do-rabbitmq">&lt;strong>Principais Conceitos do RabbitMQ&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-conceitos-do-rabbitmq" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>&lt;strong>Exchange (Troca)&lt;/strong>&lt;br>
@@ -24,4 +24,4 @@ O &lt;strong>Exchange&lt;/strong> é responsável por receber as mensagens dos &
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Queue (Fila)&lt;/strong>&lt;br>
-As &lt;strong>filas&lt;/strong> são onde as mensagens são armazenadas até que o &lt;strong>consumidor&lt;/strong> as consuma. As mensagens são &lt;strong>gerenciadas&lt;/strong> dentro de filas de forma a garantir que sejam processadas de maneira confiável.&lt;/p></description></item></channel></rss>
+As &lt;strong>filas&lt;/strong> são onde as mensagens são armazenadas até que o &lt;strong>consumidor&lt;/strong> as consuma. As mensagens são &lt;strong>gerenciadas&lt;/strong> dentro de filas de forma a garantir que sejam processadas de maneira confiável.&lt;/p></description></item><item><title>Filas de Mensagens</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/</guid><description/></item></channel></rss>

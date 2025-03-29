@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Outros on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/outros/</link><description>Recent content in Outros on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/outros/index.xml" rel="self" type="application/rss+xml"/><item><title>Conceito de Camadas no Modelo OSI</title><link>https://sampalu.github.io/guia-de-estudos/outros/camada-osi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/camada-osi/</guid><description>&lt;p>Aqui está um resumo das camadas, do nível mais baixo (físico) ao mais alto (aplicação):&lt;/p>
+&lt;h3 id="camadas-do-modelo-osi">&lt;strong>Camadas do Modelo OSI&lt;/strong>&lt;a class="td-heading-self-link" href="#camadas-do-modelo-osi" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Camada Física (Layer 1)&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Responsável pela transmissão bruta de bits (0s e 1s) através de meios físicos como cabos de rede, rádio (Wi-Fi) e fibra óptica.&lt;/li>
+&lt;li>Exemplos: Ethernet, Wi-Fi, Bluetooth. &lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Camada de Enlace de Dados (Layer 2)&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Garante a entrega confiável dos dados dentro de uma rede local (LAN).&lt;/li>
+&lt;li>Usa endereços MAC para identificar dispositivos na rede.&lt;/li>
+&lt;li>Exemplos: Switches, protocolo Ethernet, Wi-Fi (802.11). &lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Camada de Rede (Layer 3)&lt;/strong>:&lt;/p></description></item></channel></rss>
