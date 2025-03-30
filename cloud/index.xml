@@ -8,7 +8,24 @@
 &lt;li>&lt;strong>Manutenibilidade&lt;/strong> – Facilidade para corrigir erros, modificar ou aprimorar o software.&lt;/li>
 &lt;li>&lt;strong>Portabilidade&lt;/strong> – Capacidade do software de ser transferido para diferentes ambientes e plataformas.&lt;/li>
 &lt;/ol>
-&lt;p>Esses pilares garantem que a plataforma possa &lt;strong>evoluir com qualidade&lt;/strong>, mantendo um equilíbrio entre funcionalidade, desempenho e adaptação a novos requisitos.&lt;/p></description></item><item><title>Escalabilidade (Vertical / Horizontal)</title><link>https://sampalu.github.io/guia-de-estudos/cloud/escalabilidade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/escalabilidade/</guid><description>&lt;h3 id="escalabilidade-vertical-scale-updown">&lt;strong>Escalabilidade Vertical (Scale Up/Down)&lt;/strong>&lt;a class="td-heading-self-link" href="#escalabilidade-vertical-scale-updown" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Esses pilares garantem que a plataforma possa &lt;strong>evoluir com qualidade&lt;/strong>, mantendo um equilíbrio entre funcionalidade, desempenho e adaptação a novos requisitos.&lt;/p></description></item><item><title>Gerenciamento do Ciclo de Vida de Aplicações na Nuvem</title><link>https://sampalu.github.io/guia-de-estudos/cloud/gerenciamento-ciclo-vida/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/gerenciamento-ciclo-vida/</guid><description>&lt;h2 id="sdlc-software-development-life-cycle">&lt;strong>SDLC (Software Development Life Cycle)&lt;/strong>&lt;a class="td-heading-self-link" href="#sdlc-software-development-life-cycle" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="fases-do-sdlc">&lt;strong>Fases do SDLC&lt;/strong>&lt;a class="td-heading-self-link" href="#fases-do-sdlc" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Planejamento&lt;/strong> – Definição do escopo, requisitos e estimativas de tempo e custo.&lt;/li>
+&lt;li>&lt;strong>Análise de Requisitos&lt;/strong> – Levantamento e documentação das necessidades do sistema.&lt;/li>
+&lt;li>&lt;strong>Design da Arquitetura&lt;/strong> – Definição da arquitetura do sistema, modelagem de dados e escolha de tecnologias.&lt;/li>
+&lt;li>&lt;strong>Implementação (Desenvolvimento)&lt;/strong> – Escrita do código-fonte e integração dos componentes.&lt;/li>
+&lt;li>&lt;strong>Testes&lt;/strong> – Testes unitários, de integração, funcionais e de desempenho.&lt;/li>
+&lt;li>&lt;strong>Implantação&lt;/strong> – Entrega do software ao ambiente de produção.&lt;/li>
+&lt;li>&lt;strong>Manutenção&lt;/strong> – Correção de bugs e implementação de melhorias.&lt;/li>
+&lt;/ol>
+&lt;h3 id="principais-modelos-do-sdlc">&lt;strong>Principais Modelos do SDLC&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-modelos-do-sdlc" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Waterfall (Cascata)&lt;/strong> – Processo sequencial rígido.&lt;/li>
+&lt;li>&lt;strong>Agile&lt;/strong> – Iterativo e incremental, usado em metodologias como Scrum e Kanban.&lt;/li>
+&lt;li>&lt;strong>DevOps&lt;/strong> – Foco na automação e entrega contínua.&lt;/li>
+&lt;/ul>
+&lt;p>O &lt;strong>SDLC&lt;/strong> pode ser aplicado tanto em software local quanto em aplicações na nuvem.&lt;/p></description></item><item><title>Escalabilidade (Vertical / Horizontal)</title><link>https://sampalu.github.io/guia-de-estudos/cloud/escalabilidade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/escalabilidade/</guid><description>&lt;h3 id="escalabilidade-vertical-scale-updown">&lt;strong>Escalabilidade Vertical (Scale Up/Down)&lt;/strong>&lt;a class="td-heading-self-link" href="#escalabilidade-vertical-scale-updown" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;p>A escalabilidade &lt;strong>vertical&lt;/strong> significa aumentar ou diminuir a capacidade de um único recurso, como uma máquina virtual (EC2), banco de dados (RDS), etc.&lt;/p>
 &lt;p>✅ &lt;strong>Como funciona?&lt;/strong>&lt;/p>
 &lt;ul>

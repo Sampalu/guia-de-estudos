@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nosql on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/tags/nosql/</link><description>Recent content in Nosql on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/tags/nosql/index.xml" rel="self" type="application/rss+xml"/><item><title>Bancos de Dados Não Relacionais (NoSQL)</title><link>https://sampalu.github.io/guia-de-estudos/bancos-dados/nao-relacionais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/bancos-dados/nao-relacionais/</guid><description>&lt;h4 id="principais-tipos-e-exemplos-de-bancos-nosql">&lt;strong>Principais Tipos e Exemplos de Bancos NoSQL&lt;/strong>:&lt;a class="td-heading-self-link" href="#principais-tipos-e-exemplos-de-bancos-nosql" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Chave-Valor&lt;/strong> – Dados armazenados como pares chave-valor.&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Exemplo&lt;/em>: Redis, DynamoDB.&lt;/li>
+&lt;li>&lt;em>Uso&lt;/em>: Cache, sessão de usuários.&lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Documentos&lt;/strong> – Dados armazenados em formato JSON/BSON.&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Exemplo&lt;/em>: MongoDB, CouchDB.&lt;/li>
+&lt;li>&lt;em>Uso&lt;/em>: Aplicações flexíveis, como CMS e APIs.&lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Colunar&lt;/strong> – Projetado para grandes volumes de leitura/escrita.&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Exemplo&lt;/em>: Apache Cassandra, HBase.&lt;/li>
+&lt;li>&lt;em>Uso&lt;/em>: Big Data, análise de dados.&lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Grafos&lt;/strong> – Otimizado para representar conexões entre dados.&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Exemplo&lt;/em>: Neo4j, ArangoDB.&lt;/li>
+&lt;li>&lt;em>Uso&lt;/em>: Redes sociais, recomendações.&lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="quando-usar">&lt;strong>Quando usar?&lt;/strong>&lt;a class="td-heading-self-link" href="#quando-usar" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>Quando os dados são semiestruturados ou não têm esquema fixo.&lt;/li>
+&lt;li>Quando a escalabilidade horizontal é mais importante que a consistência forte.&lt;/li>
+&lt;li>Em aplicações que exigem alta velocidade de leitura/escrita, como big data, redes sociais e IoT.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusão">&lt;strong>Conclusão&lt;/strong>&lt;a class="td-heading-self-link" href="#conclus%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Se a prioridade for &lt;strong>consistência e estruturação dos dados&lt;/strong>, um &lt;strong>banco SQL&lt;/strong> é a melhor escolha. Se o foco for &lt;strong>escalabilidade e flexibilidade&lt;/strong>, um &lt;strong>banco NoSQL&lt;/strong> pode ser mais adequado. Em muitos casos, uma abordagem &lt;strong>híbrida&lt;/strong> (usando ambos) pode ser a melhor solução.&lt;/p></description></item></channel></rss>

@@ -2,4 +2,43 @@
 &lt;hr>
 &lt;h2 id="1-single-responsibility-principle-srp--princípio-da-responsabilidade-única">1. &lt;strong>S&lt;/strong>ingle Responsibility Principle (SRP) – Princípio da Responsabilidade Única&lt;a class="td-heading-self-link" href="#1-single-responsibility-principle-srp--princ%c3%adpio-da-responsabilidade-%c3%banica" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="definição">Definição:&lt;a class="td-heading-self-link" href="#defini%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;p>Uma classe deve ter &lt;strong>apenas um motivo para mudar&lt;/strong>, ou seja, deve ter &lt;strong>uma única responsabilidade&lt;/strong>.&lt;/p></description></item></channel></rss>
+&lt;p>Uma classe deve ter &lt;strong>apenas um motivo para mudar&lt;/strong>, ou seja, deve ter &lt;strong>uma única responsabilidade&lt;/strong>.&lt;/p></description></item><item><title>Arquiteturas</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/arquiteturas/</guid><description>&lt;p>Podemos considerar que há uma &lt;strong>evolução conceitual&lt;/strong> entre essas arquiteturas, mas não no sentido de substituição direta. Todas elas compartilham princípios semelhantes e podem ser vistas como refinamentos ou variações umas das outras. Vamos analisar essa evolução:&lt;/p>
+&lt;hr>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;strong>Arquitetura&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Ideia Principal&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Destaque&lt;/strong>&lt;/th>
+ &lt;th>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Hexagonal (2005)&lt;/strong>&lt;/td>
+ &lt;td>Separar a lógica de negócio da infraestrutura usando &amp;ldquo;portas&amp;rdquo; e &amp;ldquo;adaptadores&amp;rdquo;.&lt;/td>
+ &lt;td>Independência de frameworks, bancos de dados e interfaces externas. Uma maneira flexível de conectar sistemas sem acoplamento direto&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Onion (2008)&lt;/strong>&lt;/td>
+ &lt;td>Organizar o código em camadas concêntricas, com o domínio no centro.&lt;/td>
+ &lt;td>Refinamento da Hexagonal, enfatizando a dependência de abstrações. Reforça a separação de camadas e evita acoplamento indesejado&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Clean Architecture (2012)&lt;/strong>&lt;/td>
+ &lt;td>Organizar a aplicação em círculos concêntricos, com o domínio no centro e camadas externas ao redor.&lt;/td>
+ &lt;td>Incorpora ideias da Hexagonal e da Onion, mas adiciona um foco maior nos princípios SOLID e na testabilidade do sistema&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;p>&lt;strong>Hexagonal → Onion → Clean Architecture&lt;/strong>&lt;/p></description></item><item><title>Visitor</title><link>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/visitor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/fundamentos/padroes-projeto/behavioural/visitor/</guid><description>&lt;h1 id="visitor---behavioural-comportamental">Visitor - Behavioural (Comportamental)&lt;a class="td-heading-self-link" href="#visitor---behavioural-comportamental" aria-label="Heading self-link">&lt;/a>&lt;/h1>
+&lt;h2 id="intenção">Intenção&lt;a class="td-heading-self-link" href="#inten%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;em>Representa uma operação a ser executada sobre os elementos da estrutura de um objeto. O visitor permite que você separe um algoritmo dos elementos sobre os quais opera.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="sobre-o-visitor">Sobre o Visitor&lt;a class="td-heading-self-link" href="#sobre-o-visitor" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Em vídeo: &lt;a href="https://www.youtube.com/watch?v=5PRG7rT2dcU&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=45">https://www.youtube.com/watch?v=5PRG7rT2dcU&amp;amp;list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&amp;amp;index=45&lt;/a>&lt;/p>
+&lt;p>O &lt;strong>Visitor&lt;/strong> é um padrão de projeto &lt;strong>comportamental&lt;/strong> que permite &lt;strong>adicionar novas operações a uma estrutura de objetos sem modificá-los&lt;/strong>. Isso é feito separando a lógica de processamento dos objetos, mantendo cada um com &lt;strong>suas responsabilidades bem definidas&lt;/strong>.&lt;/p></description></item></channel></rss>

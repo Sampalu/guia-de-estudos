@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Algoritmos on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/</link><description>Recent content in Algoritmos on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/outros/algoritmos/index.xml" rel="self" type="application/rss+xml"/><item><title>Big-O Notation</title><link>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/big-o-notation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/big-o-notation/</guid><description>&lt;h3 id="o-que-significa-on">O que significa O(n)?&lt;a class="td-heading-self-link" href="#o-que-significa-on" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>A notação &lt;strong>O(n)&lt;/strong> significa que o tempo de execução do algoritmo cresce &lt;strong>linearmente&lt;/strong> em relação ao tamanho da entrada. Se o tamanho da entrada for dobrado, o tempo de execução também dobra aproximadamente.&lt;/p>
+&lt;hr>
+&lt;h2 id="exemplos-de-on-em-c">Exemplos de O(n) em C#&lt;a class="td-heading-self-link" href="#exemplos-de-on-em-c" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="1-percorrendo-um-array-complexidade-on">&lt;strong>1️⃣ Percorrendo um array (Complexidade O(n))&lt;/strong>&lt;a class="td-heading-self-link" href="#1-percorrendo-um-array-complexidade-on" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Um exemplo clássico de O(n) é um loop que percorre um array:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">void&lt;/span> &lt;span style="color:#000">PrintElements&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">int&lt;/span>&lt;span style="color:#000;font-weight:bold">[]&lt;/span> &lt;span style="color:#000">array&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">foreach&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">item&lt;/span> &lt;span style="color:#204a87;font-weight:bold">in&lt;/span> &lt;span style="color:#000">array&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">Console&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">WriteLine&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">item&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span> &lt;span style="color:#8f5902;font-style:italic">// Executado &amp;#39;n&amp;#39; vezes&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>✅ Se o array tiver &lt;strong>10 elementos&lt;/strong>, o loop roda &lt;strong>10 vezes&lt;/strong>.&lt;br>
+✅ Se o array tiver &lt;strong>1.000 elementos&lt;/strong>, o loop roda &lt;strong>1.000 vezes&lt;/strong>.&lt;br>
+📌 Como o número de operações cresce proporcionalmente ao tamanho da entrada, temos O(n).&lt;/p></description></item><item><title>Complexidade de Algoritmos</title><link>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/complexidade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/complexidade/</guid><description>&lt;h2 id="br1-tipos-de-complexidade">&lt;br>&lt;strong>1️⃣ Tipos de Complexidade&lt;/strong>&lt;a class="td-heading-self-link" href="#br1-tipos-de-complexidade" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="complexidade-de-tempo-time-complexity">&lt;strong>Complexidade de Tempo (Time Complexity)&lt;/strong>&lt;a class="td-heading-self-link" href="#complexidade-de-tempo-time-complexity" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Mede &lt;strong>quantas operações&lt;/strong> o algoritmo executa em relação ao tamanho da entrada &lt;strong>n&lt;/strong>.&lt;/li>
+&lt;li>Expressamos isso usando a &lt;strong>notação Big-O&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="complexidade-de-espaço-space-complexity">&lt;strong>Complexidade de Espaço (Space Complexity)&lt;/strong>&lt;a class="td-heading-self-link" href="#complexidade-de-espa%c3%a7o-space-complexity" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Mede &lt;strong>quanto de memória&lt;/strong> um algoritmo usa, incluindo variáveis, estruturas e chamadas recursivas.&lt;/li>
+&lt;li>Também expressamos usando &lt;strong>Big-O&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="br2-principais-classes-de-complexidade">&lt;br>&lt;strong>2️⃣ Principais Classes de Complexidade&lt;/strong>&lt;a class="td-heading-self-link" href="#br2-principais-classes-de-complexidade" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;strong>Notação Big-O&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Nome&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Exemplo&lt;/strong>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>O(1)&lt;/strong>&lt;/td>
+ &lt;td>Tempo constante&lt;/td>
+ &lt;td>Acessar um índice em um array.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>O(log n)&lt;/strong>&lt;/td>
+ &lt;td>Logarítmico&lt;/td>
+ &lt;td>Busca binária.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>O(n)&lt;/strong>&lt;/td>
+ &lt;td>Linear&lt;/td>
+ &lt;td>Percorrer uma lista uma vez.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>O(n log n)&lt;/strong>&lt;/td>
+ &lt;td>Linearítmico&lt;/td>
+ &lt;td>Merge Sort, Quick Sort (melhor caso).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>O(n²)&lt;/strong>&lt;/td>
+ &lt;td>Quadrático&lt;/td>
+ &lt;td>Bubble Sort, Selection Sort.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>O(2ⁿ)&lt;/strong>&lt;/td>
+ &lt;td>Exponencial&lt;/td>
+ &lt;td>Algoritmos de força bruta (ex.: Fibonacci recursivo).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>O(n!)&lt;/strong>&lt;/td>
+ &lt;td>Fatorial&lt;/td>
+ &lt;td>Algoritmo de Caixeiro Viajante (TSP).&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div style="padding: 10px; display: inline-block;">
+ &lt;img src="../../../images/big-o-complexidade.png" alt="Complexidade" />
+&lt;/div>
+&lt;hr>
+&lt;h2 id="br3-exemplos-práticos-em-c">&lt;br>&lt;strong>3️⃣ Exemplos Práticos em C#&lt;/strong>&lt;a class="td-heading-self-link" href="#br3-exemplos-pr%c3%a1ticos-em-c" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="-o1--tempo-constante">✅ &lt;strong>O(1) – Tempo Constante&lt;/strong>&lt;a class="td-heading-self-link" href="#-o1--tempo-constante" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Independente do tamanho da entrada, o tempo de execução &lt;strong>não muda&lt;/strong>.&lt;/p></description></item><item><title>Tipos de Algoritmos</title><link>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/tipos-algoritmos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/tipos-algoritmos/</guid><description>&lt;h3 id="1-algoritmos-de-busca">&lt;strong>1️. Algoritmos de Busca&lt;/strong>&lt;a class="td-heading-self-link" href="#1-algoritmos-de-busca" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Usados para encontrar um elemento dentro de uma estrutura de dados.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Busca Linear (O(n))&lt;/strong>&lt;br>
+Percorre os elementos um por um até encontrar o valor desejado.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">int&lt;/span> &lt;span style="color:#000">BuscaLinear&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">int&lt;/span>&lt;span style="color:#000;font-weight:bold">[]&lt;/span> &lt;span style="color:#000">array&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#204a87;font-weight:bold">int&lt;/span> &lt;span style="color:#000">target&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">int&lt;/span> &lt;span style="color:#000">i&lt;/span> &lt;span style="color:#000;font-weight:bold">=&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#000">i&lt;/span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span> &lt;span style="color:#000">array&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">Length&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#000">i&lt;/span>&lt;span style="color:#000;font-weight:bold">++)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">array&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#000">i&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span> &lt;span style="color:#000;font-weight:bold">==&lt;/span> &lt;span style="color:#000">target&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">return&lt;/span> &lt;span style="color:#000">i&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#8f5902;font-style:italic">// Retorna a posição do elemento encontrado&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">return&lt;/span> &lt;span style="color:#000;font-weight:bold">-&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#8f5902;font-style:italic">// Elemento não encontrado&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>✅ Funciona em qualquer estrutura de dados.&lt;br>
+❌ Ineficiente para grandes conjuntos de dados.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Busca Binária (O(log n))&lt;/strong>&lt;br>
+Funciona em &lt;strong>arrays ordenados&lt;/strong> e reduz a busca pela metade a cada iteração.&lt;/p></description></item><item><title>Estruturas de Árvores</title><link>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/estruturas-arvores/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/estruturas-arvores/</guid><description>&lt;h3 id="1-termos-importantes">&lt;strong>1️⃣ Termos Importantes&lt;/strong>&lt;a class="td-heading-self-link" href="#1-termos-importantes" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Raiz&lt;/strong> → O primeiro nó da árvore.&lt;/li>
+&lt;li>&lt;strong>Folha (Leaf)&lt;/strong> → Nó que &lt;strong>não tem filhos&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Altura&lt;/strong> → O maior número de arestas da raiz até uma folha.&lt;/li>
+&lt;li>&lt;strong>Profundidade&lt;/strong> → Distância entre um nó e a raiz.&lt;/li>
+&lt;li>&lt;strong>Grau&lt;/strong> → Número de filhos de um nó.&lt;/li>
+&lt;/ul>
+&lt;p>🔹 &lt;strong>Exemplo de Árvore Binária:&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code> 10
+ / \
+ 5 20
+ / \ / \
+ 3 7 15 25
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;strong>Raiz:&lt;/strong> 10&lt;/li>
+&lt;li>&lt;strong>Nós internos:&lt;/strong> 10, 5, 20&lt;/li>
+&lt;li>&lt;strong>Folhas:&lt;/strong> 3, 7, 15, 25&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="2-tipos-de-árvores">&lt;strong>2️⃣ Tipos de Árvores&lt;/strong>&lt;a class="td-heading-self-link" href="#2-tipos-de-%c3%a1rvores" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;h3 id="-árvore-binária">🔹 &lt;strong>Árvore Binária&lt;/strong>&lt;a class="td-heading-self-link" href="#-%c3%a1rvore-bin%c3%a1ria" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Cada nó pode ter &lt;strong>no máximo 2 filhos&lt;/strong>.&lt;/p></description></item><item><title>Análise Assintótica</title><link>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/analise-assintotica/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/algoritmos/analise-assintotica/</guid><description>&lt;h3 id="1-tipos-de-notações-assintóticas">&lt;strong>1️⃣ Tipos de Notações Assintóticas&lt;/strong>&lt;a class="td-heading-self-link" href="#1-tipos-de-nota%c3%a7%c3%b5es-assint%c3%b3ticas" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;strong>Notação&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Nome&lt;/strong>&lt;/th>
+ &lt;th>&lt;strong>Significado&lt;/strong>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>O(n)&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>O Grande (Upper Bound)&lt;/strong>&lt;/td>
+ &lt;td>Limite superior (pior caso). O tempo de execução &lt;strong>não cresce mais rápido&lt;/strong> do que isso.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Ω(n)&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>Ômega (Lower Bound)&lt;/strong>&lt;/td>
+ &lt;td>Limite inferior (melhor caso). O tempo de execução &lt;strong>não cresce mais devagar&lt;/strong> do que isso.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Θ(n)&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>Theta (Tight Bound)&lt;/strong>&lt;/td>
+ &lt;td>Quando O(n) e Ω(n) são iguais. Representa o &lt;strong>caso médio&lt;/strong>.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="2-exemplo-visual">&lt;strong>2️⃣ Exemplo Visual&lt;/strong>&lt;a class="td-heading-self-link" href="#2-exemplo-visual" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Suponha que temos três funções de tempo de execução para um algoritmo:&lt;/p></description></item></channel></rss>

@@ -32,7 +32,45 @@
 &lt;li>&lt;strong>Autenticação e segurança&lt;/strong>, protegendo os servidores de origem&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>&lt;strong>Exemplo:&lt;/strong> Se você acessa &lt;code>meusite.com&lt;/code>, um proxy reverso pode encaminhar sua requisição para diferentes servidores, servindo páginas estáticas diretamente ou repassando para um servidor de aplicação.&lt;/p></description></item><item><title>Algoritmos de Balanceamento de Carga</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/algoritmos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/algoritmos/</guid><description>&lt;h3 id="1-round-robin-">1️⃣ &lt;strong>Round Robin&lt;/strong> 🌀&lt;a class="td-heading-self-link" href="#1-round-robin-" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>Exemplo:&lt;/strong> Se você acessa &lt;code>meusite.com&lt;/code>, um proxy reverso pode encaminhar sua requisição para diferentes servidores, servindo páginas estáticas diretamente ou repassando para um servidor de aplicação.&lt;/p></description></item><item><title>Tecnicas de Cache</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/tecnicas-cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/tecnicas-cache/</guid><description>&lt;p>O uso de cache para resiliência em engenharia de software é uma estratégia fundamental para melhorar a disponibilidade e a escalabilidade dos sistemas. Na AWS, serviços como &lt;strong>Amazon ElastiCache&lt;/strong> (Redis e Memcached) são amplamente utilizados para reduzir a carga em bancos de dados e garantir que aplicações possam continuar operando mesmo sob falhas temporárias.&lt;/p>
+&lt;h2 id="técnicas-de-cache-para-resiliência">&lt;strong>Técnicas de Cache para Resiliência&lt;/strong>&lt;a class="td-heading-self-link" href="#t%c3%a9cnicas-de-cache-para-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="cache-aside-lazy-loading">&lt;strong>Cache-Aside (Lazy Loading)&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-aside-lazy-loading" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>A aplicação primeiro verifica se os dados estão no cache.&lt;/li>
+&lt;li>Se não estiverem, busca no banco de dados e armazena no cache para acessos futuros.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> Reduz carga no banco de dados e melhora o desempenho.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> O primeiro acesso pode ser mais lento.&lt;/li>
+&lt;/ul>
+&lt;h3 id="write-through">&lt;strong>Write-Through&lt;/strong>&lt;a class="td-heading-self-link" href="#write-through" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Toda vez que um dado é atualizado, ele é gravado no cache e no banco de dados simultaneamente.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> O cache está sempre atualizado.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> Pode gerar escrita desnecessária caso os dados não sejam frequentemente acessados.&lt;/li>
+&lt;/ul>
+&lt;h3 id="write-behind-write-back">&lt;strong>Write-Behind (Write-Back)&lt;/strong>&lt;a class="td-heading-self-link" href="#write-behind-write-back" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>As atualizações são gravadas no cache primeiro e propagadas para o banco de dados em segundo plano.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> Reduz a latência das operações de escrita.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> Pode causar perda de dados em caso de falhas antes da persistência.&lt;/li>
+&lt;/ul>
+&lt;h3 id="cache-persistente">&lt;strong>Cache Persistente&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-persistente" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Alguns serviços, como &lt;strong>Redis com snapshots (RDB) e append-only file (AOF)&lt;/strong>, permitem persistência dos dados do cache para recuperação em caso de falha.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> Evita perda total dos dados armazenados no cache.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> Pode aumentar a latência da gravação devido ao processo de persistência.&lt;/li>
+&lt;/ul>
+&lt;h3 id="cache-de-sessão">&lt;strong>Cache de Sessão&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-de-sess%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Em sistemas distribuídos, armazenar sessões no Redis permite que os usuários continuem autenticados mesmo que um servidor falhe.&lt;/li>
+&lt;li>&lt;strong>Prós:&lt;/strong> Melhora a experiência do usuário ao evitar reautenticação.&lt;/li>
+&lt;li>&lt;strong>Contras:&lt;/strong> Pode precisar de replicação para alta disponibilidade.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="como-usar-redismemcached-na-aws-para-resiliência">&lt;strong>Como Usar Redis/Memcached na AWS para Resiliência?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-usar-redismemcached-na-aws-para-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="amazon-elasticache-redis-vs-memcached">&lt;strong>Amazon ElastiCache (Redis vs. Memcached)&lt;/strong>&lt;a class="td-heading-self-link" href="#amazon-elasticache-redis-vs-memcached" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Redis&lt;/strong>:&lt;/p></description></item><item><title>Algoritmos de Balanceamento de Carga</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/algoritmos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/load-balancers/algoritmos/</guid><description>&lt;h3 id="1-round-robin-">1️⃣ &lt;strong>Round Robin&lt;/strong> 🌀&lt;a class="td-heading-self-link" href="#1-round-robin-" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;p>🔹 &lt;strong>Como funciona?&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>As requisições são distribuídas &lt;strong>de forma sequencial&lt;/strong> entre os servidores disponíveis.&lt;/li>
@@ -43,7 +81,21 @@
 ✅ Útil quando todos os servidores têm a mesma capacidade.&lt;/p>
 &lt;p>🔹 &lt;strong>Desvantagens:&lt;/strong>&lt;br>
 ❌ Não considera a carga atual dos servidores.&lt;br>
-❌ Pode sobrecarregar um servidor mais lento ou menos potente.&lt;/p></description></item><item><title>Microserviços</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/microservicos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/microservicos/</guid><description>&lt;h3 id="principais-características-dos-microserviços">&lt;strong>Principais Características dos Microserviços:&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-caracter%c3%adsticas-dos-microservi%c3%a7os" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+❌ Pode sobrecarregar um servidor mais lento ou menos potente.&lt;/p></description></item><item><title>Estratégias de Eviction</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/eviction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/eviction/</guid><description>&lt;h2 id="1-lru-least-recently-used---menos-recentemente-usado">&lt;strong>1. LRU (Least Recently Used) - Menos Recentemente Usado&lt;/strong>&lt;a class="td-heading-self-link" href="#1-lru-least-recently-used---menos-recentemente-usado" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>O &lt;strong>LRU&lt;/strong> remove os itens que não foram acessados há mais tempo. Ele assume que os dados recentemente acessados são mais prováveis de serem usados novamente.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Como funciona no Redis?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>O Redis mantém uma lista dos últimos itens acessados.&lt;/li>
+&lt;li>Quando o cache atinge o limite, o item menos recentemente utilizado é removido.&lt;/li>
+&lt;li>Redis pode usar &lt;strong>amostragem aleatória&lt;/strong> (por padrão, examina um subconjunto aleatório de chaves e remove a menos utilizada).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Vantagens:&lt;/strong>&lt;br>
+✅ Evita a remoção de dados frequentemente acessados.&lt;br>
+✅ Bom para cargas de trabalho onde os dados &amp;ldquo;quentes&amp;rdquo; são acessados repetidamente.&lt;/p></description></item><item><title>Microserviços</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/microservicos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/microservicos/</guid><description>&lt;h3 id="principais-características-dos-microserviços">&lt;strong>Principais Características dos Microserviços:&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-caracter%c3%adsticas-dos-microservi%c3%a7os" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ol>
 &lt;li>&lt;strong>Independência&lt;/strong> – Cada microserviço pode ser desenvolvido e mantido por equipes separadas, sem impactar outros serviços.&lt;/li>
 &lt;li>&lt;strong>Escalabilidade&lt;/strong> – Permite escalar apenas os serviços que necessitam de mais recursos, tornando a aplicação mais eficiente.&lt;/li>
@@ -136,45 +188,7 @@ As &lt;strong>filas&lt;/strong> são onde as mensagens são armazenadas até que
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Colaboração entre Especialistas do Domínio e Desenvolvedores&lt;/strong>&lt;/p></description></item><item><title>Filas de Mensagens</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/</guid><description/></item><item><title>Tecnicas de Cache</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/</guid><description>&lt;p>O uso de cache para resiliência em engenharia de software é uma estratégia fundamental para melhorar a disponibilidade e a escalabilidade dos sistemas. Na AWS, serviços como &lt;strong>Amazon ElastiCache&lt;/strong> (Redis e Memcached) são amplamente utilizados para reduzir a carga em bancos de dados e garantir que aplicações possam continuar operando mesmo sob falhas temporárias.&lt;/p>
-&lt;h2 id="técnicas-de-cache-para-resiliência">&lt;strong>Técnicas de Cache para Resiliência&lt;/strong>&lt;a class="td-heading-self-link" href="#t%c3%a9cnicas-de-cache-para-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;h3 id="cache-aside-lazy-loading">&lt;strong>Cache-Aside (Lazy Loading)&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-aside-lazy-loading" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>A aplicação primeiro verifica se os dados estão no cache.&lt;/li>
-&lt;li>Se não estiverem, busca no banco de dados e armazena no cache para acessos futuros.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> Reduz carga no banco de dados e melhora o desempenho.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> O primeiro acesso pode ser mais lento.&lt;/li>
-&lt;/ul>
-&lt;h3 id="write-through">&lt;strong>Write-Through&lt;/strong>&lt;a class="td-heading-self-link" href="#write-through" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>Toda vez que um dado é atualizado, ele é gravado no cache e no banco de dados simultaneamente.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> O cache está sempre atualizado.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> Pode gerar escrita desnecessária caso os dados não sejam frequentemente acessados.&lt;/li>
-&lt;/ul>
-&lt;h3 id="write-behind-write-back">&lt;strong>Write-Behind (Write-Back)&lt;/strong>&lt;a class="td-heading-self-link" href="#write-behind-write-back" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>As atualizações são gravadas no cache primeiro e propagadas para o banco de dados em segundo plano.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> Reduz a latência das operações de escrita.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> Pode causar perda de dados em caso de falhas antes da persistência.&lt;/li>
-&lt;/ul>
-&lt;h3 id="cache-persistente">&lt;strong>Cache Persistente&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-persistente" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>Alguns serviços, como &lt;strong>Redis com snapshots (RDB) e append-only file (AOF)&lt;/strong>, permitem persistência dos dados do cache para recuperação em caso de falha.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> Evita perda total dos dados armazenados no cache.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> Pode aumentar a latência da gravação devido ao processo de persistência.&lt;/li>
-&lt;/ul>
-&lt;h3 id="cache-de-sessão">&lt;strong>Cache de Sessão&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-de-sess%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>Em sistemas distribuídos, armazenar sessões no Redis permite que os usuários continuem autenticados mesmo que um servidor falhe.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> Melhora a experiência do usuário ao evitar reautenticação.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> Pode precisar de replicação para alta disponibilidade.&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="como-usar-redismemcached-na-aws-para-resiliência">&lt;strong>Como Usar Redis/Memcached na AWS para Resiliência?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-usar-redismemcached-na-aws-para-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;h3 id="amazon-elasticache-redis-vs-memcached">&lt;strong>Amazon ElastiCache (Redis vs. Memcached)&lt;/strong>&lt;a class="td-heading-self-link" href="#amazon-elasticache-redis-vs-memcached" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Redis&lt;/strong>:&lt;/p></description></item><item><title>CQRS (Command Query Responsibility Segregation)</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/cqrs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/cqrs/</guid><description>&lt;hr>
+&lt;p>&lt;strong>Colaboração entre Especialistas do Domínio e Desenvolvedores&lt;/strong>&lt;/p></description></item><item><title>Filas de Mensagens</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/filas-de-mensagens/</guid><description/></item><item><title>Tecnicas de Cache</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/</guid><description/></item><item><title>CQRS (Command Query Responsibility Segregation)</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/cqrs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/cqrs/</guid><description>&lt;hr>
 &lt;h3 id="o-problema-que-o-cqrs-resolve">&lt;strong>O Problema que o CQRS Resolve&lt;/strong>&lt;a class="td-heading-self-link" href="#o-problema-que-o-cqrs-resolve" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;p>Em uma arquitetura tradicional, geralmente utilizamos um &lt;strong>modelo único&lt;/strong> para leitura e escrita, onde o mesmo banco de dados e os mesmos objetos de domínio são usados para buscar e modificar informações. Isso pode gerar problemas como:&lt;/p>
 &lt;p>✅ &lt;strong>Concorrência:&lt;/strong> Grandes volumes de leitura podem impactar a performance de operações de escrita.&lt;br>
@@ -298,7 +312,16 @@ As &lt;strong>filas&lt;/strong> são onde as mensagens são armazenadas até que
 &lt;p>&lt;strong>Use Orquestrada quando:&lt;/strong>&lt;br>
 ✔️ O fluxo exige &lt;strong>controle rígido&lt;/strong> (ex.: processos bancários, compliance).&lt;br>
 ✔️ É necessário &lt;strong>monitoramento detalhado&lt;/strong>.&lt;br>
-✔️ Existe &lt;strong>lógica de negócios complexa&lt;/strong> que precisa de um coordenador.&lt;/p></description></item><item><title>Outros Padrões</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</guid><description>&lt;p>Os principais padrões de design para microserviços ajudam a lidar com desafios comuns como comunicação, escalabilidade, resiliência e segurança. Aqui estão os mais relevantes, além do &lt;strong>Saga&lt;/strong>, que é usado para coordenação de transações distribuídas:&lt;/p>
+✔️ Existe &lt;strong>lógica de negócios complexa&lt;/strong> que precisa de um coordenador.&lt;/p></description></item><item><title>Camada Anticorrupção (Anticorruption Layer - ACL)</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/camada-anticorrupcao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/camada-anticorrupcao/</guid><description>&lt;h2 id="por-que-usar-a-camada-anticorrupção">&lt;strong>Por que usar a Camada Anticorrupção?&lt;/strong>&lt;a class="td-heading-self-link" href="#por-que-usar-a-camada-anticorrup%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Quando dois sistemas precisam se comunicar, pode haver diferenças significativas entre os modelos que eles utilizam. Se um sistema for diretamente integrado ao outro sem uma adaptação, pode acabar herdando conceitos inadequados, levando a problemas como:&lt;br>
+✅ Dependência excessiva da implementação do outro sistema&lt;br>
+✅ Dificuldade na manutenção e evolução do código&lt;br>
+✅ Falhas e inconsistências devido a diferentes representações de dados&lt;/p></description></item><item><title>Backend for Frontend (BFF)</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/bff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/bff/</guid><description>&lt;h2 id="por-que-usar-o-bff">&lt;strong>Por que usar o BFF?&lt;/strong>&lt;a class="td-heading-self-link" href="#por-que-usar-o-bff" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Em arquiteturas tradicionais, um único backend expõe uma API REST ou GraphQL para vários clientes (navegadores, apps mobile, etc.). O problema é que diferentes frontends podem ter &lt;strong>necessidades distintas&lt;/strong>, como:&lt;/p>
+&lt;p>✅ Diferentes formatos de dados (JSON para web, GraphQL para mobile)&lt;br>
+✅ Necessidade de menos dados no mobile (economia de banda)&lt;br>
+✅ Autenticação e autorização específicas por plataforma&lt;br>
+✅ Diferentes formas de composição de serviços e chamadas à API&lt;/p></description></item><item><title>Outros Padrões</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/design-pattern-microservico/resumo/</guid><description>&lt;p>Os principais padrões de design para microserviços ajudam a lidar com desafios comuns como comunicação, escalabilidade, resiliência e segurança. Aqui estão os mais relevantes, além do &lt;strong>Saga&lt;/strong>, que é usado para coordenação de transações distribuídas:&lt;/p>
 &lt;hr>
 &lt;h2 id="1-padrões-de-comunicação">&lt;strong>1. Padrões de Comunicação&lt;/strong>&lt;a class="td-heading-self-link" href="#1-padr%c3%b5es-de-comunica%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;h3 id="api-gateway">&lt;strong>API Gateway&lt;/strong>&lt;a class="td-heading-self-link" href="#api-gateway" aria-label="Heading self-link">&lt;/a>&lt;/h3>

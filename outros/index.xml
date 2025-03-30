@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Outros on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/outros/</link><description>Recent content in Outros on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/outros/index.xml" rel="self" type="application/rss+xml"/><item><title>Conceito de Camadas no Modelo OSI</title><link>https://sampalu.github.io/guia-de-estudos/outros/camada-osi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/camada-osi/</guid><description>&lt;p>Aqui está um resumo das camadas, do nível mais baixo (físico) ao mais alto (aplicação):&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Outros on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/outros/</link><description>Recent content in Outros on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/outros/index.xml" rel="self" type="application/rss+xml"/><item><title>OWASP</title><link>https://sampalu.github.io/guia-de-estudos/outros/owasp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/owasp/</guid><description>&lt;h3 id="principais-iniciativas-da-owasp">Principais Iniciativas da OWASP&lt;a class="td-heading-self-link" href="#principais-iniciativas-da-owasp" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>OWASP Top 10&lt;/strong> – Um dos projetos mais famosos, lista as 10 principais vulnerabilidades de segurança em aplicações web, como &lt;strong>Injeção de SQL&lt;/strong>, &lt;strong>Cross-Site Scripting (XSS)&lt;/strong> e &lt;strong>Falhas de autenticação&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>OWASP ASVS (Application Security Verification Standard)&lt;/strong> – Um padrão para avaliação de segurança em aplicações.&lt;/li>
+&lt;li>&lt;strong>OWASP ZAP (Zed Attack Proxy)&lt;/strong> – Ferramenta gratuita usada para testes de segurança em aplicações web.&lt;/li>
+&lt;li>&lt;strong>OWASP Dependency-Check&lt;/strong> – Ferramenta para analisar dependências de projetos e identificar vulnerabilidades conhecidas.&lt;/li>
+&lt;li>&lt;strong>OWASP SAMM (Software Assurance Maturity Model)&lt;/strong> – Modelo para ajudar empresas a melhorar a maturidade de seus processos de segurança.&lt;/li>
+&lt;/ol>
+&lt;p>A OWASP tem uma comunidade ativa e promove eventos, conferências e meetups para troca de conhecimento. Muitas empresas usam suas diretrizes para melhorar a segurança de suas aplicações.&lt;/p></description></item><item><title>Garbage Collector (GC)</title><link>https://sampalu.github.io/guia-de-estudos/outros/gcollector/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/gcollector/</guid><description>&lt;p>O &lt;strong>Garbage Collector (GC)&lt;/strong> do .NET continua a evoluir para melhorar a eficiência da coleta de lixo e otimizar a performance das aplicações. Ele mantém os princípios fundamentais das versões anteriores, mas com aprimoramentos para melhor uso da memória e menor impacto na execução da aplicação.&lt;/p>
+&lt;hr>
+&lt;h2 id="1-como-funciona-o-garbage-collector-no-net">&lt;strong>1. Como Funciona o Garbage Collector no .NET?&lt;/strong>&lt;a class="td-heading-self-link" href="#1-como-funciona-o-garbage-collector-no-net" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>O GC no .NET trabalha em um modelo &lt;strong>geracional&lt;/strong>, onde os objetos alocados são categorizados em três gerações:&lt;/p></description></item><item><title>Conceito de Camadas no Modelo OSI</title><link>https://sampalu.github.io/guia-de-estudos/outros/camada-osi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/camada-osi/</guid><description>&lt;p>Aqui está um resumo das camadas, do nível mais baixo (físico) ao mais alto (aplicação):&lt;/p>
 &lt;h3 id="camadas-do-modelo-osi">&lt;strong>Camadas do Modelo OSI&lt;/strong>&lt;a class="td-heading-self-link" href="#camadas-do-modelo-osi" aria-label="Heading self-link">&lt;/a>&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -17,4 +28,15 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Camada de Rede (Layer 3)&lt;/strong>:&lt;/p></description></item></channel></rss>
+&lt;p>&lt;strong>Camada de Rede (Layer 3)&lt;/strong>:&lt;/p></description></item><item><title>Concorrência e Paralelismo</title><link>https://sampalu.github.io/guia-de-estudos/outros/concorrencia-x-paralelismo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/concorrencia-x-paralelismo/</guid><description>&lt;h2 id="introdução">Introdução&lt;a class="td-heading-self-link" href="#introdu%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Threads (do inglês &amp;ldquo;fio&amp;rdquo; ou &amp;ldquo;linha&amp;rdquo;) são partes de um processo que executam tarefas de forma independente, como se fossem subsistemas dentro de um programa maior.&lt;/p>
+&lt;p>Neste texto, vamos abordar:&lt;/p>
+&lt;ul>
+&lt;li>O conceito de processos e threads;&lt;/li>
+&lt;li>Diferenças entre concorrência e paralelismo;&lt;/li>
+&lt;li>Como as CPUs executam tarefas;&lt;/li>
+&lt;li>Problemas comuns e soluções, como semáforos e thread safety.&lt;/li>
+&lt;/ul>
+&lt;h2 id="o-que-é-um-processo-e-uma-thread">O que é um Processo e uma Thread?&lt;a class="td-heading-self-link" href="#o-que-%c3%a9-um-processo-e-uma-thread" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="processos">Processos&lt;a class="td-heading-self-link" href="#processos" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Um &lt;strong>processo&lt;/strong> é uma instância de um programa em execução. Ele contém:&lt;/p></description></item></channel></rss>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Acid on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/tags/acid/</link><description>Recent content in Acid on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/tags/acid/index.xml" rel="self" type="application/rss+xml"/><item><title>Bancos de Dados Relacionais (SQL)</title><link>https://sampalu.github.io/guia-de-estudos/bancos-dados/relacionais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/bancos-dados/relacionais/</guid><description>&lt;h4 id="principais-bancos-de-dados-relacionais">&lt;strong>Principais Bancos de Dados Relacionais&lt;/strong>:&lt;a class="td-heading-self-link" href="#principais-bancos-de-dados-relacionais" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>MySQL&lt;/strong> – Muito popular, usado em aplicações web.&lt;/li>
+&lt;li>&lt;strong>PostgreSQL&lt;/strong> – Avançado, com suporte a extensões e maior flexibilidade.&lt;/li>
+&lt;li>&lt;strong>SQL Server&lt;/strong> – Desenvolvido pela Microsoft, muito utilizado em sistemas corporativos.&lt;/li>
+&lt;li>&lt;strong>Oracle Database&lt;/strong> – Robusto, usado em grandes empresas e sistemas financeiros. &lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;h4 id="quando-usar">&lt;strong>Quando usar?&lt;/strong>&lt;a class="td-heading-self-link" href="#quando-usar" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>Quando os dados possuem estrutura bem definida. (estrutura fixa)&lt;/li>
+&lt;li>Quando há necessidade de garantir consistência forte e integridade referencial.&lt;/li>
+&lt;li>Em sistemas financeiros, ERPs, e-commerce, e aplicações onde a confiabilidade é essencial.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusão">&lt;strong>Conclusão&lt;/strong>&lt;a class="td-heading-self-link" href="#conclus%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Se a prioridade for &lt;strong>consistência e estruturação dos dados&lt;/strong>, um &lt;strong>banco SQL&lt;/strong> é a melhor escolha. Se o foco for &lt;strong>escalabilidade e flexibilidade&lt;/strong>, um &lt;strong>banco NoSQL&lt;/strong> pode ser mais adequado. Em muitos casos, uma abordagem &lt;strong>híbrida&lt;/strong> (usando ambos) pode ser a melhor solução.&lt;/p></description></item></channel></rss>

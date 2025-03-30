@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sre on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/tags/sre/</link><description>Recent content in Sre on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/tags/sre/index.xml" rel="self" type="application/rss+xml"/><item><title>Gerenciamento do Ciclo de Vida de Aplicações na Nuvem</title><link>https://sampalu.github.io/guia-de-estudos/cloud/gerenciamento-ciclo-vida/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/gerenciamento-ciclo-vida/</guid><description>&lt;h2 id="sdlc-software-development-life-cycle">&lt;strong>SDLC (Software Development Life Cycle)&lt;/strong>&lt;a class="td-heading-self-link" href="#sdlc-software-development-life-cycle" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="fases-do-sdlc">&lt;strong>Fases do SDLC&lt;/strong>&lt;a class="td-heading-self-link" href="#fases-do-sdlc" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Planejamento&lt;/strong> – Definição do escopo, requisitos e estimativas de tempo e custo.&lt;/li>
+&lt;li>&lt;strong>Análise de Requisitos&lt;/strong> – Levantamento e documentação das necessidades do sistema.&lt;/li>
+&lt;li>&lt;strong>Design da Arquitetura&lt;/strong> – Definição da arquitetura do sistema, modelagem de dados e escolha de tecnologias.&lt;/li>
+&lt;li>&lt;strong>Implementação (Desenvolvimento)&lt;/strong> – Escrita do código-fonte e integração dos componentes.&lt;/li>
+&lt;li>&lt;strong>Testes&lt;/strong> – Testes unitários, de integração, funcionais e de desempenho.&lt;/li>
+&lt;li>&lt;strong>Implantação&lt;/strong> – Entrega do software ao ambiente de produção.&lt;/li>
+&lt;li>&lt;strong>Manutenção&lt;/strong> – Correção de bugs e implementação de melhorias.&lt;/li>
+&lt;/ol>
+&lt;h3 id="principais-modelos-do-sdlc">&lt;strong>Principais Modelos do SDLC&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-modelos-do-sdlc" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Waterfall (Cascata)&lt;/strong> – Processo sequencial rígido.&lt;/li>
+&lt;li>&lt;strong>Agile&lt;/strong> – Iterativo e incremental, usado em metodologias como Scrum e Kanban.&lt;/li>
+&lt;li>&lt;strong>DevOps&lt;/strong> – Foco na automação e entrega contínua.&lt;/li>
+&lt;/ul>
+&lt;p>O &lt;strong>SDLC&lt;/strong> pode ser aplicado tanto em software local quanto em aplicações na nuvem.&lt;/p></description></item><item><title>Observabilidade e SRE</title><link>https://sampalu.github.io/guia-de-estudos/cloud/observabilidade-e-sre/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/cloud/observabilidade-e-sre/</guid><description>&lt;h2 id="observabilidade-vs-monitoramento">&lt;strong>Observabilidade vs. Monitoramento&lt;/strong>&lt;a class="td-heading-self-link" href="#observabilidade-vs-monitoramento" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Monitoramento&lt;/strong> refere-se à coleta de métricas e logs para entender o comportamento de um sistema.&lt;/li>
+&lt;li>&lt;strong>Observabilidade&lt;/strong> é um conceito mais amplo, referindo-se à capacidade de entender o estado interno de um sistema apenas por meio dos dados que ele gera (logs, métricas e traces).&lt;/li>
+&lt;/ul>
+&lt;h3 id="pilares-da-observabilidade">&lt;strong>Pilares da Observabilidade&lt;/strong>&lt;a class="td-heading-self-link" href="#pilares-da-observabilidade" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Os três pilares principais da observabilidade são:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Métricas&lt;/strong> – Dados numéricos sobre o desempenho do sistema ao longo do tempo.&lt;/li>
+&lt;li>&lt;strong>Logs&lt;/strong> – Registros de eventos com informações detalhadas sobre o comportamento do sistema.&lt;/li>
+&lt;li>&lt;strong>Traces (Rastreamentos)&lt;/strong> – Registro do fluxo de uma requisição através de diferentes componentes do sistema.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="site-reliability-engineering-sre">&lt;strong>Site Reliability Engineering (SRE)&lt;/strong>&lt;a class="td-heading-self-link" href="#site-reliability-engineering-sre" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>O SRE é um conjunto de práticas desenvolvido pelo Google para aplicar engenharia de software na operação de sistemas. Ele foca em confiabilidade, automação e eficiência.&lt;/p></description></item></channel></rss>

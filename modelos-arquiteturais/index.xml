@@ -1,42 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Modelos Arquiteturais on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/</link><description>Recent content in Modelos Arquiteturais on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/index.xml" rel="self" type="application/rss+xml"/><item><title>Tecnicas de Cache</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/tecnicas-cache/</guid><description>&lt;p>O uso de cache para resiliência em engenharia de software é uma estratégia fundamental para melhorar a disponibilidade e a escalabilidade dos sistemas. Na AWS, serviços como &lt;strong>Amazon ElastiCache&lt;/strong> (Redis e Memcached) são amplamente utilizados para reduzir a carga em bancos de dados e garantir que aplicações possam continuar operando mesmo sob falhas temporárias.&lt;/p>
-&lt;h2 id="técnicas-de-cache-para-resiliência">&lt;strong>Técnicas de Cache para Resiliência&lt;/strong>&lt;a class="td-heading-self-link" href="#t%c3%a9cnicas-de-cache-para-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;h3 id="cache-aside-lazy-loading">&lt;strong>Cache-Aside (Lazy Loading)&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-aside-lazy-loading" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>A aplicação primeiro verifica se os dados estão no cache.&lt;/li>
-&lt;li>Se não estiverem, busca no banco de dados e armazena no cache para acessos futuros.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> Reduz carga no banco de dados e melhora o desempenho.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> O primeiro acesso pode ser mais lento.&lt;/li>
-&lt;/ul>
-&lt;h3 id="write-through">&lt;strong>Write-Through&lt;/strong>&lt;a class="td-heading-self-link" href="#write-through" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>Toda vez que um dado é atualizado, ele é gravado no cache e no banco de dados simultaneamente.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> O cache está sempre atualizado.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> Pode gerar escrita desnecessária caso os dados não sejam frequentemente acessados.&lt;/li>
-&lt;/ul>
-&lt;h3 id="write-behind-write-back">&lt;strong>Write-Behind (Write-Back)&lt;/strong>&lt;a class="td-heading-self-link" href="#write-behind-write-back" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>As atualizações são gravadas no cache primeiro e propagadas para o banco de dados em segundo plano.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> Reduz a latência das operações de escrita.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> Pode causar perda de dados em caso de falhas antes da persistência.&lt;/li>
-&lt;/ul>
-&lt;h3 id="cache-persistente">&lt;strong>Cache Persistente&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-persistente" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>Alguns serviços, como &lt;strong>Redis com snapshots (RDB) e append-only file (AOF)&lt;/strong>, permitem persistência dos dados do cache para recuperação em caso de falha.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> Evita perda total dos dados armazenados no cache.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> Pode aumentar a latência da gravação devido ao processo de persistência.&lt;/li>
-&lt;/ul>
-&lt;h3 id="cache-de-sessão">&lt;strong>Cache de Sessão&lt;/strong>&lt;a class="td-heading-self-link" href="#cache-de-sess%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>Em sistemas distribuídos, armazenar sessões no Redis permite que os usuários continuem autenticados mesmo que um servidor falhe.&lt;/li>
-&lt;li>&lt;strong>Prós:&lt;/strong> Melhora a experiência do usuário ao evitar reautenticação.&lt;/li>
-&lt;li>&lt;strong>Contras:&lt;/strong> Pode precisar de replicação para alta disponibilidade.&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="como-usar-redismemcached-na-aws-para-resiliência">&lt;strong>Como Usar Redis/Memcached na AWS para Resiliência?&lt;/strong>&lt;a class="td-heading-self-link" href="#como-usar-redismemcached-na-aws-para-resili%c3%aancia" aria-label="Heading self-link">&lt;/a>&lt;/h2>
-&lt;h3 id="amazon-elasticache-redis-vs-memcached">&lt;strong>Amazon ElastiCache (Redis vs. Memcached)&lt;/strong>&lt;a class="td-heading-self-link" href="#amazon-elasticache-redis-vs-memcached" aria-label="Heading self-link">&lt;/a>&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Redis&lt;/strong>:&lt;/p></description></item><item><title>Protocolos e Padrões de Comunicação</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/protocolos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/protocolos/</guid><description>&lt;p>Aqui está um resumo dos principais protocolos e padrões de comunicação usados em aplicações web e distribuídas:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Modelos Arquiteturais on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/</link><description>Recent content in Modelos Arquiteturais on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/index.xml" rel="self" type="application/rss+xml"/><item><title>Protocolos e Padrões de Comunicação</title><link>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/protocolos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/modelos-arquiteturais/protocolos/</guid><description>&lt;p>Aqui está um resumo dos principais protocolos e padrões de comunicação usados em aplicações web e distribuídas:&lt;/p>
 &lt;hr>
 &lt;h2 id="1-http-hypertext-transfer-protocol">&lt;strong>1. HTTP (HyperText Transfer Protocol)&lt;/strong>&lt;a class="td-heading-self-link" href="#1-http-hypertext-transfer-protocol" aria-label="Heading self-link">&lt;/a>&lt;/h2>
 &lt;p>O HTTP é o protocolo base da web, usado para comunicação entre clientes (como navegadores) e servidores. Ele funciona no modelo &lt;strong>request-response&lt;/strong>, onde o cliente faz uma requisição e o servidor responde.&lt;/p>

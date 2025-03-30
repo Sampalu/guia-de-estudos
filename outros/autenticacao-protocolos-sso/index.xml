@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Autenticação e Protocolos SSO on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/</link><description>Recent content in Autenticação e Protocolos SSO on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/index.xml" rel="self" type="application/rss+xml"/><item><title>Autenticação e Protocolos SSO</title><link>https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/autenticacao-protocolos-sso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/autenticacao-protocolos-sso/</guid><description>&lt;h2 id="1-introdução-à-autenticação">&lt;strong>1. Introdução à Autenticação&lt;/strong>&lt;a class="td-heading-self-link" href="#1-introdu%c3%a7%c3%a3o-%c3%a0-autentica%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;h3 id="o-que-é-autenticação">&lt;strong>O que é autenticação?&lt;/strong>&lt;a class="td-heading-self-link" href="#o-que-%c3%a9-autentica%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Autenticação é o processo de verificar a identidade de um usuário ou sistema. Isso pode ser feito por meio de credenciais, como:&lt;/p>
+&lt;ul>
+&lt;li>Usuário e senha&lt;/li>
+&lt;li>Biometria (impressão digital, reconhecimento facial)&lt;/li>
+&lt;li>Certificados digitais&lt;/li>
+&lt;li>Tokens de autenticação&lt;/li>
+&lt;/ul>
+&lt;h3 id="diferença-entre-autenticação-e-autorização">&lt;strong>Diferença entre Autenticação e Autorização&lt;/strong>&lt;a class="td-heading-self-link" href="#diferen%c3%a7a-entre-autentica%c3%a7%c3%a3o-e-autoriza%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Autenticação&lt;/strong>: Verifica &lt;em>quem&lt;/em> está acessando o sistema.&lt;/li>
+&lt;li>&lt;strong>Autorização&lt;/strong>: Define &lt;em>o que&lt;/em> esse usuário pode acessar dentro do sistema.&lt;/li>
+&lt;/ul>
+&lt;p>Exemplo:&lt;/p></description></item><item><title>Authorization Server</title><link>https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/autorization-server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/autorization-server/</guid><description>&lt;h3 id="principais-funções-de-um-authorization-server">&lt;strong>Principais funções de um Authorization Server&lt;/strong>&lt;a class="td-heading-self-link" href="#principais-fun%c3%a7%c3%b5es-de-um-authorization-server" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Autenticação do Usuário&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Verifica se as credenciais do usuário são válidas (por exemplo, login e senha, autenticação multifator, etc.). &lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Emissão de Tokens&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Após autenticar o usuário, o Authorization Server gera e retorna um &lt;strong>token de acesso&lt;/strong> (Access Token), que pode ser usado para acessar APIs protegidas.&lt;/li>
+&lt;li>Pode também emitir um &lt;strong>token de atualização&lt;/strong> (Refresh Token), que permite obter novos tokens de acesso sem precisar autenticar novamente o usuário. &lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Gerenciamento de Permissões (Scopes)&lt;/strong>&lt;/p></description></item><item><title>Fluxos de Autenticação e Autorização com OAuth 2.0 e OpenID Connect</title><link>https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/fluxo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/fluxo/</guid><description>&lt;h3 id="passo-1-o-usuário-inicia-a-autenticação">&lt;strong>Passo 1: O Usuário Inicia a Autenticação&lt;/strong>&lt;a class="td-heading-self-link" href="#passo-1-o-usu%c3%a1rio-inicia-a-autentica%c3%a7%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>O usuário tenta acessar um aplicativo (Cliente), que precisa autenticar e autorizar o acesso a determinados recursos.&lt;/p>
+&lt;h3 id="passo-2-o-cliente-redireciona-o-usuário-para-o-authorization-server">&lt;strong>Passo 2: O Cliente Redireciona o Usuário para o Authorization Server&lt;/strong>&lt;a class="td-heading-self-link" href="#passo-2-o-cliente-redireciona-o-usu%c3%a1rio-para-o-authorization-server" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>O aplicativo redireciona o usuário para o &lt;strong>Authorization Server&lt;/strong>, que pode ser um serviço como Google, Facebook, Auth0 ou outro provedor de identidade.&lt;/p>
+&lt;p>Esse redirecionamento inclui:&lt;/p>
+&lt;ul>
+&lt;li>O identificador do Cliente (Client ID).&lt;/li>
+&lt;li>O escopo das permissões solicitadas (exemplo: acesso ao e-mail).&lt;/li>
+&lt;li>O tipo de resposta esperada (código de autorização, token, etc.).&lt;/li>
+&lt;/ul>
+&lt;h3 id="passo-3-o-usuário-autentica-no-authorization-server">&lt;strong>Passo 3: O Usuário Autentica no Authorization Server&lt;/strong>&lt;a class="td-heading-self-link" href="#passo-3-o-usu%c3%a1rio-autentica-no-authorization-server" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>O Authorization Server exibe uma tela de login para o usuário, que pode ser:&lt;/p></description></item><item><title>Tipos de Fluxos de Autenticação e Autorização</title><link>https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/tipos-fluxo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/outros/autenticacao-protocolos-sso/tipos-fluxo/</guid><description>&lt;h2 id="1-authorization-code-flow-fluxo-de-código-de-autorização--mais-seguro">&lt;strong>1. Authorization Code Flow (Fluxo de Código de Autorização) – Mais Seguro&lt;/strong>&lt;a class="td-heading-self-link" href="#1-authorization-code-flow-fluxo-de-c%c3%b3digo-de-autoriza%c3%a7%c3%a3o--mais-seguro" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>&lt;strong>Usado em:&lt;/strong> Aplicações Web e Mobile que precisam de alta segurança.&lt;br>
+&lt;strong>Padrão:&lt;/strong> OAuth 2.0 e OpenID Connect.&lt;/p>
+&lt;h3 id="passos">&lt;strong>Passos:&lt;/strong>&lt;a class="td-heading-self-link" href="#passos" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ol>
+&lt;li>O cliente redireciona o usuário para o Authorization Server.&lt;/li>
+&lt;li>O usuário autentica e consente.&lt;/li>
+&lt;li>O Authorization Server retorna um &lt;strong>código de autorização&lt;/strong> ao cliente.&lt;/li>
+&lt;li>O cliente troca o código por um &lt;strong>Access Token&lt;/strong> e, opcionalmente, um &lt;strong>Refresh Token&lt;/strong>.&lt;/li>
+&lt;li>O cliente usa o &lt;strong>Access Token&lt;/strong> para acessar APIs protegidas.&lt;/li>
+&lt;li>Se o token expirar, o &lt;strong>Refresh Token&lt;/strong> pode ser usado para obter um novo token.&lt;/li>
+&lt;/ol>
+&lt;p>✅ &lt;strong>Vantagens:&lt;/strong>&lt;br>
+✔ Mais seguro, pois o token não é exposto no navegador.&lt;br>
+✔ Permite o uso de Refresh Tokens.&lt;/p></description></item></channel></rss>

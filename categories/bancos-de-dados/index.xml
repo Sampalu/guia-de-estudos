@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bancos De Dados on Sampalu</title><link>https://sampalu.github.io/guia-de-estudos/categories/bancos-de-dados/</link><description>Recent content in Bancos De Dados on Sampalu</description><generator>Hugo</generator><language>en</language><atom:link href="https://sampalu.github.io/guia-de-estudos/categories/bancos-de-dados/index.xml" rel="self" type="application/rss+xml"/><item><title>Bancos de Dados Relacionais (SQL)</title><link>https://sampalu.github.io/guia-de-estudos/bancos-dados/relacionais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/bancos-dados/relacionais/</guid><description>&lt;h4 id="principais-bancos-de-dados-relacionais">&lt;strong>Principais Bancos de Dados Relacionais&lt;/strong>:&lt;a class="td-heading-self-link" href="#principais-bancos-de-dados-relacionais" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>MySQL&lt;/strong> – Muito popular, usado em aplicações web.&lt;/li>
+&lt;li>&lt;strong>PostgreSQL&lt;/strong> – Avançado, com suporte a extensões e maior flexibilidade.&lt;/li>
+&lt;li>&lt;strong>SQL Server&lt;/strong> – Desenvolvido pela Microsoft, muito utilizado em sistemas corporativos.&lt;/li>
+&lt;li>&lt;strong>Oracle Database&lt;/strong> – Robusto, usado em grandes empresas e sistemas financeiros. &lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;h4 id="quando-usar">&lt;strong>Quando usar?&lt;/strong>&lt;a class="td-heading-self-link" href="#quando-usar" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>Quando os dados possuem estrutura bem definida. (estrutura fixa)&lt;/li>
+&lt;li>Quando há necessidade de garantir consistência forte e integridade referencial.&lt;/li>
+&lt;li>Em sistemas financeiros, ERPs, e-commerce, e aplicações onde a confiabilidade é essencial.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusão">&lt;strong>Conclusão&lt;/strong>&lt;a class="td-heading-self-link" href="#conclus%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Se a prioridade for &lt;strong>consistência e estruturação dos dados&lt;/strong>, um &lt;strong>banco SQL&lt;/strong> é a melhor escolha. Se o foco for &lt;strong>escalabilidade e flexibilidade&lt;/strong>, um &lt;strong>banco NoSQL&lt;/strong> pode ser mais adequado. Em muitos casos, uma abordagem &lt;strong>híbrida&lt;/strong> (usando ambos) pode ser a melhor solução.&lt;/p></description></item><item><title>Bancos de Dados Não Relacionais (NoSQL)</title><link>https://sampalu.github.io/guia-de-estudos/bancos-dados/nao-relacionais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/bancos-dados/nao-relacionais/</guid><description>&lt;h4 id="principais-tipos-e-exemplos-de-bancos-nosql">&lt;strong>Principais Tipos e Exemplos de Bancos NoSQL&lt;/strong>:&lt;a class="td-heading-self-link" href="#principais-tipos-e-exemplos-de-bancos-nosql" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Chave-Valor&lt;/strong> – Dados armazenados como pares chave-valor.&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Exemplo&lt;/em>: Redis, DynamoDB.&lt;/li>
+&lt;li>&lt;em>Uso&lt;/em>: Cache, sessão de usuários.&lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Documentos&lt;/strong> – Dados armazenados em formato JSON/BSON.&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Exemplo&lt;/em>: MongoDB, CouchDB.&lt;/li>
+&lt;li>&lt;em>Uso&lt;/em>: Aplicações flexíveis, como CMS e APIs.&lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Colunar&lt;/strong> – Projetado para grandes volumes de leitura/escrita.&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Exemplo&lt;/em>: Apache Cassandra, HBase.&lt;/li>
+&lt;li>&lt;em>Uso&lt;/em>: Big Data, análise de dados.&lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Grafos&lt;/strong> – Otimizado para representar conexões entre dados.&lt;/p>
+&lt;ul>
+&lt;li>&lt;em>Exemplo&lt;/em>: Neo4j, ArangoDB.&lt;/li>
+&lt;li>&lt;em>Uso&lt;/em>: Redes sociais, recomendações.&lt;br>&lt;br>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="quando-usar">&lt;strong>Quando usar?&lt;/strong>&lt;a class="td-heading-self-link" href="#quando-usar" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>Quando os dados são semiestruturados ou não têm esquema fixo.&lt;/li>
+&lt;li>Quando a escalabilidade horizontal é mais importante que a consistência forte.&lt;/li>
+&lt;li>Em aplicações que exigem alta velocidade de leitura/escrita, como big data, redes sociais e IoT.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="conclusão">&lt;strong>Conclusão&lt;/strong>&lt;a class="td-heading-self-link" href="#conclus%c3%a3o" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Se a prioridade for &lt;strong>consistência e estruturação dos dados&lt;/strong>, um &lt;strong>banco SQL&lt;/strong> é a melhor escolha. Se o foco for &lt;strong>escalabilidade e flexibilidade&lt;/strong>, um &lt;strong>banco NoSQL&lt;/strong> pode ser mais adequado. Em muitos casos, uma abordagem &lt;strong>híbrida&lt;/strong> (usando ambos) pode ser a melhor solução.&lt;/p></description></item><item><title>Scaling Databases</title><link>https://sampalu.github.io/guia-de-estudos/bancos-dados/scaling-databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/bancos-dados/scaling-databases/</guid><description>&lt;h3 id="1-escala-vertical-scale-up">&lt;strong>1. Escala Vertical (Scale-Up)&lt;/strong>&lt;a class="td-heading-self-link" href="#1-escala-vertical-scale-up" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Consiste em &lt;strong>aumentar os recursos da máquina onde o banco de dados está rodando&lt;/strong> (CPU, RAM, SSD, etc.).&lt;/p>
+&lt;h4 id="vantagens">&lt;strong>Vantagens&lt;/strong>:&lt;a class="td-heading-self-link" href="#vantagens" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>Simples de implementar (basta aumentar os recursos do servidor).&lt;/li>
+&lt;li>Não exige mudanças significativas na arquitetura do banco.&lt;/li>
+&lt;/ul>
+&lt;h4 id="desvantagens">&lt;strong>Desvantagens&lt;/strong>:&lt;a class="td-heading-self-link" href="#desvantagens" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>Custo elevado (máquinas mais potentes são caras).&lt;/li>
+&lt;li>Limite físico (eventualmente, não há mais como escalar).&lt;/li>
+&lt;li>Ponto único de falha (se o servidor falhar, tudo cai).&lt;/li>
+&lt;/ul>
+&lt;h4 id="quando-usar">&lt;strong>Quando usar?&lt;/strong>&lt;a class="td-heading-self-link" href="#quando-usar" aria-label="Heading self-link">&lt;/a>&lt;/h4>
+&lt;ul>
+&lt;li>Quando o sistema ainda não atingiu o limite do hardware atual.&lt;/li>
+&lt;li>Quando a aplicação requer consistência forte e baixa latência.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="2-escala-horizontal-scale-out">&lt;strong>2. Escala Horizontal (Scale-Out)&lt;/strong>&lt;a class="td-heading-self-link" href="#2-escala-horizontal-scale-out" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;p>Consiste em &lt;strong>distribuir a carga entre vários servidores&lt;/strong>, em vez de depender de apenas um.&lt;/p></description></item><item><title>Conceitos Essenciais</title><link>https://sampalu.github.io/guia-de-estudos/bancos-dados/conceitos-essenciais/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/bancos-dados/conceitos-essenciais/</guid><description>&lt;h2 id="1-orms-object-relational-mappers">1. ORMs (Object-Relational Mappers)&lt;a class="td-heading-self-link" href="#1-orms-object-relational-mappers" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>Os ORMs permitem interagir com bancos de dados relacionais usando código orientado a objetos, evitando a escrita manual de SQL.&lt;/p>
+&lt;h3 id="vantagens">Vantagens:&lt;a class="td-heading-self-link" href="#vantagens" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Abstração do banco de dados.&lt;/li>
+&lt;li>Facilidade na manutenção do código.&lt;/li>
+&lt;li>Redução de código SQL repetitivo.&lt;/li>
+&lt;/ul>
+&lt;h3 id="desvantagens">Desvantagens:&lt;a class="td-heading-self-link" href="#desvantagens" aria-label="Heading self-link">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>Pode gerar queries ineficientes.&lt;/li>
+&lt;li>Curva de aprendizado em ORMs complexos.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Exemplos&lt;/strong>: SQLAlchemy (Python), Hibernate (Java), Entity Framework (.NET).&lt;/p>
+&lt;hr>
+&lt;h2 id="2-acid-atomicidade-consistência-isolamento-e-durabilidade">2. ACID (Atomicidade, Consistência, Isolamento e Durabilidade)&lt;a class="td-heading-self-link" href="#2-acid-atomicidade-consist%c3%aancia-isolamento-e-durabilidade" aria-label="Heading self-link">&lt;/a>&lt;/h2>
+&lt;p>ACID é um conjunto de propriedades que garantem a confiabilidade das transações em bancos de dados.&lt;/p></description></item><item><title>Bancos de Dados</title><link>https://sampalu.github.io/guia-de-estudos/bancos-dados/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sampalu.github.io/guia-de-estudos/bancos-dados/</guid><description/></item></channel></rss>
